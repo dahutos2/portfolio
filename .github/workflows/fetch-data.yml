@@ -1,0 +1,34 @@
+name: Fetch portfolio data
+on:
+  workflow_dispatch:
+  push:
+    paths: [portfolio.config.yml]
+  schedule:
+    - cron: '0 2 * * *'  # JST 11:00
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+
+      - name: Install deps
+        run: pip install PyYAML requests markdown feedparser
+        
+      - name: Generate data
+        env: { GH_TOKEN: ${{ secrets.GH_PAT }} }
+        run: |
+          python .github/scripts/build_data.py
+
+      - name: Commit
+        run: |
+          git config user.name  github-actions
+          git config user.email github-actions@github.com
+          git add public/data
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: update public data"
+          git push

@@ -1,0 +1,27 @@
+owner: dahutos2
+
+featured_repos:
+  - dahutos2/flutter-sample
+  - dahutos2/machine-learning-lab
+
+services:
+  - title: モバイルアプリ開発
+    stack: [Flutter, Swift, Kotlin]
+    blurb: UI/UX から CI/CD までワンストップ
+  - title: Web API / Rails
+    stack: [Rails, PostgreSQL]
+    blurb: スケールと保守性を両立
+
+timeline:
+  - date: 2025-04
+    text: Joined Foo Inc. as Lead Mobile Engineer
+  - date: 2024-11
+    text: PyCon JP Speaker
+
+testimonials:
+  - author: Alice / CTO @ Bar
+    quote: "迅速かつ高品質なデリバリーに感謝"
+
+achievements:
+  - title: OSS PR merged in Flutter
+    link: https://github.com/flutter/flutter/pull/12345
