@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Base typography ---------- */
+@layer base {
+  h1 {@apply text-3xl md:text-5xl font-bold tracking-tight;}
+  h2 {@apply text-2xl md:text-4xl font-bold tracking-tight;}
+  h3 {@apply text-xl  md:text-2xl font-semibold tracking-tight;}
+}
+
+/* ---------- Design tokens ---------- */
+@layer components {
+  /* Unified card shell */
+  .card-base {@apply p-6 rounded-2xl shadow-sm bg-white dark:bg-gray-800 hover:shadow-lg transition;}
+
+  /* Buttons */
+  .btn-primary {@apply inline-block px-6 py-3 rounded-lg bg-primary-500 text-white hover:bg-primary-400 transition;}
+  .btn-outline {@apply inline-block px-6 py-3 rounded-lg border border-primary-500 text-primary-500 hover:bg-primary-100 transition;}
+}
+
+/* ---------- Progress color fix ---------- */
+.progress-tailwind::-webkit-progress-value {background-color: theme('colors.primary.500');}
+.progress-tailwind::-moz-progress-bar {background-color: theme('colors.primary.500');}
+.progress-tailwind {color: theme('colors.primary.500');}

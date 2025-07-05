@@ -1,9 +1,13 @@
-owner: dahutos2
-
+# ========= 主なプロジェクト（repos.json） =========
 featured_repos:
   - meal_health_verification
   - local-competitive-app
 
+
+# ========= 提供可能なサービス（services.json） =========
+# title: サービス名     ex. モバイルアプリ開発
+# stack: スキル一覧     ex. [Flutter, Swift, Kotlin]
+# blurb: サービスの説明
 services:
   - title: モバイルアプリ開発
     stack: [Flutter, Swift, Kotlin]
@@ -12,16 +16,31 @@ services:
     stack: [Rails, PostgreSQL]
     blurb: スケールと保守性を両立
 
+# ========= キャリアタイムライン（timeline.json） =========
+# text: 経歴に関わる出来事
+# date: 経歴に関わる出来事の始まりの日付(YYYY-MM)
 timeline:
-  - date: 2025-04
-    text: Joined Foo Inc. as Lead Mobile Engineer
-  - date: 2024-11
-    text: PyCon JP Speaker
+  - text: Joined Foo Inc. as Lead Mobile Engineer
+    date: 2025-04
+  - text: PyCon JP Speaker
+    date: 2024-11
 
+# ========= 推薦の声（testimonials.json） =========
+# author:   人物
+# position: 肩書き
+# quote:    声の内容
+# avatar:   顔写真
 testimonials:
-  - author: Alice / CTO @ Bar
+  - author: "Bob"
+    position: "CTO @ Bar"
     quote: "迅速かつ高品質なデリバリーに感謝"
+    avatar: "assets/man.png"
 
+# ========= 実績（achievements.json） =========
+# title: 活動実績
+# link:  実績のリンク
+# date:  日付
 achievements:
   - title: OSS PR merged in Flutter
     link: https://github.com/flutter/flutter/pull/12345
+    date: "2025-01"

@@ -13,6 +13,7 @@ export interface User {
 export interface Achievement {
   title: string
   link:  string
+  date:  string
 }
 
 /* ---------------- repos.json ---------------- */
@@ -33,14 +34,16 @@ export interface Service {
 
 /* ---------------- testimonials.json --------- */
 export interface Testimonial {
-  author: string
-  quote:  string
+  author:   string
+  position: string
+  quote:    string
+  avatar:   string
 }
 
 /* ---------------- timeline.json ------------- */
 export interface TimelineEntry {
-  date: string   // "2025-04" など
   text: string
+  date: string
 }
 
 /* ---------------- metrics.json -------------- */
@@ -63,7 +66,6 @@ export interface CodingLang {
   seconds: number
 }
 export interface CodingStats {
-  range:          string
   total_seconds:  number
   languages:      CodingLang[]
 }

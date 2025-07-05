@@ -1,24 +1,27 @@
 <script setup lang="ts">
 import DefaultLayout from './layouts/DefaultLayout.vue'
-import Hero from './components/Hero.vue'
+import HeroSection from './components/HeroSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ServicesSection from './components/ServicesSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
 import SocialProof from './components/SocialProof.vue'
-import Services from './components/Services.vue'
-import RepoGallery from './components/RepoGallery.vue'
 import TechStack from './components/TechStack.vue'
-import Timeline from './components/Timeline.vue'
-import Testimonials from './components/Testimonials.vue'
+import TimelineSection from './components/TimelineSection.vue'
+import AchievementsSection from './components/AchievementsSection.vue'
+import TestimonialsSection from './components/TestimonialsSection.vue'
 import ContactSection from './components/ContactSection.vue'
 </script>
-
 <template>
   <DefaultLayout>
-    <Hero />
+    <HeroSection />
+    <AboutSection />
+    <ServicesSection />
+    <ProjectsSection />
     <SocialProof />
-    <Services />
-    <RepoGallery />
     <TechStack />
-    <Timeline />
-    <Testimonials />
+    <TimelineSection />
+    <AchievementsSection />
+    <TestimonialsSection />
     <ContactSection />
   </DefaultLayout>
 </template>

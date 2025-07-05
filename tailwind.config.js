@@ -1,26 +1,28 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html', 'src/**/*.{vue,ts,tsx}'],
+  content: ['./index.html', 'src/**/*.{vue,ts,tsx}'],
   theme: {
     extend: {
       colors: {
         primary: {
-          100: '#E0F7F5',
-          200: '#B3EBE7',
-          300: '#80DFD8',
-          400: '#4DD3CA',
-          500: '#00ADA0'
+          50:  '#e0faf9',
+          100: '#b3f0ee',
+          200: '#80e5e3',
+          300: '#4ddad8',
+          400: '#26d1cf',
+          500: '#00ADB5',
+          600: '#009ca3',
+          700: '#00868c',
+          800: '#006f75',
+          900: '#004f52',
         },
         secondary: {
-          100: '#F9F1FF',
-          200: '#E4D4FF',
-          300: '#C7A6FF',
-          400: '#AA79FF',
-          500: '#824DFF'
-        }
-      }
-    }
+          100: '#fff5d0',
+          500: '#F9C74F',
+        },
+      },
+    },
   },
-  plugins: []
+  plugins: [require('@tailwindcss/typography')],
 }
 

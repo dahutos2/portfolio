@@ -12,12 +12,11 @@
     "@iconify-json/mdi": "^1.2.3",
     "@vueuse/core": "^13.5.0",
     "github-markdown-css": "^5.8.1",
-    "naive-ui": "^2.42.0",
     "pinia": "^3.0.3",
-    "swiper": "^11.2.10",
     "vue": "^3.5.17"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.21",

@@ -1,23 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-const name = ref(''); const mail = ref(''); const msg = ref('')
-function submit() {
-    fetch('https://formspree.io/f/<id>', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name.value, email: mail.value, message: msg.value })
-    }).then(() => alert('Thank you!'))
-}
+import SectionContainer from '../layouts/SectionContainer.vue'
+const mailto = 'mailto:dahutos2@gmail.com?subject=お問い合わせ%20from%20Portfolio'
 </script>
-
 <template>
     <SectionContainer id="contact">
-        <h2 class="text-2xl font-bold mb-6">Contact</h2>
-        <form class="grid gap-4 max-w-lg" @submit.prevent="submit">
-            <input v-model="name" placeholder="Your name" class="border p-2 rounded" required>
-            <input v-model="mail" placeholder="Email" type="email" class="border p-2 rounded" required>
-            <textarea v-model="msg" placeholder="Message" rows="5" class="border p-2 rounded" required />
-            <button type="submit" class="bg-primary-500 text-white py-2 rounded">Send</button>
-        </form>
+        <h2 class="mb-6 text-center">お問い合わせ</h2>
+        <div class="flex flex-col items-center space-y-4">
+            <p class="text-lg text-gray-700 dark:text-gray-300">
+                お仕事のご相談・ご依頼はお気軽にご連絡ください。
+            </p>
+            <a :href="mailto" class="btn-primary">メールを送る</a>
+        </div>
     </SectionContainer>
 </template>

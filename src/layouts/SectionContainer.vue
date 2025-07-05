@@ -1,5 +1,10 @@
+<script setup lang="ts">
+defineProps<{ id: string }>()
+</script>
 <template>
-    <div class="max-w-5xl mx-auto px-4 py-16">
-        <slot />
-    </div>
+    <section :id="id" class="py-24">
+        <div class="max-w-6xl mx-auto px-4">
+            <slot />
+        </div>
+    </section>
 </template>
