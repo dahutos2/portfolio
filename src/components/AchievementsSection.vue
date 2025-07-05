@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SectionContainer from '../layouts/SectionContainer.vue'
-import SectionState from '../components/ui/SectionState.vue'
+import SectionState from '../components/parts/SectionState.vue'
 import { useFetch } from '../composables/useFetch'
 import type { Achievement } from '../types/portfolio'
 import AchievementCard from './parts/AchievementCard.vue'

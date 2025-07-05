@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import SectionContainer from '../layouts/SectionContainer.vue'
-import SectionState from '../components/ui/SectionState.vue'
+import SectionState from '../components/parts/SectionState.vue'
 import type { User } from '../types/portfolio'
 import { useFetch } from '../composables/useFetch'
 const { data: user, loading } = useFetch<User>('user.json')

@@ -2,7 +2,7 @@
 import { useFetch } from '../composables/useFetch'
 import type { User } from '../types/portfolio'
 import SectionContainer from '../layouts/SectionContainer.vue'
-import SectionState from '../components/ui/SectionState.vue'
+import SectionState from '../components/parts/SectionState.vue'
 const { data: user, loading } = useFetch<User>('user.json')
 </script>
 <template>
