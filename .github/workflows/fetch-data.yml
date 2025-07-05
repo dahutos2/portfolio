@@ -32,7 +32,8 @@ jobs:
       # GitHub API から JSON を生成
       - name: Generate public/data/*
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          OWNER: ${{ github.repository_owner }} # ユーザー名
+          GH_TOKEN: ${{ secrets.GH_PAT }} # Secret PAT
         run: |
           python .github/scripts/build_data.py
 

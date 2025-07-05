@@ -1,8 +1,8 @@
 owner: dahutos2
 
 featured_repos:
-  - dahutos2/meal_health_verification
-  - dahutos2/local-competitive-app
+  - meal_health_verification
+  - local-competitive-app
 
 services:
   - title: モバイルアプリ開発

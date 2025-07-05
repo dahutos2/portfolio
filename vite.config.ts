@@ -10,5 +10,5 @@ export default defineConfig({
     Components({ resolvers: [NaiveUiResolver()] })
   ],
   server: { port: 5173 },
-  base: '/portfolio/'
+  base: '/'
 })
