@@ -32,6 +32,8 @@ from bs4 import BeautifulSoup
 
 md = (
     MarkdownIt("commonmark", {"html": True, "linkify": True})
+    .enable("table")  # ← Pipe テーブルを有効化
+    .enable("strikethrough")  # （commonmark では off のため）
     .use(tasklists_plugin)  # - [ ] チェックリスト
     .use(footnote_plugin)  # 脚注
     .use(front_matter_plugin)  # YAML Front-Matter 無視

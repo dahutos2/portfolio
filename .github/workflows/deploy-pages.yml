@@ -3,7 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore: ['**.md', 'portfolio.config.yml']
+    paths-ignore: [
+      '**.md',
+      'portfolio.config.yml',
+      '.github/scripts/**.py',
+      '.github/workflows/**.yml'
+    ]
   workflow_dispatch:
 
 jobs:
