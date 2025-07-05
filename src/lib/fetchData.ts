@@ -4,7 +4,7 @@
  */
 export async function fetchData<T = unknown>(file: string): Promise<T> {
   // import.meta.env.BASE_URL は dev では '/', build では '/repo名/'
-  const url = `${import.meta.env.BASE_URL}/data/${file}`
+  const url = `${import.meta.env.BASE_URL}data/${file}`
   const res = await fetch(url)
 
   if (!res.ok) throw new Error(`Failed to GET ${url} → ${res.status}`)

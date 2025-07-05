@@ -11,7 +11,7 @@ const tes = ref<Testimonial[]>([])
 
 onMounted(async () => {
     // JSON を取得
-    tes.value = await fetchData<Testimonial[]>("data/testimonials.json")
+    tes.value = await fetchData<Testimonial[]>("testimonials.json")
 
     // DOM が描画されてから Swiper を初期化
     await nextTick()
