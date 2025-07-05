@@ -41,6 +41,9 @@ jobs:
           python .github/scripts/build_data.py
 
       # 変更があればコミット & プッシュ
+
+      - name: Write build id
+        run: echo "{\"version\":\"${{ github.sha }}\"}" > public/data/build.json
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
