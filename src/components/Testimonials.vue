@@ -1,7 +1,25 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-const tes = ref<any[]>([])
-onMounted(async () => tes.value = await (await fetch('/data/testimonials.json')).json())
+import { ref, onMounted, nextTick } from 'vue'
+import Swiper from 'swiper'
+import { Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/autoplay'
+
+interface Testimonial { author: string; quote: string }
+const tes = ref<Testimonial[]>([])
+
+onMounted(async () => {
+    // JSON を取得
+    tes.value = await (await fetch('/data/testimonials.json')).json()
+
+    // DOM が描画されてから Swiper を初期化
+    await nextTick()
+    new Swiper('#testimonial-swiper', { // NOSONAR
+        modules: [Autoplay],
+        loop: true,
+        autoplay: { delay: 5000 }
+    })
+})
 </script>
 
 <template>
@@ -17,10 +35,3 @@ onMounted(async () => tes.value = await (await fetch('/data/testimonials.json'))
         </div>
     </SectionContainer>
 </template>
-
-<script setup>
-// Swiper CDN を index.html で読み込む
-import Swiper from 'swiper'
-import 'swiper/css'
-onMounted(()=> new Swiper('#testimonial-swiper',{loop:true,autoplay:{delay:5000}}))
-</script>
