@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import type { Repo, User } from '../types/portfolio'
+import type { Metrics, User } from '../types/portfolio'
 import { fetchData } from '../lib/fetchData'
 const metrics = ref<{ stars: number, followers: number }>()
 onMounted(async () => {
-    const u = await fetchData<User>("user.json")
-    const repos = await fetchData<Repo[]>("repos.json")
-    metrics.value = {
-        followers: u.followers,
-        stars: repos.reduce((s: number, r: Repo) => s + r.stars, 0)
-    }
+    const user = await fetchData<User>("user.json")
+    const m = await fetchData<Metrics>('metrics.json')
+    metrics.value = { followers: user.followers, stars: m.total_stars }
 })
 </script>
 

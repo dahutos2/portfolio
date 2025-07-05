@@ -1,7 +1,3 @@
-/* ------------------------------------------------------------------ *
- * ポートフォリオ表示で扱う JSON 型定義
- * ------------------------------------------------------------------ */
-
 /** public/data/user.json */
 export interface User {
   name:      string
@@ -45,4 +41,19 @@ export interface Testimonial {
 export interface TimelineEntry {
   date: string   // ISO8601 文字列 (e.g. "2025-04")
   text: string
+}
+
+export interface MetricsLanguage {
+  lang:  string          // 言語名
+  count: number          // リポジトリ件数
+  stars: number          // その言語の合計 Star
+}
+
+/** public/data/metrics.json */
+export interface Metrics {
+  total_repos:   number
+  private_repos: number
+  public_repos:  number
+  total_stars:   number
+  languages:     MetricsLanguage[]
 }
