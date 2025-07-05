@@ -1,0 +1,8 @@
+PyYAML
+requests
+feedparser
+markdown-it-py
+mdit-py-plugins
+linkify-it-py
+mdurl
+beautifulsoup4

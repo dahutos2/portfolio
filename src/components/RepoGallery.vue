@@ -11,17 +11,28 @@ onMounted(async () => {
 </script>
 
 <template>
-    <SectionContainer id="projects">
-        <h2 class="text-2xl font-bold mb-6">Featured Projects</h2>
+    <SectionContainer>
+        <h2 class="text-2xl font-bold mb-6">Featured&nbsp;Projects</h2>
+
         <NCard v-for="r in repos" :key="r.full_name" class="my-8">
             <template #header>{{ r.full_name }}</template>
+
             <p>{{ r.description }}</p>
             <p class="text-sm mb-4">⭐ {{ r.stars }} ｜ {{ r.lang }}</p>
+
             <NCollapse :default-expanded-names="[]">
                 <NCollapseItem :title="`README – ${r.full_name}`" :name="r.full_name">
-                    <div v-html="r.html" class="prose max-w-none" />
+                    <div v-html="r.html" class="markdown-body" />
                 </NCollapseItem>
             </NCollapse>
         </NCard>
     </SectionContainer>
 </template>
+
+<style scoped>
+/* README 内画像をレスポンシブに */
+.markdown-body img {
+    max-width: 100%;
+    border-radius: .5rem;
+}
+</style>

@@ -21,8 +21,35 @@ from __future__ import annotations
 
 from pathlib import Path
 from urllib import request as ur, error as urlerror, parse as urlparse
-import json, yaml, os, base64, markdown
+import json, yaml, os, base64
 from collections import Counter
+
+from markdown_it import MarkdownIt
+from mdit_py_plugins.tasklists import tasklists_plugin
+from mdit_py_plugins.footnote import footnote_plugin
+from mdit_py_plugins.front_matter import front_matter_plugin
+from bs4 import BeautifulSoup
+
+md = (
+    MarkdownIt("commonmark", {"html": True, "linkify": True})
+    .use(tasklists_plugin)  # - [ ] チェックリスト
+    .use(footnote_plugin)  # 脚注
+    .use(front_matter_plugin)  # YAML Front-Matter 無視
+)
+
+
+def render_readme(md_text: str, owner: str, repo: str, branch: str) -> str:
+    # Markdown → HTML & 相対画像パスを raw.githubusercontent に補正
+    html = md.render(md_text)
+
+    soup = BeautifulSoup(html, "html.parser")
+    for img in soup.find_all("img"):
+        src = img.get("src", "")
+        if src and not src.startswith(("http://", "https://")):
+            img["src"] = (
+                f"https://raw.githubusercontent.com/{owner}/{repo}/{branch}/{src.lstrip('./')}"
+            )
+    return str(soup)
 
 
 def github_api(url: str, headers: dict) -> dict:
@@ -74,35 +101,27 @@ def build_user_json(owner: str, headers: dict, out_dir: Path) -> None:
     )
 
 
-def build_repos_json(
-    owner: str, featured_repos: list[str], headers: dict, out_dir: Path
-) -> None:
+def build_repos_json(owner: str, featured_cfg: list[str], hdr: dict, out: Path) -> None:
     featured = []
-    for repo in featured_repos:
-        # owner が省略されていれば補完
-        full_name = repo if "/" in repo else f"{owner}/{repo}"
+    for repo in featured_cfg:
+        full = repo if "/" in repo else f"{owner}/{repo}"
+        repo_data = github_api(f"https://api.github.com/repos/{full}", hdr)
+        default_branch = repo_data.get("default_branch", "main")
 
-        # リポジトリ本体情報
-        repo_data = github_api(f"https://api.github.com/repos/{full_name}", headers)
+        rd = github_api(f"https://api.github.com/repos/{full}/readme", hdr)
+        md_text = base64.b64decode(rd["content"]).decode()
+        html = render_readme(md_text, owner, repo_data["name"], default_branch)
 
-        # README (Base64) → Markdown HTML
-        readme_data = github_api(
-            f"https://api.github.com/repos/{full_name}/readme", headers
-        )
-        html = markdown.markdown(
-            base64.b64decode(readme_data["content"]).decode(),
-            extensions=["fenced_code", "tables"],
-        )
         featured.append(
             {
-                "full_name": full_name,
+                "full_name": full,
                 "description": repo_data.get("description"),
                 "stars": repo_data.get("stargazers_count"),
                 "lang": repo_data.get("language"),
                 "html": html,
             }
         )
-    (out_dir / "repos.json").write_text(json.dumps(featured, ensure_ascii=False))
+    (out / "repos.json").write_text(json.dumps(featured, ensure_ascii=False))
 
 
 def build_metrics_json(headers: dict, out_dir: Path):
