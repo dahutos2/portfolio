@@ -1,47 +1,42 @@
 name: Fetch portfolio data
 
+# ── トリガ条件 ─────────────────────────────
 on:
-  workflow_dispatch:
-  push:
+  workflow_dispatch:           # 手動実行
+  push:                        # YAML 編集時に実行
     paths: [portfolio.config.yml]
-  schedule:
-    - cron: '0 2 * * *'   # UTC 02:00 = JST 11:00
+  schedule:                    # 毎日 JST 11:00
+    - cron: '0 2 * * *'
 
+# ── ジョブ定義 ─────────────────────────────
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # リポジトリ取得
-      - uses: actions/checkout@v4
+      # リポジトリを取得
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # Node.js + npm キャッシュ
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: '**/package-lock.json'
-
-      # Python 3.11
+      # Python 3.11 をセットアップ
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # Python ライブラリ
+      # 必要な Python ライブラリをインストール
       - name: Install Python deps
         run: |
           pip install PyYAML requests markdown feedparser
 
-      # データ生成
-      - name: Generate data
+      # GitHub API から JSON を生成
+      - name: Generate public/data/*
         env:
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           python .github/scripts/build_data.py
 
-      # 変更があればコミット
+      # 変更があればコミット & プッシュ
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
