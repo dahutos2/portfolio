@@ -5,7 +5,7 @@ on:
   push:
     paths: [portfolio.config.yml]
   schedule:
-    - cron: '0 2 * * *'   # JST 11:00
+    - cron: '0 2 * * *'       # 毎日 UTC 02:00 = JST 11:00
 
 jobs:
   build:
@@ -16,25 +16,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Python 設定
+      # pnpm を先にセットアップ（キャッシュも自動）
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+          run_install: false
+
+      # Node.js ＋ pnpm キャッシュ
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+          cache-dependency-path: '**/pnpm-lock.yaml'
+
+      # Python 3.11 をセットアップ
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 依存ライブラリ
+      # Python ライブラリ
       - name: Install Python deps
         run: |
           pip install PyYAML requests markdown feedparser
 
-      # データ生成
-      - name: Generate public/data/*
+      # public/data/* 生成
+      - name: Generate data
         env:
-          GH_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}   # PAT を Secrets に登録済み
         run: |
           python .github/scripts/build_data.py
 
-      # 生成物をコミット
+      # 変更があればコミット＆プッシュ
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
