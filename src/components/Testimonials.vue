@@ -4,13 +4,14 @@ import Swiper from 'swiper'
 import { Autoplay } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/autoplay'
+import type { Testimonial } from '../types/portfolio'
+import { fetchData } from '../lib/fetchData'
 
-interface Testimonial { author: string; quote: string }
 const tes = ref<Testimonial[]>([])
 
 onMounted(async () => {
     // JSON を取得
-    tes.value = await (await fetch('/data/testimonials.json')).json()
+    tes.value = await fetchData<Testimonial[]>("data/testimonials.json")
 
     // DOM が描画されてから Swiper を初期化
     await nextTick()

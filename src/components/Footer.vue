@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-const user = ref<any>()
-onMounted(async () => user.value = await (await fetch('/data/user.json')).json())
+import { fetchData } from '../lib/fetchData';
+import type { User } from '../types/portfolio';
+const user = ref<User | null>(null)
+onMounted(async () => user.value = await fetchData<User>("user.json"))
 </script>
 
 <template>

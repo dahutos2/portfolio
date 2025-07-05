@@ -2,8 +2,10 @@
 import { ref, onMounted, computed } from 'vue'
 import { NProgress } from 'naive-ui'
 import { groupBy } from 'lodash-es'
-const repos = ref<any[]>([])
-onMounted(async () => repos.value = await (await fetch('/data/repos.json')).json())
+import type { Repo } from '../types/portfolio'
+import { fetchData } from '../lib/fetchData'
+const repos = ref<Repo[]>([])
+onMounted(async () => repos.value = await fetchData<Repo[]>("repos.json"))
 
 const stats = computed(() => {
     const total = repos.value.length

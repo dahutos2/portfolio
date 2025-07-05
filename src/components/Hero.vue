@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { NButton, NAvatar, NSpace } from 'naive-ui'
-const user = ref<any>()
-onMounted(async () => user.value = await (await fetch('/data/user.json')).json())
+import type { User } from '../types/portfolio'
+import { fetchData } from '../lib/fetchData'
+const user = ref<User | null>(null)
+onMounted(async () => user.value = await fetchData<User>("user.json"))
 </script>
 
 <template>

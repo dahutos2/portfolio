@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-interface Service { title: string; stack: string[]; blurb: string }
+import type { Service } from '../types/portfolio'
+import { fetchData } from '../lib/fetchData'
 const services = ref<Service[]>([])
-onMounted(async () => services.value = await (await fetch('/data/services.json')).json())
+onMounted(async () => services.value = await fetchData<Service[]>("services.json"))
 </script>
 
 <template>

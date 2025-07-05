@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-const timeline = ref<any[]>([])
-onMounted(async () => timeline.value = await (await fetch('/data/timeline.json')).json())
+import type { TimelineEntry } from '../types/portfolio';
+import { fetchData } from '../lib/fetchData';
+const timeline = ref<TimelineEntry[]>([])
+onMounted(async () => timeline.value = await fetchData<TimelineEntry[]>("timeline.json"))
 </script>
 
 <template>

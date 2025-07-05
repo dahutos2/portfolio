@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { NCard, NCollapse, NCollapseItem } from 'naive-ui'
-const repos = ref<any[]>([])
+import type { Repo } from '../types/portfolio'
+import { fetchData } from '../lib/fetchData'
+const repos = ref<Repo[]>([])
 onMounted(async () => {
-    repos.value = (await (await fetch('/data/repos.json')).json())
+    repos.value = (await fetchData<Repo[]>("repos.json"))
         .sort((a: any, b: any) => b.stars - a.stars)
 })
 </script>
