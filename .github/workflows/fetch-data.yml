@@ -34,6 +34,7 @@ jobs:
         env:
           OWNER: ${{ github.repository_owner }} # ユーザー名
           GH_TOKEN: ${{ secrets.GH_PAT }} # Secret PAT
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} # Secret WakaTime API key
         run: |
           python .github/scripts/build_data.py
 

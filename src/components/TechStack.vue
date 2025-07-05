@@ -1,33 +1,34 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
 import { NProgress } from 'naive-ui'
-import type { Metrics, MetricsLanguage } from '../types/portfolio'
+import type { CodingStats } from '../types/portfolio'
 import { fetchData } from '../lib/fetchData'
-const langs = ref<MetricsLanguage[]>([])
+
+const coding = ref<CodingStats | null>(null)
 onMounted(async () => {
-    const m = await fetchData<Metrics>('metrics.json')
-    langs.value = m.languages
+    coding.value = await fetchData<CodingStats>('coding.json')
 })
 
 const stats = computed(() => {
-    if (!langs.value.length) return []
-    const total = langs.value.reduce((s, l) => s + l.count, 0)
-    return [...langs.value]                        // コピーして
-        .sort((a, b) => b.count - a.count)          // 件数降順
-        .slice(0, 6)                                // TOP6
-        .map(l => ({ ...l, pct: l.count / total })) // 割合を付与
+    if (!coding.value) return []
+    const total = coding.value.total_seconds
+    return [...coding.value.languages]
+        .sort((a, b) => b.seconds - a.seconds)
+        .slice(0, 6)
+        .map(l => ({ ...l, pct: l.seconds / total }))
 })
 </script>
 
 <template>
     <SectionContainer v-if="stats.length">
-        <h2 class="text-2xl font-bold mb-6">Tech Stack</h2>
-        <div v-for="s in stats" :key="s.lang" class="mb-4">
+        <h2 class="text-2xl font-bold mb-6">Tech Stack (by time)</h2>
+
+        <div v-for="l in stats" :key="l.lang" class="mb-4">
             <div class="flex justify-between text-sm mb-1">
-                <span>{{ s.lang }}</span>
-                <span>{{ (s.pct * 100).toFixed(0) }}%</span>
+                <span>{{ l.lang }}</span>
+                <span>{{ (l.pct * 100).toFixed(0) }}%</span>
             </div>
-            <NProgress :percentage="s.pct * 100" :show-indicator="false" />
+            <NProgress :percentage="l.pct * 100" :show-indicator="false" />
         </div>
     </SectionContainer>
 </template>

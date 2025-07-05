@@ -1,4 +1,4 @@
-/** public/data/user.json */
+/* ---------------- user.json ----------------- */
 export interface User {
   name:      string
   bio:       string | null
@@ -9,51 +9,61 @@ export interface User {
   followers: number
 }
 
-/** public/data/achievements.json */
+/* ---------------- achievements.json --------- */
 export interface Achievement {
   title: string
   link:  string
 }
 
-/** public/data/repos.json */
+/* ---------------- repos.json ---------------- */
 export interface Repo {
   full_name:   string
   description: string | null
   stars:       number
   lang:        string | null
-  html:        string  // README（HTML 文字列）
+  html:        string
 }
 
-/** public/data/services.json */
+/* ---------------- services.json ------------- */
 export interface Service {
   title: string
-  stack: string[]   // 例: ["Flutter", "Swift"]
+  stack: string[]
   blurb: string
 }
 
-/** public/data/testimonials.json */
+/* ---------------- testimonials.json --------- */
 export interface Testimonial {
   author: string
   quote:  string
 }
 
-/** public/data/timeline.json */
+/* ---------------- timeline.json ------------- */
 export interface TimelineEntry {
-  date: string   // ISO8601 文字列 (e.g. "2025-04")
+  date: string   // "2025-04" など
   text: string
 }
 
+/* ---------------- metrics.json -------------- */
 export interface MetricsLanguage {
-  lang:  string          // 言語名
-  count: number          // リポジトリ件数
-  stars: number          // その言語の合計 Star
+  lang:  string
+  count: number
+  stars: number
 }
-
-/** public/data/metrics.json */
 export interface Metrics {
   total_repos:   number
   private_repos: number
   public_repos:  number
   total_stars:   number
   languages:     MetricsLanguage[]
+}
+
+/* ---------------- coding.json --------------- */
+export interface CodingLang {
+  lang:    string
+  seconds: number
+}
+export interface CodingStats {
+  range:          string
+  total_seconds:  number
+  languages:      CodingLang[]
 }

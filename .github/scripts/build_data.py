@@ -4,18 +4,25 @@
 GitHub Actions で実行され、ポートフォリオサイト用の JSON データを
 public/data/ 以下に生成するスクリプト。
 
-主な生成物
-    user.json          : プロフィール情報
-    repos.json         : フィーチャーしたいリポジトリ一覧
-    metrics.json         : 全リポジトリ集計
-    services.json ...  : その他 YAML で指定された任意セクション
+生成ファイル
+  user.json      : プロフィール
+  repos.json     : featured リポジトリ詳細（README HTML 付き）
+  metrics.json   : 全リポジトリ集計（件数・スター・言語）
+  coding.json    : WakaTime all-time の言語別コーディング時間
+  services / timeline / testimonials / achievements : YAML そのままコピー
+
+環境変数
+  GH_TOKEN            : repo スコープ PAT（private も集計するため必須）
+  GITHUB_REPOSITORY_OWNER / OWNER : GitHub オーナー名
+  WAKATIME_API_KEY    : WakaTime Read-only API key
+  WAKATIME_USER       : WakaTime ユーザー
 """
 from __future__ import annotations
 
 from pathlib import Path
-from urllib import request as ur, error as urlerror
+from urllib import request as ur, error as urlerror, parse as urlparse
 import json, yaml, os, base64, markdown
-from collections import defaultdict, Counter
+from collections import Counter
 
 
 def github_api(url: str, headers: dict) -> dict:
@@ -35,6 +42,18 @@ def paginated(url: str, headers: dict):
             break
         yield from data
         page += 1
+
+
+def wakatime_api(endpoint: str, api_key: str):
+    url = f"https://wakatime.com/api/v1/{endpoint}?api_key={urlparse.quote(api_key)}"
+    try:
+        with ur.urlopen(url) as res:
+            payload = json.load(res)
+            if not payload.get("data"):
+                raise RuntimeError(str(payload))
+            return payload["data"]
+    except urlerror.HTTPError as e:
+        raise RuntimeError(f"[WakaTime {e.code}] {endpoint}") from e
 
 
 def build_user_json(owner: str, headers: dict, out_dir: Path) -> None:
@@ -86,7 +105,7 @@ def build_repos_json(
     (out_dir / "repos.json").write_text(json.dumps(featured, ensure_ascii=False))
 
 
-def build_metrics(headers: dict, out_dir: Path):
+def build_metrics_json(headers: dict, out_dir: Path):
     # 全リポジトリ（public+private）の言語別件数・スター数
     lang_counter = Counter()
     star_counter = Counter()
@@ -123,6 +142,30 @@ def build_metrics(headers: dict, out_dir: Path):
     (out_dir / "metrics.json").write_text(json.dumps(metrics, ensure_ascii=False))
 
 
+def build_coding_json(owner: str, out_dir: Path) -> None:
+    # 言語別コーディング時間
+    key = os.getenv("WAKATIME_API_KEY")
+    if not key:
+        print("⚠️  WAKATIME_API_KEY が未設定: coding.json をスキップ")
+        return
+
+    stats = wakatime_api(f"users/{owner}/stats/all_time", key)
+    langs = [
+        {"lang": l["name"], "seconds": int(l["total_seconds"])}
+        for l in stats["languages"]
+    ]
+    (out_dir / "coding.json").write_text(
+        json.dumps(
+            {
+                "range": "all_time",
+                "total_seconds": int(stats["total_seconds"]),
+                "languages": langs,
+            },
+            ensure_ascii=False,
+        )
+    )
+
+
 def build_extra_sections(cfg: dict, out_dir: Path) -> None:
     # services / timeline / testimonials / achievements をそのまま JSON にコピー
     for k in ["services", "timeline", "testimonials", "achievements"]:
@@ -153,7 +196,8 @@ def main():
     # 各 JSON 生成
     build_user_json(owner, headers, data_dir)
     build_repos_json(owner, cfg.get("featured_repos", []), headers, data_dir)
-    build_metrics(headers, data_dir)
+    build_metrics_json(headers, data_dir)
+    build_coding_json(owner, data_dir)
     build_extra_sections(cfg, data_dir)
 
     print("✅ Data build complete:", [p.name for p in data_dir.iterdir()])
