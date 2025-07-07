@@ -1,5 +1,6 @@
 /* ---------------- user.json ----------------- */
 export interface User {
+  owner:     string
   name:      string
   bio:       string | null
   location:  string | null
@@ -22,7 +23,6 @@ export interface Repo {
   description: string | null
   stars:       number
   lang:        string | null
-  html:        string
 }
 
 /* ---------------- services.json ------------- */

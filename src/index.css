@@ -2,21 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------- Base typography ---------- */
+/* ---------- 基本背景 & テキスト ---------- */
 @layer base {
-  h1 {@apply text-3xl md:text-5xl font-bold tracking-tight;}
-  h2 {@apply text-2xl md:text-4xl font-bold tracking-tight;}
-  h3 {@apply text-xl  md:text-2xl font-semibold tracking-tight;}
+  body {
+    @apply bg-white text-gray-800 transition-colors duration-300
+           dark:bg-surface dark:text-on-surface;
+  }
 }
 
-/* ---------- Design tokens ---------- */
-@layer components {
-  /* Unified card shell */
-  .card-base {@apply p-6 rounded-2xl shadow-sm bg-white dark:bg-gray-800 hover:shadow-lg transition;}
+/* ---------- セクション背景 ---------- */
+@layer utilities {
+  .section-light { @apply bg-white dark:bg-surface; }
+  .section-muted { @apply bg-gray-50 dark:bg-surface-muted; }
+}
 
-  /* Buttons */
-  .btn-primary {@apply inline-block px-6 py-3 rounded-lg bg-primary-500 text-white hover:bg-primary-400 transition;}
-  .btn-outline {@apply inline-block px-6 py-3 rounded-lg border border-primary-500 text-primary-500 hover:bg-primary-100 transition;}
+/* ---------- カード & ボタン ---------- */
+@layer components {
+  .card-base {
+    @apply p-6 rounded-2xl shadow-md hover:shadow-lg
+           bg-white text-gray-700
+           dark:bg-surface-card dark:text-on-surface/90;
+  }
+
+  .chip {
+    @apply inline-block px-2 py-1 text-xs rounded
+           bg-primary-100 text-primary-800
+           dark:bg-primary-400/20 dark:text-primary-200;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-medium
+           bg-primary-500 text-white hover:bg-primary-400
+           focus-visible:outline-4 focus-visible:outline-primary-300
+           dark:bg-primary-400 dark:hover:bg-primary-300 dark:text-white;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-lg font-medium border
+           border-primary-500 text-primary-500 hover:bg-primary-100
+           focus-visible:outline-4 focus-visible:outline-primary-300
+           dark:border-primary-400 dark:text-primary-300 dark:hover:bg-surface-muted;
+  }
 }
 
 /* ---------- Progress color fix ---------- */

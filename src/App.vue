@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import DefaultLayout from './layouts/DefaultLayout.vue'
 import HeroSection from './components/HeroSection.vue'
+import StatsSection from './components/StatsSection.vue'
+import SkillsSection from './components/SkillsSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
 import ProjectsSection from './components/ProjectsSection.vue'
-import SocialProof from './components/SocialProof.vue'
-import TechStack from './components/TechStack.vue'
-import TimelineSection from './components/TimelineSection.vue'
-import AchievementsSection from './components/AchievementsSection.vue'
+import CareerSection from './components/CareerSection.vue'
 import TestimonialsSection from './components/TestimonialsSection.vue'
 import ContactSection from './components/ContactSection.vue'
 </script>
@@ -15,13 +14,12 @@ import ContactSection from './components/ContactSection.vue'
   <DefaultLayout>
     <HeroSection />
     <AboutSection />
-    <ServicesSection />
+    <StatsSection muted />
+    <SkillsSection />
+    <ServicesSection muted />
     <ProjectsSection />
-    <SocialProof />
-    <TechStack />
-    <TimelineSection />
-    <AchievementsSection />
+    <CareerSection muted />
     <TestimonialsSection />
-    <ContactSection />
+    <ContactSection muted />
   </DefaultLayout>
 </template>
