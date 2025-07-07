@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, nextTick, withDefaults, defineEmits } from 'vue'
+import { ref, onMounted, nextTick, withDefaults, defineEmits } from 'vue'
 
 /** 受け取る props */
 const props = withDefaults(defineProps<{
@@ -17,6 +17,12 @@ const open = ref(false)
 const triggerRef = ref<HTMLElement | null>(null)
 const popRef = ref<HTMLElement | null>(null)
 const popStyle = ref<Record<string, string>>({})
+
+/* モバイル判定 */
+const isMobile = ref(true)
+onMounted(() => {
+    isMobile.value = window.matchMedia('(hover: hover)').matches === false
+})
 
 /* タイマー管理 */
 let showTimer: number | null = null
@@ -60,7 +66,7 @@ const emit = defineEmits<
 
 <template>
     <!-- ───── トリガ + スロット ───── -->
-    <div ref="triggerRef" class="relative group" @mouseenter="scheduleShow" @mouseleave="scheduleHide"
+    <div v-if="!isMobile" ref="triggerRef" class="relative group" @mouseenter="scheduleShow" @mouseleave="scheduleHide"
         @focusin="scheduleShow" @focusout="scheduleHide">
         <!-- アンカー用スロット -->
         <slot name="anchor" />
@@ -78,5 +84,8 @@ const emit = defineEmits<
                 <slot />
             </div>
         </transition>
+    </div>
+    <div v-else>
+        <slot name="anchor" />
     </div>
 </template>

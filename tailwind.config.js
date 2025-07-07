@@ -21,6 +21,9 @@ module.exports = {
           500: '#F9C74F',
         },
       },
+      screens: {
+        'hover-hover': { raw: '(hover: hover)' }, // PC 判定
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
