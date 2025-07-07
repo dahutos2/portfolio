@@ -61,13 +61,14 @@ jobs:
           git commit -m "chore: update public data"
           git push
 
+      # gh-pages ブランチに public/data だけ上書き
       - name: Prepare gh-pages worktree
         run: |
           set -e
-          # ===== 既定ブランチ名を取得 (main / master 等) =====
-          DEFAULT_BRANCH=$(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d'/' -f3)
+          # 現在のブランチ名を保存（例: main / master）
+          BASE_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-          # ===== gh-pages ブランチを用意 =====
+          # gh-pages が無ければ作成
           if git ls-remote --exit-code origin gh-pages; then
             echo "gh-pages exists"
             git fetch origin gh-pages
@@ -79,19 +80,17 @@ jobs:
             git push origin gh-pages
           fi
 
-          # ===== main ブランチに戻る =====
-          git checkout "${DEFAULT_BRANCH}"
+          # 元のブランチに戻る
+          git checkout "$BASE_BRANCH"
 
-          # ===== 既存 worktree をクリーンにして追加 =====
+          # 既存 worktree を掃除して再作成
           git worktree prune
           rm -rf gh-pages || true
           git worktree add gh-pages origin/gh-pages
 
-      - name: Sync data & push to gh-pages
+      - name: Sync data & push
         run: |
-          # data ディレクトリを置換（--delete で古いファイル削除）
           rsync -av --delete public/data/ gh-pages/data/
-
           cd gh-pages
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
