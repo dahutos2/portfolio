@@ -15,14 +15,16 @@ jobs:
 
     permissions:
       contents: write
-      pages:    write
+      pages:    read
       id-token: write
 
 
     steps:
       # リポジトリを取得
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       # Python 3.11 をセットアップ
       - name: Setup Python
@@ -50,23 +52,25 @@ jobs:
       - name: Write build id
         run: echo "{\"version\":\"${{ github.sha }}\"}" > public/data/build.json
       
-      # 変更があればコミット & プッシュ
-      - name: Commit generated files
+      # gh-pages ブランチへ data だけ上書き
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages  # デプロイ先ブランチ
+          path: gh-pages # 別ディレクトリにチェックアウト
+
+      - name: Copy data into gh-pages
+        run: |
+          rm -rf gh-pages/data # 旧 data を削除
+          mkdir -p gh-pages/data
+          cp -r public/data/* gh-pages/data/
+
+      - name: Commit & push data
+        working-directory: gh-pages
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data
+          git add data
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "chore: update public data"
-          git push
-
-      # public/data を Pages 用アーティファクトにアップロード
-      - name: Upload data artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public/data
-
-      # 🚀 GitHub Pages へデプロイ
-      - name: Deploy Pages (data-only)
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git commit -m "chore: update public/data (automated)"
+          git push origin gh-pages
