@@ -15,16 +15,13 @@ jobs:
 
     permissions:
       contents: write
-      pages:    read
+      pages:    write
       id-token: write
-
 
     steps:
       # リポジトリを取得
-      - name: Checkout source
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
       # Python 3.11 をセットアップ
       - name: Setup Python
@@ -52,25 +49,44 @@ jobs:
       - name: Write build id
         run: echo "{\"version\":\"${{ github.sha }}\"}" > public/data/build.json
       
-      # gh-pages ブランチへ data だけ上書き
-      - name: Checkout gh-pages branch
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages  # デプロイ先ブランチ
-          path: gh-pages # 別ディレクトリにチェックアウト
-
-      - name: Copy data into gh-pages
-        run: |
-          rm -rf gh-pages/data # 旧 data を削除
-          mkdir -p gh-pages/data
-          cp -r public/data/* gh-pages/data/
-
-      - name: Commit & push data
-        working-directory: gh-pages
+      # 変更があればコミット & プッシュ
+      - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add public/data
           git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: update public data"
+          git push
+
+      # public/data だけ gh-pages ブランチに上書き
+      - name: Prepare gh-pages worktree
+        run: |
+          set -e
+          # gh-pages ブランチが無ければ作る
+          if git ls-remote --exit-code origin gh-pages; then
+            echo "gh-pages exists"
+            git fetch origin gh-pages
+          else
+            echo "gh-pages does not exist — creating"
+            git checkout --orphan gh-pages
+            git rm -rf .
+            git commit --allow-empty -m "init gh-pages"
+            git push origin gh-pages
+            git checkout -
+          fi
+          # ワークツリーを gh-pages/ ディレクトリに展開
+          git worktree add gh-pages origin/gh-pages
+
+      - name: Sync data & push
+        run: |
+          # data を上書きコピー（--delete で不要ファイルを削除）
+          rsync -av --delete public/data/ gh-pages/data/
+          cd gh-pages
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          git diff --cached --quiet && echo "data up-to-date" && exit 0
           git commit -m "chore: update public/data (automated)"
           git push origin gh-pages
+
