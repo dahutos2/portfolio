@@ -13,6 +13,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+      pages:    write
+      id-token: write
+
+
     steps:
       # リポジトリを取得
       - name: Checkout
@@ -40,10 +46,11 @@ jobs:
         run: |
           python .github/scripts/build_data.py
 
-      # 変更があればコミット & プッシュ
-
+      # build.json 追記
       - name: Write build id
         run: echo "{\"version\":\"${{ github.sha }}\"}" > public/data/build.json
+      
+      # 変更があればコミット & プッシュ
       - name: Commit generated files
         run: |
           git config user.name  "github-actions[bot]"
@@ -52,3 +59,14 @@ jobs:
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "chore: update public data"
           git push
+
+      # public/data を Pages 用アーティファクトにアップロード
+      - name: Upload data artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public/data
+
+      # 🚀 GitHub Pages へデプロイ
+      - name: Deploy Pages (data-only)
+        id: deployment
+        uses: actions/deploy-pages@v4
