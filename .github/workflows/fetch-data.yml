@@ -22,6 +22,8 @@ jobs:
       # リポジトリを取得
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       # Python 3.11 をセットアップ
       - name: Setup Python
@@ -59,11 +61,13 @@ jobs:
           git commit -m "chore: update public data"
           git push
 
-      # public/data だけ gh-pages ブランチに上書き
       - name: Prepare gh-pages worktree
         run: |
           set -e
-          # gh-pages ブランチが無ければ作る
+          # ===== 既定ブランチ名を取得 (main / master 等) =====
+          DEFAULT_BRANCH=$(git symbolic-ref --short refs/remotes/origin/HEAD | cut -d'/' -f3)
+
+          # ===== gh-pages ブランチを用意 =====
           if git ls-remote --exit-code origin gh-pages; then
             echo "gh-pages exists"
             git fetch origin gh-pages
@@ -73,15 +77,21 @@ jobs:
             git rm -rf .
             git commit --allow-empty -m "init gh-pages"
             git push origin gh-pages
-            git checkout -
           fi
-          # ワークツリーを gh-pages/ ディレクトリに展開
+
+          # ===== main ブランチに戻る =====
+          git checkout "${DEFAULT_BRANCH}"
+
+          # ===== 既存 worktree をクリーンにして追加 =====
+          git worktree prune
+          rm -rf gh-pages || true
           git worktree add gh-pages origin/gh-pages
 
-      - name: Sync data & push
+      - name: Sync data & push to gh-pages
         run: |
-          # data を上書きコピー（--delete で不要ファイルを削除）
+          # data ディレクトリを置換（--delete で古いファイル削除）
           rsync -av --delete public/data/ gh-pages/data/
+
           cd gh-pages
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
