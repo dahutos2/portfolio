@@ -26,7 +26,7 @@ const stats = computed(() => {
 </script>
 
 <template>
-    <SectionContainer id="stats" muted>
+    <SectionContainer id="stats">
         <SectionTitle title="Stats" />
 
         <SectionState :loading="loading" :data="stats">

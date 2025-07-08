@@ -10,7 +10,7 @@ const { data: services, loading } = useFetch<Service[]>('services.json')
 </script>
 
 <template>
-  <SectionContainer id="services" muted>
+  <SectionContainer id="services">
     <SectionTitle title="What&nbsp;I&nbsp;Offer" />
 
     <SectionState :loading="loading" :data="services" empty-text="登録されたサービスはありません">

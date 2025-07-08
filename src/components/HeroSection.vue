@@ -16,9 +16,6 @@ const { data: user, loading } = useFetch<User>('user.json')
           <h1 class="text-4xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
             {{ user!.name }}
           </h1>
-          <p class="text-lg text-gray-600 dark:text-on-surface/80">
-            {{ user!.bio }}
-          </p>
 
           <div class="flex space-x-4">
             <a :href="`https://github.com/${user!.owner}`" target="_blank" rel="noopener noreferrer"

@@ -2,10 +2,10 @@
 const links = [
     { label: 'Home', to: '#top' },
     { label: 'About', to: '#about' },
-    { label: 'Stats', to: '#stats' },
-    { label: 'Skills', to: '#skills' },
-    { label: 'Work', to: '#projects' },
     { label: 'Services', to: '#services' },
+    { label: 'Stats', to: '#stats' },
+    { label: 'Work', to: '#projects' },
+    { label: 'Skills', to: '#skills' },
     { label: 'Career', to: '#career' },
     { label: 'Contact', to: '#contact' }
 ]

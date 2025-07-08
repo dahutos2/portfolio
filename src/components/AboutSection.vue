@@ -15,7 +15,7 @@ onMounted(async () => {
   <SectionContainer id="about">
     <SectionTitle title="About&nbsp;Me" />
 
-    <p class="leading-relaxed text-gray-700 dark:text-on-surface max-w-3xl">
+    <p class="text-xl leading-relaxed text-gray-700 dark:text-on-surface max-w-3xl">
       {{ user?.bio }}
     </p>
 

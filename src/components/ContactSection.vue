@@ -6,7 +6,7 @@ const mailto = 'mailto:dahutos2@gmail.com?subject=お問い合わせ%20from%20Po
 </script>
 
 <template>
-    <SectionContainer id="contact" muted>
+    <SectionContainer id="contact">
         <SectionTitle title="Get&nbsp;in&nbsp;Touch" />
 
         <div class="mx-auto max-w-xl space-y-6 text-center">
