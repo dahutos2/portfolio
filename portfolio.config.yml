@@ -34,41 +34,41 @@ services:
 # date: 日付(YYYY-MM)
 # link: 実績のリンク
 career:
-  - date: 2021-08
-    text: シフト管理Webアプリ開発（Django）
+  - title: シフト管理Webアプリ開発（Django）
+    date: 2021-08
 
-  - date: 2022-01
-    text: 株式会社テクノプロに入社
+  - title: 株式会社テクノプロに入社
+    date: 2022-01
 
-  - date: 2022-07
-    text: 社内プロジェクト：FA向け画像解析PCアプリ開発（Electron）
+  - title: 社内プロジェクト：FA向け画像解析PCアプリ開発（Electron）
+    date: 2022-07
 
-  - date: 2022-09
-    text: Flutterアプリコンテスト「#ミライノカイモノ 2022」参加
+  - title: Flutterアプリコンテスト「#ミライノカイモノ 2022」参加
+    date: 2022-09
     link: https://sites.google.com/view/flutter-shopping-2022/
 
-  - date: 2022-10
-    text: 社内プロジェクト：FA向け画像解析PCアプリ開発（WPF / Prism）
+  - title: 社内プロジェクト：FA向け画像解析PCアプリ開発（WPF / Prism）
+    date: 2022-10
 
-  - date: 2023-06
-    text: 社内コンペ（技術発表会）自然言語処理をテーマに登壇
+  - title: 社内コンペ（技術発表会）自然言語処理をテーマに登壇
+    date: 2023-06
 
-  - date: 2023-10
-    text: 東京Flutterハッカソン参加
+  - title: 東京Flutterハッカソン参加
+    date: 2023-10
     link: https://hackathon.flutteruniv.com/
 
-  - date: 2024-06
-    text: 社内技術発表会でAWS + FlutterによるAI大喜利アプリを発表
+  - title: 社内技術発表会でAWS + FlutterによるAI大喜利アプリを発表
+    date: 2024-06
 
-  - date: 2024-07
-    text: 自動車レストアプラットフォーム「Top Dead Center」を開発開始
+  - title: 自動車レストアプラットフォーム「Top Dead Center」を開発開始
+    date: 2024-07
     link: https://topdeadcenter.co.jp/top-dead-center-app
 
-  - date: 2025-01
-    text: 介護システムのWeb化プロジェクト参画
+  - title: 介護システムのWeb化プロジェクト参画
+    date: 2025-01
 
-  - date: 2025-04
-    text: タレントマネジメントWebシステムプロジェクト参画
+  - title: タレントマネジメントWebシステムプロジェクト参画
+    date: 2025-04
 
 # ========= 推薦の声（testimonials.json） =========
 # author:   人物
