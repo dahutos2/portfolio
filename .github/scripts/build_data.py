@@ -9,7 +9,7 @@ public/data/ 以下に生成するスクリプト。
   repos.json     : featured リポジトリ詳細
   metrics.json   : 全リポジトリ集計（件数・スター・言語）
   coding.json    : WakaTime all-time の言語別コーディング時間
-  services / timeline / testimonials / achievements : YAML そのままコピー
+  services / career / testimonials : YAML そのままコピー
 
 環境変数
   GH_TOKEN            : repo スコープ PAT（private も集計するため必須）
@@ -154,8 +154,8 @@ def build_coding_json(owner: str, out_dir: Path) -> None:
 
 
 def build_extra_sections(cfg: dict, out_dir: Path) -> None:
-    # services / timeline / testimonials / achievements をそのまま JSON にコピー
-    for k in ["services", "timeline", "testimonials", "achievements"]:
+    # services / career / testimonials をそのまま JSON にコピー
+    for k in ["services", "career", "testimonials"]:
         if k in cfg:
             (out_dir / f"{k}.json").write_text(json.dumps(cfg[k], ensure_ascii=False))
 

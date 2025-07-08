@@ -9,21 +9,66 @@ featured_repos:
 # stack: スキル一覧     ex. [Flutter, Swift, Kotlin]
 # blurb: サービスの説明
 services:
-  - title: モバイルアプリ開発
-    stack: [Flutter, Swift, Kotlin]
-    blurb: UI/UX から CI/CD までワンストップ
-  - title: Web API / Rails
-    stack: [Rails, PostgreSQL]
-    blurb: スケールと保守性を両立
+  - title: Flutterアプリ開発
+    stack: [Flutter, Dart, Firebase, Riverpod, Dio]
+    blurb: UI/UX設計からFirebase認証・通知連携、CI自動ビルドまで──iOS/Android両対応アプリをワンストップで開発します。
 
-# ========= キャリアタイムライン（timeline.json） =========
-# text: 経歴に関わる出来事
-# date: 経歴に関わる出来事の始まりの日付(YYYY-MM)
-timeline:
-  - text: Joined Foo Inc. as Lead Mobile Engineer
-    date: 2025-04
-  - text: PyCon JP Speaker
-    date: 2024-11
+  - title: バックエンド / API開発（Rails）
+    stack: [Ruby on Rails, PostgreSQL, SendGrid, Firebase Admin SDK]
+    blurb: RESTful API設計・認証・招待コード登録・メール通知をセキュアかつ拡張性の高い構成で実装します。
+
+  - title: DevOps / インフラ構築
+    stack: [GitHub Actions, Docker, AWS, Cloudflare]
+    blurb: テスト・ビルド自動化からBot対策／レートリミット設定まで、本番運用に耐えるCI/CD・運用基盤を構築します。
+
+  - title: フロントエンド開発（Web）
+    stack: [Vue 3, TypeScript, Nuxt 3, React, Vite, Tailwind CSS]
+    blurb: モダンフレームワークでアクセシビリティと保守性を両立したSPAやポートフォリオサイトをデザイン・実装します。
+
+  - title: Web / デスクトップアプリ開発
+    stack: [Django, Flask, Streamlit, C# (.NET), Electron, WPF/Prism]
+    blurb: Python系WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。
+
+# ========= キャリアタイムライン（career.json） =========
+# text: 活動実績
+# date: 日付(YYYY-MM)
+# link: 実績のリンク
+career:
+  - date: 2021-08
+    text: シフト管理Webアプリ開発（Django）
+
+  - date: 2022-01
+    text: 株式会社テクノプロに入社
+
+  - date: 2022-07
+    text: 社内プロジェクト：FA向け画像解析PCアプリ開発（Electron）
+
+  - date: 2022-09
+    text: Flutterアプリコンテスト「#ミライノカイモノ 2022」参加
+    link: https://sites.google.com/view/flutter-shopping-2022/
+
+  - date: 2022-10
+    text: 社内プロジェクト：FA向け画像解析PCアプリ開発（WPF / Prism）
+
+  - date: 2023-06
+    text: 社内コンペ（技術発表会）自然言語処理をテーマに登壇
+
+  - date: 2023-10
+    text: 東京Flutterハッカソン参加
+    link: https://hackathon.flutteruniv.com/
+
+  - date: 2024-06
+    text: 社内技術発表会でAWS + FlutterによるAI大喜利アプリを発表
+
+  - date: 2024-07
+    text: 自動車レストアプラットフォーム「Top Dead Center」を開発開始
+    link: https://topdeadcenter.co.jp/top-dead-center-app
+
+  - date: 2025-01
+    text: 介護システムのWeb化プロジェクト参画
+
+  - date: 2025-04
+    text: タレントマネジメントWebシステムプロジェクト参画
 
 # ========= 推薦の声（testimonials.json） =========
 # author:   人物
@@ -35,12 +80,3 @@ testimonials:
     position: "CTO @ Bar"
     quote: "迅速かつ高品質なデリバリーに感謝"
     avatar: "assets/man.png"
-
-# ========= 実績（achievements.json） =========
-# title: 活動実績
-# link:  実績のリンク
-# date:  日付
-achievements:
-  - title: OSS PR merged in Flutter
-    link: https://github.com/flutter/flutter/pull/12345
-    date: "2025-01"

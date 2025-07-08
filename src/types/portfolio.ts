@@ -10,13 +10,6 @@ export interface User {
   followers: number
 }
 
-/* ---------------- achievements.json --------- */
-export interface Achievement {
-  title: string
-  link:  string
-  date:  string
-}
-
 /* ---------------- repos.json ---------------- */
 export interface Repo {
   full_name:   string
@@ -40,10 +33,11 @@ export interface Testimonial {
   avatar:   string
 }
 
-/* ---------------- timeline.json ------------- */
-export interface TimelineEntry {
-  text: string
-  date: string
+/* ---------------- career.json ------------- */
+export interface CareerEvent {
+  title: string
+  date:  string
+  link?: string
 }
 
 /* ---------------- metrics.json -------------- */
