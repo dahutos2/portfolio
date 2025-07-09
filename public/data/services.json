@@ -1,1 +1,58 @@
-[{"title": "モバイルアプリ開発", "stack": ["Flutter", "Firebase", "Riverpod", "Dio"], "blurb": "認証・プッシュ通知を含む、iOS/Android両対応アプリをワンストップで開発します。"}, {"title": "バックエンド / API開発", "stack": ["Ruby on Rails", "FastAPI", "PostgreSQL", "SendGrid", "Firebase Admin SDK"], "blurb": "RESTful API設計・認証・メール通知をセキュアかつ拡張性の高い構成で実装します。"}, {"title": "DevOps / インフラ構築", "stack": ["GitHub Actions", "Docker", "AWS", "Cloudflare"], "blurb": "テスト・ビルド自動化からBot対策／レートリミット設定まで、本番運用に耐えるCI/CD・運用基盤を構築します。"}, {"title": "フロントエンド開発（Web）", "stack": ["Vue 3", "TypeScript", "Nuxt 3", "React", "Vite", "Tailwind CSS", "MUI"], "blurb": "モダンフレームワークを用いて、保守性に優れたSPAをアクセシビリティにも配慮して構築します。"}, {"title": "Web / デスクトップアプリ開発", "stack": ["Django", "Flask", "Streamlit", "C# (.NET)", "Electron", "WPF/Prism"], "blurb": "WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。"}]
+[
+  {
+    "title": "モバイルアプリ開発",
+    "stack": [
+      "Flutter",
+      "Firebase",
+      "Riverpod",
+      "Dio"
+    ],
+    "blurb": "認証・プッシュ通知を含む、iOS/Android両対応アプリをワンストップで開発します。"
+  },
+  {
+    "title": "バックエンド / API開発",
+    "stack": [
+      "Ruby on Rails",
+      "FastAPI",
+      "PostgreSQL",
+      "SendGrid",
+      "Firebase Admin SDK"
+    ],
+    "blurb": "RESTful API設計・認証・メール通知をセキュアかつ拡張性の高い構成で実装します。"
+  },
+  {
+    "title": "DevOps / インフラ構築",
+    "stack": [
+      "GitHub Actions",
+      "Docker",
+      "AWS",
+      "Cloudflare"
+    ],
+    "blurb": "テスト・ビルド自動化からBot対策／レートリミット設定まで、本番運用に耐えるCI/CD・運用基盤を構築します。"
+  },
+  {
+    "title": "フロントエンド開発（Web）",
+    "stack": [
+      "Vue 3",
+      "TypeScript",
+      "Nuxt 3",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "MUI"
+    ],
+    "blurb": "モダンフレームワークを用いて、保守性に優れたSPAをアクセシビリティにも配慮して構築します。"
+  },
+  {
+    "title": "Web / デスクトップアプリ開発",
+    "stack": [
+      "Django",
+      "Flask",
+      "Streamlit",
+      "C# (.NET)",
+      "Electron",
+      "WPF/Prism"
+    ],
+    "blurb": "WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。"
+  }
+]

@@ -1,1 +1,73 @@
-{"total_repos": 54, "private_repos": 13, "public_repos": 41, "languages": [{"lang": "Dart", "count": 14, "stars": 18}, {"lang": "TypeScript", "count": 2, "stars": 2}, {"lang": "Python", "count": 16, "stars": 16}, {"lang": "C#", "count": 1, "stars": 1}, {"lang": "Unknown", "count": 3, "stars": 2}, {"lang": "Jupyter Notebook", "count": 4, "stars": 4}, {"lang": "JavaScript", "count": 2, "stars": 2}, {"lang": "PHP", "count": 3, "stars": 4}, {"lang": "CSS", "count": 1, "stars": 1}, {"lang": "Java", "count": 3, "stars": 3}, {"lang": "Vue", "count": 2, "stars": 1}, {"lang": "Ruby", "count": 1, "stars": 1}, {"lang": "HTML", "count": 2, "stars": 2}], "total_stars": 57}
+{
+  "total_repos": 54,
+  "private_repos": 13,
+  "public_repos": 41,
+  "languages": [
+    {
+      "lang": "Dart",
+      "count": 14,
+      "stars": 18
+    },
+    {
+      "lang": "TypeScript",
+      "count": 2,
+      "stars": 2
+    },
+    {
+      "lang": "Python",
+      "count": 16,
+      "stars": 16
+    },
+    {
+      "lang": "C#",
+      "count": 1,
+      "stars": 1
+    },
+    {
+      "lang": "Unknown",
+      "count": 3,
+      "stars": 2
+    },
+    {
+      "lang": "Jupyter Notebook",
+      "count": 4,
+      "stars": 4
+    },
+    {
+      "lang": "JavaScript",
+      "count": 2,
+      "stars": 2
+    },
+    {
+      "lang": "PHP",
+      "count": 3,
+      "stars": 4
+    },
+    {
+      "lang": "CSS",
+      "count": 1,
+      "stars": 1
+    },
+    {
+      "lang": "Java",
+      "count": 3,
+      "stars": 3
+    },
+    {
+      "lang": "Vue",
+      "count": 2,
+      "stars": 1
+    },
+    {
+      "lang": "Ruby",
+      "count": 1,
+      "stars": 1
+    },
+    {
+      "lang": "HTML",
+      "count": 2,
+      "stars": 2
+    }
+  ],
+  "total_stars": 57
+}

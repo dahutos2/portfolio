@@ -1,1 +1,14 @@
-[{"full_name": "dahutos2/meal_health_verification", "description": "Flutterで作成した 健康度ベースの料理推薦アプリ", "stars": 3, "lang": "Dart"}, {"full_name": "dahutos2/local-competitive-app", "description": "C#とTypescirptでコーディングテストをローカルで行うアプリ", "stars": 1, "lang": "TypeScript"}]
+[
+  {
+    "full_name": "dahutos2/meal_health_verification",
+    "description": "Flutterで作成した 健康度ベースの料理推薦アプリ",
+    "stars": 3,
+    "lang": "Dart"
+  },
+  {
+    "full_name": "dahutos2/local-competitive-app",
+    "description": "C#とTypescirptでコーディングテストをローカルで行うアプリ",
+    "stars": 1,
+    "lang": "TypeScript"
+  }
+]
