@@ -9,25 +9,25 @@ featured_repos:
 # stack: スキル一覧     ex. [Flutter, Swift, Kotlin]
 # blurb: サービスの説明
 services:
-  - title: Flutterアプリ開発
-    stack: [Flutter, Dart, Firebase, Riverpod, Dio]
-    blurb: UI/UX設計からFirebase認証・通知連携、CI自動ビルドまで──iOS/Android両対応アプリをワンストップで開発します。
+  - title: モバイルアプリ開発
+    stack: [Flutter, Firebase, Riverpod, Dio]
+    blurb: 認証・プッシュ通知を含む、iOS/Android両対応アプリをワンストップで開発します。
 
-  - title: バックエンド / API開発（Rails）
-    stack: [Ruby on Rails, PostgreSQL, SendGrid, Firebase Admin SDK]
-    blurb: RESTful API設計・認証・招待コード登録・メール通知をセキュアかつ拡張性の高い構成で実装します。
+  - title: バックエンド / API開発
+    stack: [Ruby on Rails, FastAPI, PostgreSQL, SendGrid, Firebase Admin SDK]
+    blurb: RESTful API設計・認証・メール通知をセキュアかつ拡張性の高い構成で実装します。
 
   - title: DevOps / インフラ構築
     stack: [GitHub Actions, Docker, AWS, Cloudflare]
     blurb: テスト・ビルド自動化からBot対策／レートリミット設定まで、本番運用に耐えるCI/CD・運用基盤を構築します。
 
   - title: フロントエンド開発（Web）
-    stack: [Vue 3, TypeScript, Nuxt 3, React, Vite, Tailwind CSS]
-    blurb: モダンフレームワークでアクセシビリティと保守性を両立したSPAやポートフォリオサイトをデザイン・実装します。
+    stack: [Vue 3, TypeScript, Nuxt 3, React, Vite, Tailwind CSS, MUI]
+    blurb: モダンフレームワークを用いて、保守性に優れたSPAをアクセシビリティにも配慮して構築します。
 
   - title: Web / デスクトップアプリ開発
     stack: [Django, Flask, Streamlit, C# (.NET), Electron, WPF/Prism]
-    blurb: Python系WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。
+    blurb: WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。
 
 # ========= キャリアタイムライン（career.json） =========
 # text: 活動実績
@@ -40,34 +40,34 @@ career:
   - title: 株式会社テクノプロに入社
     date: 2022-01
 
-  - title: 社内プロジェクト：FA向け画像解析PCアプリ開発（Electron）
+  - title: 社内プロジェクト『FA向け画像解析PCアプリ開発（Electron）』に参画
     date: 2022-07
 
   - title: Flutterアプリコンテスト「#ミライノカイモノ 2022」参加
     date: 2022-09
     link: https://sites.google.com/view/flutter-shopping-2022/
 
-  - title: 社内プロジェクト：FA向け画像解析PCアプリ開発（WPF / Prism）
+  - title: 社内プロジェクト『FA向け画像解析PCアプリ開発（WPF / Prism）』参画
     date: 2022-10
 
-  - title: 社内コンペ（技術発表会）自然言語処理をテーマに登壇
+  - title: 社内コンペ（技術発表会）で「自然言語処理」をテーマに発表
     date: 2023-06
 
   - title: 東京Flutterハッカソン参加
     date: 2023-10
     link: https://hackathon.flutteruniv.com/
 
-  - title: 社内技術発表会でAWS + FlutterによるAI大喜利アプリを発表
+  - title: 社内コンペ（技術発表会）でAWS + FlutterによるAI大喜利アプリを発表
     date: 2024-06
 
   - title: 自動車レストアプラットフォーム「Top Dead Center」を開発開始
     date: 2024-07
     link: https://topdeadcenter.co.jp/top-dead-center-app
 
-  - title: 介護システムのWeb化プロジェクト参画
+  - title: 社内プロジェクト『介護システムのWeb化』に参画
     date: 2025-01
 
-  - title: タレントマネジメントWebシステムプロジェクト参画
+  - title: 社内プロジェクト『タレントマネジメントWebシステム』に参画
     date: 2025-04
 
 # ========= 推薦の声（testimonials.json） =========
