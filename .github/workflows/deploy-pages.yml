@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: [
+      '**.md',
+      'portfolio.config.yml',
+      '.github/scripts/**.py',
+      '.github/workflows/**.yml',
+      'public/data/**'
+    ]
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Fetch portfolio data"]
+    types: [completed]
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages:    write
+      id-token: write
+
+    steps:
+      # コード取得
+      - uses: actions/checkout@v4
+
+      # Node + npm キャッシュ
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: '**/package-lock.json'
+
+      # 依存インストール
+      - run: npm ci
+
+      # Vite ビルド
+      - run: npm run build
+
+      # アーティファクトを Pages 用にアップロード
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages:    write
+      id-token: write
+    environment:
+      name: github-pages
+      url:  ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

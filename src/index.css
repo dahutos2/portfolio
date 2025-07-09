@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- 基本背景 & テキスト ---------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-gray-800 transition-colors duration-300
+           dark:bg-surface dark:text-on-surface;
+  }
+}
+
+/* ---------- セクション背景 ---------- */
+@layer utilities {
+  .section-light { @apply bg-white dark:bg-surface; }
+  .section-muted { @apply bg-gray-50 dark:bg-surface-muted; }
+}
+
+/* ---------- カード & ボタン ---------- */
+@layer components {
+  .card-base {
+    @apply p-6 rounded-2xl shadow-md hover:shadow-lg
+           bg-white text-gray-700
+           dark:bg-surface-card dark:text-on-surface/90;
+  }
+
+  .chip {
+    @apply inline-block px-2 py-1 text-xs rounded
+           bg-primary-100 text-primary-800
+           dark:bg-primary-400/20 dark:text-primary-200;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-medium
+          bg-primary-500 text-white hover:bg-primary-400
+          focus-visible:outline-4 focus-visible:outline-primary-300;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 rounded-lg font-medium border
+           border-primary-500 text-primary-500 hover:bg-primary-100
+           focus-visible:outline-4 focus-visible:outline-primary-300
+           dark:border-primary-400 dark:text-primary-300 dark:hover:bg-surface-muted;
+  }
+}
+
+/* ---------- Progress color fix ---------- */
+.progress-tailwind::-webkit-progress-value {background-color: theme('colors.primary.500');}
+.progress-tailwind::-moz-progress-bar {background-color: theme('colors.primary.500');}
+.progress-tailwind {color: theme('colors.primary.500');}

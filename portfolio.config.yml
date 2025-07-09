@@ -1,0 +1,85 @@
+# ========= 制作実績（repos.json） =========
+featured_repos:
+  - meal_health_verification
+  - local-competitive-app
+  - flutter-starter
+  - detect-coins-backend
+  - detect-coins-frontend
+  - time-sheet-management 
+
+# ========= 提供できること（services.json） =========
+# title: サービス名     ex. モバイルアプリ開発
+# stack: スキル一覧     ex. [Flutter, Swift, Kotlin]
+# blurb: サービスの説明
+services:
+  - title: モバイルアプリ開発
+    stack: [Flutter, Firebase, Supabase, Riverpod, Dio]
+    blurb: 認証・プッシュ通知を含む、iOS/Android両対応アプリをワンストップで開発します。
+
+  - title: バックエンド / API開発
+    stack: [Ruby on Rails, FastAPI, PostgreSQL, SendGrid, Firebase Admin SDK]
+    blurb: RESTful API設計・認証・メール通知をセキュアかつ拡張性の高い構成で実装します。
+
+  - title: DevOps / インフラ構築
+    stack: [GitHub Actions, Docker, AWS, Cloudflare]
+    blurb: テスト・ビルド自動化からBot対策／レートリミット設定まで、本番運用に耐えるCI/CD・運用基盤を構築します。
+
+  - title: フロントエンド開発（Web）
+    stack: [Vue 3, TypeScript, Nuxt 3, React, Vite, Tailwind CSS, MUI]
+    blurb: モダンフレームワークを用いて、保守性に優れたSPAをアクセシビリティにも配慮して構築します。
+
+  - title: Web / デスクトップアプリ開発
+    stack: [Django, Flask, Streamlit, C# (.NET), Electron, WPF/Prism]
+    blurb: WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。
+
+# ========= 経歴と実績（career.json） =========
+# text: 活動実績
+# date: 日付(YYYY-MM)
+# link: 実績のリンク
+career:
+  - title: シフト管理Webアプリ開発（Django）
+    date: 2021-08
+
+  - title: 株式会社テクノプロに入社
+    date: 2022-01
+
+  - title: 社内プロジェクト『FA向け画像解析PCアプリ開発（Electron）』に参画
+    date: 2022-07
+
+  - title: Flutterアプリコンテスト「#ミライノカイモノ 2022」参加
+    date: 2022-09
+    link: https://sites.google.com/view/flutter-shopping-2022/
+
+  - title: 社内プロジェクト『FA向け画像解析PCアプリ開発（WPF / Prism）』参画
+    date: 2022-10
+
+  - title: 社内コンペ（技術発表会）で「自然言語処理」をテーマに発表
+    date: 2023-06
+
+  - title: 東京Flutterハッカソン参加
+    date: 2023-10
+    link: https://hackathon.flutteruniv.com/
+
+  - title: 社内コンペ（技術発表会）でAWS + FlutterによるAI大喜利アプリを発表
+    date: 2024-06
+
+  - title: 自動車レストアプラットフォーム「Top Dead Center」を開発開始
+    date: 2024-07
+    link: https://topdeadcenter.co.jp/top-dead-center-app
+
+  - title: 社内プロジェクト『介護システムのWeb化』に参画
+    date: 2025-01
+
+  - title: 社内プロジェクト『タレントマネジメントWebシステム』に参画
+    date: 2025-04
+
+# ========= 推薦の声（testimonials.json） =========
+# author:   人物
+# position: 肩書き
+# quote:    声の内容
+# avatar:   顔写真
+testimonials:
+  - author: "Bob"
+    position: "CTO @ Bar"
+    quote: "迅速かつ高品質なデリバリーに感謝"
+    avatar: "assets/man.png"

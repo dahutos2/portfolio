@@ -1,0 +1,38 @@
+[
+  {
+    "full_name": "dahutos2/meal_health_verification",
+    "description": "Flutterで作成した 健康度ベースの料理推薦アプリ",
+    "stars": 3,
+    "lang": "Dart"
+  },
+  {
+    "full_name": "dahutos2/local-competitive-app",
+    "description": "C#とTypescriptでコーディングテストをローカルで行うアプリ",
+    "stars": 1,
+    "lang": "TypeScript"
+  },
+  {
+    "full_name": "dahutos2/flutter-starter",
+    "description": "Flutterで作成した大喜利アプリのフロントエンド",
+    "stars": 1,
+    "lang": "Dart"
+  },
+  {
+    "full_name": "dahutos2/detect-coins-backend",
+    "description": "Flaskで作成した小銭検出アプリのバックエンド",
+    "stars": 1,
+    "lang": "Jupyter Notebook"
+  },
+  {
+    "full_name": "dahutos2/detect-coins-frontend",
+    "description": "Flutterで作成した小銭検出アプリのバックエンド",
+    "stars": 1,
+    "lang": "Dart"
+  },
+  {
+    "full_name": "dahutos2/time-sheet-management",
+    "description": "Djangoで作成した従業員のシフト管理アプリ",
+    "stars": 1,
+    "lang": "HTML"
+  }
+]
