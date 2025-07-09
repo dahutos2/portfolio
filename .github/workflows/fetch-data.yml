@@ -4,6 +4,7 @@ name: Fetch portfolio data
 on:
   workflow_dispatch:           # 手動実行
   push:                        # YAML 編集時に実行
+    branches: [main]
     paths: [portfolio.config.yml]
   schedule:                    # 毎日 JST 11:00
     - cron: '0 2 * * *'
