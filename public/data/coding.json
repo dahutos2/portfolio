@@ -11,37 +11,37 @@
     {
       "lang": "YAML",
       "seconds": 22090,
-      "color": null
+      "color": "#cb171e"
     },
     {
       "lang": "Python",
       "seconds": 16162,
-      "color": null
+      "color": "#3572A5"
     },
     {
       "lang": "TypeScript",
       "seconds": 3964,
-      "color": null
+      "color": "#3178c6"
     },
     {
       "lang": "JSON",
       "seconds": 1866,
-      "color": null
+      "color": "#292929"
     },
     {
       "lang": "JavaScript",
       "seconds": 1801,
-      "color": null
+      "color": "#f1e05a"
     },
     {
       "lang": "CSS",
       "seconds": 1725,
-      "color": null
+      "color": "#563d7c"
     },
     {
       "lang": "Markdown",
       "seconds": 944,
-      "color": null
+      "color": "#083fa1"
     },
     {
       "lang": "Text",
@@ -51,7 +51,7 @@
     {
       "lang": "HTML",
       "seconds": 252,
-      "color": null
+      "color": "#e34c26"
     },
     {
       "lang": "Image (svg)",
@@ -61,7 +61,7 @@
     {
       "lang": "Git Config",
       "seconds": 111,
-      "color": null
+      "color": "#F44D27"
     },
     {
       "lang": "TSConfig",

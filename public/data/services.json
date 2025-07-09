@@ -4,6 +4,7 @@
     "stack": [
       "Flutter",
       "Firebase",
+      "Supabase",
       "Riverpod",
       "Dio"
     ],
