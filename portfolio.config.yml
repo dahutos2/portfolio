@@ -1,16 +1,19 @@
-# ========= 主なプロジェクト（repos.json） =========
+# ========= 制作実績（repos.json） =========
 featured_repos:
   - meal_health_verification
   - local-competitive-app
+  - flutter-starter
+  - detect-coins-backend
+  - detect-coins-frontend
+  - time-sheet-management 
 
-
-# ========= 提供可能なサービス（services.json） =========
+# ========= 提供できること（services.json） =========
 # title: サービス名     ex. モバイルアプリ開発
 # stack: スキル一覧     ex. [Flutter, Swift, Kotlin]
 # blurb: サービスの説明
 services:
   - title: モバイルアプリ開発
-    stack: [Flutter, Firebase, Riverpod, Dio]
+    stack: [Flutter, Firebase, Supabase, Riverpod, Dio]
     blurb: 認証・プッシュ通知を含む、iOS/Android両対応アプリをワンストップで開発します。
 
   - title: バックエンド / API開発
@@ -29,7 +32,7 @@ services:
     stack: [Django, Flask, Streamlit, C# (.NET), Electron, WPF/Prism]
     blurb: WebアプリからWindowsデスクトップアプリまで、業務効率化ツールを高速に開発します。
 
-# ========= キャリアタイムライン（career.json） =========
+# ========= 経歴と実績（career.json） =========
 # text: 活動実績
 # date: 日付(YYYY-MM)
 # link: 実績のリンク

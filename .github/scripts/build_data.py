@@ -139,10 +139,23 @@ def build_coding_json(owner: str, out_dir: Path) -> None:
         print("⚠️  WAKATIME_API_KEY が未設定: coding.json をスキップ")
         return
 
+    # 集計データ
     stats = wakatime_api(f"users/{owner}/stats/all_time", key)
 
+    # 言語→色 の辞書を準備
+    palette = {
+        lang["name"]: lang["color"]
+        for lang in wakatime_api("program_languages", key)
+        if lang.get("color")
+    }
+
+    # 言語リストを整形（Other は除外）
     langs = [
-        {"lang": l["name"], "seconds": int(l["total_seconds"]), "color": l.get("color")}
+        {
+            "lang": l["name"],
+            "seconds": int(l["total_seconds"]),
+            "color": palette.get(l["name"]),  # 見つからなければ null
+        }
         for l in stats["languages"]
         if l["name"].lower() != "other"
     ]
