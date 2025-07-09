@@ -4,6 +4,9 @@
 
 /* ---------- 基本背景 & テキスト ---------- */
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-white text-gray-800 transition-colors duration-300
            dark:bg-surface dark:text-on-surface;

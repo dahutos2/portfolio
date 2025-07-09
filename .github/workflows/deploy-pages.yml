@@ -7,9 +7,17 @@ on:
       '**.md',
       'portfolio.config.yml',
       '.github/scripts/**.py',
-      '.github/workflows/**.yml'
+      '.github/workflows/**.yml',
+      'public/data/**'
     ]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Fetch portfolio data"]
+    types: [completed]
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
 
 jobs:
   build:

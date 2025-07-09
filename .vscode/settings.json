@@ -1,0 +1,22 @@
+{
+    "cSpell.words": [
+        "dahutos",
+        "Daichi",
+        "iconify",
+        "njsproj",
+        "Noto",
+        "ntvs",
+        "Nuxt",
+        "Okumura",
+        "Riverpod",
+        "Streamlit",
+        "Supabase",
+        "unplugin",
+        "Vite",
+        "vueuse",
+        "WAKATIME"
+    ],
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+}

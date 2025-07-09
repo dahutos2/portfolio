@@ -58,8 +58,10 @@ export interface Metrics {
 export interface CodingLang {
   lang:    string
   seconds: number
+  color?:  string
 }
 export interface CodingStats {
+  started_at:          string
   total_seconds:  number
   languages:      CodingLang[]
 }

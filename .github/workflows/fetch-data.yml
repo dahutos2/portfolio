@@ -1,15 +1,17 @@
 name: Fetch portfolio data
 
-# ── トリガ条件 ─────────────────────────────
 on:
-  workflow_dispatch:           # 手動実行
-  push:                        # YAML 編集時に実行
+  workflow_dispatch:
+  push: 
     branches: [main]
     paths: [portfolio.config.yml]
-  schedule:                    # 毎日 JST 11:00
-    - cron: '0 2 * * *'
+  schedule:                    
+    - cron: '0 2 * * *' # 毎日 JST 11:00
 
-# ── ジョブ定義 ─────────────────────────────
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -48,10 +50,6 @@ jobs:
         run: |
           python .github/scripts/build_data.py
 
-      # build.json 追記
-      - name: Write build id
-        run: echo "{\"version\":\"${{ github.sha }}\"}" > public/data/build.json
-      
       # 変更があればコミット & プッシュ
       - name: Commit generated files
         run: |
@@ -60,38 +58,4 @@ jobs:
           git add public/data
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "chore: update public data"
-          git push
-
-      # gh-pages ブランチに public/data だけ上書き
-      - name: Prepare gh-pages worktree
-        run: |
-          set -e
-          BASE_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-
-          # remote に gh-pages が無ければ作成
-          if ! git ls-remote --exit-code origin gh-pages; then
-            git checkout --orphan gh-pages
-            git rm -rf .
-            git commit --allow-empty -m "init gh-pages"
-            git push origin gh-pages
-            git checkout "$BASE_BRANCH"
-          else
-            git fetch origin gh-pages
-          fi
-
-          git worktree prune
-          rm -rf gh-pages || true
-          git worktree add -B gh-pages gh-pages origin/gh-pages
-
-      - name: Sync data & push
-        run: |
-          rsync -av --delete public/data/ gh-pages/data/
-
-          cd gh-pages
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add data
-          git diff --cached --quiet && echo "data up-to-date" && exit 0
-          git commit -m "chore: update public/data (automated)"
           git push

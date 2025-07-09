@@ -43,9 +43,6 @@ export const theme = {
         surfaceHi: '#FFFFFF'
       },
     },
-    screens: {
-      'hover-hover': { raw: '(hover: hover)' }, // PC 判定
-    },
   },
 }
 export const plugins = [require('@tailwindcss/typography')]

@@ -13,7 +13,7 @@ onMounted(async () => {
 
 <template>
   <SectionContainer id="about">
-    <SectionTitle title="About&nbsp;Me" />
+    <SectionTitle title="自己紹介" />
 
     <p class="text-xl leading-relaxed text-gray-700 dark:text-on-surface max-w-3xl">
       {{ user?.bio }}

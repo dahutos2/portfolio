@@ -11,7 +11,7 @@ const { data: testimonials, loading } = useFetch<Testimonial[]>('testimonials.js
 
 <template>
   <SectionContainer id="testimonials">
-    <SectionTitle title="Voices" />
+    <SectionTitle title="推薦の声" />
 
     <SectionState :loading="loading" :data="testimonials" empty-text="推薦がありません">
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
