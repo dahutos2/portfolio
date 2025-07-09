@@ -23,6 +23,7 @@ from pathlib import Path
 from urllib import request as ur, error as urlerror, parse as urlparse
 import json, yaml, os
 from collections import Counter
+from datetime import datetime
 
 
 def github_api(url: str, headers: dict) -> dict:
@@ -71,6 +72,7 @@ def build_user_json(owner: str, headers: dict, out_dir: Path) -> None:
                 "followers": user.get("followers"),
             },
             ensure_ascii=False,
+            indent=2,
         )
     )
 
@@ -89,7 +91,7 @@ def build_repos_json(owner: str, featured_cfg: list[str], hdr: dict, out: Path) 
                 "lang": repo_data.get("language"),
             }
         )
-    (out / "repos.json").write_text(json.dumps(featured, ensure_ascii=False))
+    (out / "repos.json").write_text(json.dumps(featured, ensure_ascii=False, indent=2))
 
 
 def build_metrics_json(headers: dict, out_dir: Path):
@@ -126,29 +128,41 @@ def build_metrics_json(headers: dict, out_dir: Path):
         "total_stars": sum(star_counter.values()),
     }
 
-    (out_dir / "metrics.json").write_text(json.dumps(metrics, ensure_ascii=False))
+    (out_dir / "metrics.json").write_text(
+        json.dumps(metrics, ensure_ascii=False, indent=2)
+    )
 
 
 def build_coding_json(owner: str, out_dir: Path) -> None:
-    # 言語別コーディング時間
     key = os.getenv("WAKATIME_API_KEY")
     if not key:
         print("⚠️  WAKATIME_API_KEY が未設定: coding.json をスキップ")
         return
 
     stats = wakatime_api(f"users/{owner}/stats/all_time", key)
+
     langs = [
-        {"lang": l["name"], "seconds": int(l["total_seconds"])}
+        {"lang": l["name"], "seconds": int(l["total_seconds"]), "color": l.get("color")}
         for l in stats["languages"]
+        if l["name"].lower() != "other"
     ]
+
+    # ISO 8601 形式の文字列に変換
+    started_at = stats.get("start")
+    started_at_iso = (
+        datetime.fromisoformat(started_at).isoformat() if started_at else None
+    )
+
     (out_dir / "coding.json").write_text(
         json.dumps(
             {
                 "range": "all_time",
+                "started_at": started_at_iso,
                 "total_seconds": int(stats["total_seconds"]),
                 "languages": langs,
             },
             ensure_ascii=False,
+            indent=2,
         )
     )
 
@@ -157,7 +171,9 @@ def build_extra_sections(cfg: dict, out_dir: Path) -> None:
     # services / career / testimonials をそのまま JSON にコピー
     for k in ["services", "career", "testimonials"]:
         if k in cfg:
-            (out_dir / f"{k}.json").write_text(json.dumps(cfg[k], ensure_ascii=False))
+            (out_dir / f"{k}.json").write_text(
+                json.dumps(cfg[k], ensure_ascii=False, indent=2)
+            )
 
 
 def main():
