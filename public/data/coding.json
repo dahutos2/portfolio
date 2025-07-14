@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 85324,
+  "total_seconds": 125984,
   "languages": [
     {
       "lang": "Vue.js",
@@ -9,14 +9,24 @@
       "color": null
     },
     {
+      "lang": "Dart",
+      "seconds": 25576,
+      "color": "#00B4AB"
+    },
+    {
       "lang": "YAML",
-      "seconds": 24315,
+      "seconds": 24404,
       "color": "#cb171e"
     },
     {
       "lang": "Python",
       "seconds": 17209,
       "color": "#3572A5"
+    },
+    {
+      "lang": "Ruby",
+      "seconds": 14384,
+      "color": "#701516"
     },
     {
       "lang": "TypeScript",
@@ -29,6 +39,11 @@
       "color": "#292929"
     },
     {
+      "lang": "Markdown",
+      "seconds": 2033,
+      "color": "#083fa1"
+    },
+    {
       "lang": "CSS",
       "seconds": 1875,
       "color": "#563d7c"
@@ -39,13 +54,13 @@
       "color": "#f1e05a"
     },
     {
-      "lang": "Markdown",
-      "seconds": 1390,
-      "color": "#083fa1"
-    },
-    {
       "lang": "Text",
       "seconds": 522,
+      "color": null
+    },
+    {
+      "lang": "Bash",
+      "seconds": 430,
       "color": null
     },
     {
@@ -54,29 +69,14 @@
       "color": null
     },
     {
-      "lang": "Bash",
-      "seconds": 279,
-      "color": null
-    },
-    {
       "lang": "HTML",
       "seconds": 252,
       "color": "#e34c26"
     },
     {
-      "lang": "Dart",
-      "seconds": 161,
-      "color": "#00B4AB"
-    },
-    {
       "lang": "Git Config",
       "seconds": 111,
       "color": "#F44D27"
-    },
-    {
-      "lang": "Ruby",
-      "seconds": 25,
-      "color": "#701516"
     },
     {
       "lang": "Makefile",
@@ -87,6 +87,11 @@
       "lang": "TSConfig",
       "seconds": 9,
       "color": null
+    },
+    {
+      "lang": "RBS",
+      "seconds": 4,
+      "color": "#701516"
     }
   ]
 }
