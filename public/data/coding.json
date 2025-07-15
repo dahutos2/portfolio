@@ -1,17 +1,17 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 125984,
+  "total_seconds": 133498,
   "languages": [
+    {
+      "lang": "Dart",
+      "seconds": 31215,
+      "color": "#00B4AB"
+    },
     {
       "lang": "Vue.js",
       "seconds": 30645,
       "color": null
-    },
-    {
-      "lang": "Dart",
-      "seconds": 25576,
-      "color": "#00B4AB"
     },
     {
       "lang": "YAML",
@@ -25,7 +25,7 @@
     },
     {
       "lang": "Ruby",
-      "seconds": 14384,
+      "seconds": 16257,
       "color": "#701516"
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "lang": "RBS",
-      "seconds": 4,
+      "seconds": 6,
       "color": "#701516"
     }
   ]
