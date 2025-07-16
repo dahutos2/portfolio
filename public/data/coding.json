@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 133498,
+  "total_seconds": 138627,
   "languages": [
     {
       "lang": "Dart",
-      "seconds": 31215,
+      "seconds": 33434,
       "color": "#00B4AB"
     },
     {
@@ -15,18 +15,18 @@
     },
     {
       "lang": "YAML",
-      "seconds": 24404,
+      "seconds": 24660,
       "color": "#cb171e"
+    },
+    {
+      "lang": "Ruby",
+      "seconds": 17868,
+      "color": "#701516"
     },
     {
       "lang": "Python",
       "seconds": 17209,
       "color": "#3572A5"
-    },
-    {
-      "lang": "Ruby",
-      "seconds": 16257,
-      "color": "#701516"
     },
     {
       "lang": "TypeScript",
@@ -54,13 +54,13 @@
       "color": "#f1e05a"
     },
     {
-      "lang": "Text",
-      "seconds": 522,
+      "lang": "Bash",
+      "seconds": 860,
       "color": null
     },
     {
-      "lang": "Bash",
-      "seconds": 430,
+      "lang": "Text",
+      "seconds": 522,
       "color": null
     },
     {
@@ -69,9 +69,19 @@
       "color": null
     },
     {
+      "lang": "XML",
+      "seconds": 378,
+      "color": "#0060ac"
+    },
+    {
       "lang": "HTML",
       "seconds": 252,
       "color": "#e34c26"
+    },
+    {
+      "lang": "Groovy",
+      "seconds": 232,
+      "color": "#4298b8"
     },
     {
       "lang": "Git Config",
