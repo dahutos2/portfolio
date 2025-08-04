@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 192007,
+  "total_seconds": 193073,
   "languages": [
     {
       "lang": "Dart",
@@ -35,7 +35,7 @@
     },
     {
       "lang": "Bash",
-      "seconds": 6064,
+      "seconds": 7076,
       "color": null
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Lua",
-      "seconds": 634,
+      "seconds": 687,
       "color": "#000080"
     },
     {
