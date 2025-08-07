@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 193073,
+  "total_seconds": 193195,
   "languages": [
     {
       "lang": "Dart",
-      "seconds": 47326,
+      "seconds": 47406,
       "color": "#00B4AB"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "lang": "Groovy",
-      "seconds": 1204,
+      "seconds": 1246,
       "color": "#4298b8"
     },
     {
