@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 212506,
+  "total_seconds": 213635,
   "languages": [
     {
       "lang": "Dart",
@@ -20,7 +20,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25123,
+      "seconds": 25347,
       "color": "#cb171e"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 8557,
+      "seconds": 8560,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 7703,
+      "seconds": 7708,
       "color": null
     },
     {
@@ -59,6 +59,11 @@
       "color": "#f1e05a"
     },
     {
+      "lang": "Lua",
+      "seconds": 1584,
+      "color": "#000080"
+    },
+    {
       "lang": "Text",
       "seconds": 1496,
       "color": null
@@ -72,11 +77,6 @@
       "lang": "Makefile",
       "seconds": 900,
       "color": "#427819"
-    },
-    {
-      "lang": "Lua",
-      "seconds": 687,
-      "color": "#000080"
     },
     {
       "lang": "Image (svg)",
