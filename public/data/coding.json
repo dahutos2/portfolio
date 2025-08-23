@@ -1,17 +1,22 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 222196,
+  "total_seconds": 237875,
   "languages": [
     {
       "lang": "Dart",
-      "seconds": 47478,
+      "seconds": 47760,
       "color": "#00B4AB"
     },
     {
       "lang": "Ruby",
-      "seconds": 42472,
+      "seconds": 42523,
       "color": "#701516"
+    },
+    {
+      "lang": "TypeScript",
+      "seconds": 37989,
+      "color": "#3178c6"
     },
     {
       "lang": "Vue.js",
@@ -24,38 +29,33 @@
       "color": "#cb171e"
     },
     {
-      "lang": "TypeScript",
-      "seconds": 25101,
-      "color": "#3178c6"
-    },
-    {
       "lang": "Python",
       "seconds": 17209,
       "color": "#3572A5"
     },
     {
       "lang": "JSON",
-      "seconds": 9409,
+      "seconds": 9932,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 7712,
+      "seconds": 8634,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 4399,
+      "seconds": 4415,
       "color": "#563d7c"
     },
     {
       "lang": "Markdown",
-      "seconds": 3774,
+      "seconds": 4332,
       "color": "#083fa1"
     },
     {
       "lang": "JavaScript",
-      "seconds": 1803,
+      "seconds": 1836,
       "color": "#f1e05a"
     },
     {
@@ -80,8 +80,13 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 386,
+      "seconds": 659,
       "color": null
+    },
+    {
+      "lang": "HTML",
+      "seconds": 418,
+      "color": "#e34c26"
     },
     {
       "lang": "XML",
@@ -89,13 +94,8 @@
       "color": "#0060ac"
     },
     {
-      "lang": "HTML",
-      "seconds": 296,
-      "color": "#e34c26"
-    },
-    {
       "lang": "Git Config",
-      "seconds": 262,
+      "seconds": 271,
       "color": "#F44D27"
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 105,
+      "seconds": 106,
       "color": null
     },
     {
