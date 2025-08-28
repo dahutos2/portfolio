@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 331390,
+  "total_seconds": 332566,
   "languages": [
     {
       "lang": "TypeScript",
@@ -10,12 +10,12 @@
     },
     {
       "lang": "Dart",
-      "seconds": 50145,
+      "seconds": 51267,
       "color": "#00B4AB"
     },
     {
       "lang": "Ruby",
-      "seconds": 47811,
+      "seconds": 47815,
       "color": "#701516"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 12708,
+      "seconds": 12758,
       "color": "#292929"
     },
     {
