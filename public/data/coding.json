@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 332566,
+  "total_seconds": 336734,
   "languages": [
     {
       "lang": "TypeScript",
@@ -9,14 +9,14 @@
       "color": "#3178c6"
     },
     {
-      "lang": "Dart",
-      "seconds": 51267,
-      "color": "#00B4AB"
+      "lang": "Ruby",
+      "seconds": 51869,
+      "color": "#701516"
     },
     {
-      "lang": "Ruby",
-      "seconds": 47815,
-      "color": "#701516"
+      "lang": "Dart",
+      "seconds": 51367,
+      "color": "#00B4AB"
     },
     {
       "lang": "Vue.js",
@@ -55,7 +55,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2221,
+      "seconds": 2235,
       "color": "#427819"
     },
     {
