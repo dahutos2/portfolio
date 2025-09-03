@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 417283,
+  "total_seconds": 427932,
   "languages": [
     {
       "lang": "TypeScript",
@@ -10,7 +10,7 @@
     },
     {
       "lang": "Ruby",
-      "seconds": 93385,
+      "seconds": 99955,
       "color": "#701516"
     },
     {
@@ -25,18 +25,18 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25386,
+      "seconds": 25578,
       "color": "#cb171e"
+    },
+    {
+      "lang": "Bash",
+      "seconds": 17249,
+      "color": null
     },
     {
       "lang": "Python",
       "seconds": 17209,
       "color": "#3572A5"
-    },
-    {
-      "lang": "Bash",
-      "seconds": 15642,
-      "color": null
     },
     {
       "lang": "JSON",
@@ -45,7 +45,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 7914,
+      "seconds": 9214,
       "color": "#083fa1"
     },
     {
@@ -55,23 +55,23 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2465,
+      "seconds": 2512,
       "color": "#427819"
+    },
+    {
+      "lang": "Text",
+      "seconds": 2118,
+      "color": null
+    },
+    {
+      "lang": "Lua",
+      "seconds": 1994,
+      "color": "#000080"
     },
     {
       "lang": "JavaScript",
       "seconds": 1839,
       "color": "#f1e05a"
-    },
-    {
-      "lang": "Lua",
-      "seconds": 1682,
-      "color": "#000080"
-    },
-    {
-      "lang": "Text",
-      "seconds": 1496,
-      "color": null
     },
     {
       "lang": "Image (svg)",
