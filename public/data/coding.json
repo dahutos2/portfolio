@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 445207,
+  "total_seconds": 459655,
   "languages": [
     {
       "lang": "Ruby",
-      "seconds": 116640,
+      "seconds": 126557,
       "color": "#701516"
     },
     {
       "lang": "TypeScript",
-      "seconds": 111648,
+      "seconds": 115519,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 86308,
+      "seconds": 86778,
       "color": "#00B4AB"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Bash",
-      "seconds": 17295,
+      "seconds": 17340,
       "color": null
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 13367,
+      "seconds": 13372,
       "color": "#292929"
     },
     {
       "lang": "Markdown",
-      "seconds": 9617,
+      "seconds": 9737,
       "color": "#083fa1"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2512,
+      "seconds": 2534,
       "color": "#427819"
     },
     {
