@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 539451,
+  "total_seconds": 602696,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 162426,
+      "seconds": 198125,
       "color": "#3178c6"
     },
     {
       "lang": "Ruby",
-      "seconds": 154659,
+      "seconds": 180725,
       "color": "#701516"
     },
     {
       "lang": "Dart",
-      "seconds": 88404,
+      "seconds": 88450,
       "color": "#00B4AB"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Bash",
-      "seconds": 20230,
+      "seconds": 21099,
       "color": null
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 13395,
+      "seconds": 13459,
       "color": "#292929"
     },
     {
       "lang": "Markdown",
-      "seconds": 9770,
+      "seconds": 9990,
       "color": "#083fa1"
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2610,
+      "seconds": 2670,
       "color": "#427819"
     },
     {
       "lang": "Text",
-      "seconds": 2171,
+      "seconds": 2261,
       "color": null
     },
     {
@@ -102,6 +102,11 @@
       "lang": "C#",
       "seconds": 163,
       "color": "#178600"
+    },
+    {
+      "lang": "Java Properties",
+      "seconds": 132,
+      "color": "#2A6277"
     },
     {
       "lang": "TSConfig",
