@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 602696,
+  "total_seconds": 627939,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 198125,
+      "seconds": 204125,
       "color": "#3178c6"
     },
     {
       "lang": "Ruby",
-      "seconds": 180725,
+      "seconds": 198887,
       "color": "#701516"
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25600,
+      "seconds": 25635,
       "color": "#cb171e"
     },
     {
       "lang": "Bash",
-      "seconds": 21099,
+      "seconds": 21162,
       "color": null
     },
     {
@@ -64,6 +64,11 @@
       "color": null
     },
     {
+      "lang": "Groovy",
+      "seconds": 2166,
+      "color": "#4298b8"
+    },
+    {
       "lang": "Lua",
       "seconds": 1994,
       "color": "#000080"
@@ -79,18 +84,13 @@
       "color": null
     },
     {
-      "lang": "Groovy",
-      "seconds": 1246,
-      "color": "#4298b8"
-    },
-    {
       "lang": "HTML",
       "seconds": 418,
       "color": "#e34c26"
     },
     {
       "lang": "XML",
-      "seconds": 380,
+      "seconds": 417,
       "color": "#0060ac"
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "lang": "Java Properties",
-      "seconds": 132,
+      "seconds": 152,
       "color": "#2A6277"
     },
     {
@@ -117,6 +117,11 @@
       "lang": "RBS",
       "seconds": 6,
       "color": "#701516"
+    },
+    {
+      "lang": "Kotlin",
+      "seconds": 5,
+      "color": "#A97BFF"
     },
     {
       "lang": "Swift",
