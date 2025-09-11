@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 646215,
+  "total_seconds": 670208,
   "languages": [
     {
       "lang": "Ruby",
-      "seconds": 211675,
+      "seconds": 222077,
       "color": "#701516"
     },
     {
       "lang": "TypeScript",
-      "seconds": 208616,
+      "seconds": 212668,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 88450,
+      "seconds": 95671,
       "color": "#00B4AB"
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25635,
+      "seconds": 25640,
       "color": "#cb171e"
     },
     {
       "lang": "Bash",
-      "seconds": 22116,
+      "seconds": 24006,
       "color": null
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 13459,
+      "seconds": 13693,
       "color": "#292929"
     },
     {
       "lang": "Markdown",
-      "seconds": 9990,
+      "seconds": 10058,
       "color": "#083fa1"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2670,
+      "seconds": 2746,
       "color": "#427819"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "lang": "Lua",
-      "seconds": 1994,
+      "seconds": 1998,
       "color": "#000080"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 1464,
+      "seconds": 1487,
       "color": null
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 323,
+      "seconds": 340,
       "color": "#F44D27"
     },
     {
