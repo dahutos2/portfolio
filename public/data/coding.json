@@ -1,22 +1,27 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 689467,
+  "total_seconds": 748354,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 224269,
+      "seconds": 249446,
       "color": "#3178c6"
     },
     {
       "lang": "Ruby",
-      "seconds": 223179,
+      "seconds": 239224,
       "color": "#701516"
     },
     {
       "lang": "Dart",
-      "seconds": 101079,
+      "seconds": 102285,
       "color": "#00B4AB"
+    },
+    {
+      "lang": "Bash",
+      "seconds": 36854,
+      "color": null
     },
     {
       "lang": "Vue.js",
@@ -25,27 +30,22 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25640,
+      "seconds": 25675,
       "color": "#cb171e"
     },
     {
-      "lang": "Bash",
-      "seconds": 24917,
-      "color": null
-    },
-    {
       "lang": "Python",
-      "seconds": 17209,
+      "seconds": 20219,
       "color": "#3572A5"
     },
     {
       "lang": "JSON",
-      "seconds": 13739,
+      "seconds": 13812,
       "color": "#292929"
     },
     {
       "lang": "Markdown",
-      "seconds": 10060,
+      "seconds": 10303,
       "color": "#083fa1"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 2746,
+      "seconds": 2841,
       "color": "#427819"
     },
     {
@@ -64,14 +64,14 @@
       "color": null
     },
     {
+      "lang": "Lua",
+      "seconds": 2320,
+      "color": "#000080"
+    },
+    {
       "lang": "Groovy",
       "seconds": 2166,
       "color": "#4298b8"
-    },
-    {
-      "lang": "Lua",
-      "seconds": 1998,
-      "color": "#000080"
     },
     {
       "lang": "JavaScript",
@@ -80,12 +80,12 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 1487,
+      "seconds": 1717,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 418,
+      "seconds": 913,
       "color": "#e34c26"
     },
     {
@@ -112,6 +112,11 @@
       "lang": "TSConfig",
       "seconds": 106,
       "color": null
+    },
+    {
+      "lang": "TOML",
+      "seconds": 16,
+      "color": "#9c4221"
     },
     {
       "lang": "RBS",
