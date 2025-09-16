@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 808955,
+  "total_seconds": 880048,
   "languages": [
     {
       "lang": "Ruby",
-      "seconds": 278612,
+      "seconds": 305435,
       "color": "#701516"
     },
     {
       "lang": "TypeScript",
-      "seconds": 249446,
+      "seconds": 268137,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 122003,
+      "seconds": 140387,
       "color": "#00B4AB"
     },
     {
       "lang": "Bash",
-      "seconds": 38036,
+      "seconds": 41757,
       "color": null
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 25865,
+      "seconds": 25943,
       "color": "#cb171e"
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 13937,
+      "seconds": 14819,
       "color": "#292929"
     },
     {
@@ -52,6 +52,11 @@
       "lang": "CSS",
       "seconds": 4420,
       "color": "#563d7c"
+    },
+    {
+      "lang": "Groovy",
+      "seconds": 3030,
+      "color": "#4298b8"
     },
     {
       "lang": "Makefile",
@@ -69,9 +74,9 @@
       "color": "#000080"
     },
     {
-      "lang": "Groovy",
-      "seconds": 2166,
-      "color": "#4298b8"
+      "lang": "XML",
+      "seconds": 1859,
+      "color": "#0060ac"
     },
     {
       "lang": "JavaScript",
@@ -80,7 +85,7 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 1717,
+      "seconds": 1739,
       "color": null
     },
     {
@@ -89,24 +94,19 @@
       "color": "#e34c26"
     },
     {
-      "lang": "XML",
-      "seconds": 417,
-      "color": "#0060ac"
-    },
-    {
       "lang": "Git Config",
       "seconds": 340,
       "color": "#F44D27"
     },
     {
+      "lang": "Java Properties",
+      "seconds": 338,
+      "color": "#2A6277"
+    },
+    {
       "lang": "C#",
       "seconds": 163,
       "color": "#178600"
-    },
-    {
-      "lang": "Java Properties",
-      "seconds": 152,
-      "color": "#2A6277"
     },
     {
       "lang": "TSConfig",
