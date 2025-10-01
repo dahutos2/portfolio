@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1198912,
+  "total_seconds": 1203457,
   "languages": [
     {
       "lang": "Ruby",
@@ -10,7 +10,7 @@
     },
     {
       "lang": "TypeScript",
-      "seconds": 360895,
+      "seconds": 361399,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 93778,
+      "seconds": 97352,
       "color": null
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 27399,
+      "seconds": 27865,
       "color": "#292929"
     },
     {
