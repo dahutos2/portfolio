@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1208288,
+  "total_seconds": 1235717,
   "languages": [
     {
       "lang": "Ruby",
@@ -10,7 +10,7 @@
     },
     {
       "lang": "TypeScript",
-      "seconds": 362715,
+      "seconds": 369720,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 98200,
+      "seconds": 116615,
       "color": null
     },
     {
@@ -34,14 +34,14 @@
       "color": "#3572A5"
     },
     {
+      "lang": "JSON",
+      "seconds": 30477,
+      "color": "#292929"
+    },
+    {
       "lang": "YAML",
       "seconds": 29722,
       "color": "#cb171e"
-    },
-    {
-      "lang": "JSON",
-      "seconds": 28497,
-      "color": "#292929"
     },
     {
       "lang": "Markdown",
@@ -55,7 +55,7 @@
     },
     {
       "lang": "CSS",
-      "seconds": 4882,
+      "seconds": 4884,
       "color": "#563d7c"
     },
     {
@@ -85,7 +85,7 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 1850,
+      "seconds": 1854,
       "color": "#f1e05a"
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Less",
-      "seconds": 598,
+      "seconds": 612,
       "color": "#1d365d"
     },
     {
@@ -120,7 +120,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 136,
+      "seconds": 141,
       "color": null
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 11,
+      "seconds": 15,
       "color": "#d1dbe0"
     },
     {
