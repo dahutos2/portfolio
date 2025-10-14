@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1358457,
+  "total_seconds": 1394713,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 385548,
+      "seconds": 386035,
       "color": "#3178c6"
     },
     {
@@ -15,42 +15,42 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 202356,
+      "seconds": 204841,
       "color": null
     },
     {
       "lang": "Dart",
-      "seconds": 147269,
+      "seconds": 149521,
       "color": "#00B4AB"
     },
     {
       "lang": "Python",
-      "seconds": 67154,
+      "seconds": 81731,
       "color": "#3572A5"
     },
     {
       "lang": "Bash",
-      "seconds": 66357,
+      "seconds": 68288,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 33506,
+      "seconds": 34288,
       "color": "#292929"
     },
     {
       "lang": "YAML",
-      "seconds": 29722,
+      "seconds": 30631,
       "color": "#cb171e"
     },
     {
       "lang": "Markdown",
-      "seconds": 14214,
+      "seconds": 16939,
       "color": "#083fa1"
     },
     {
       "lang": "Makefile",
-      "seconds": 7140,
+      "seconds": 10299,
       "color": "#427819"
     },
     {
@@ -59,8 +59,13 @@
       "color": "#563d7c"
     },
     {
+      "lang": "Gettext Catalog",
+      "seconds": 6083,
+      "color": null
+    },
+    {
       "lang": "Text",
-      "seconds": 3927,
+      "seconds": 4262,
       "color": null
     },
     {
@@ -69,14 +74,14 @@
       "color": null
     },
     {
+      "lang": "HTML",
+      "seconds": 3475,
+      "color": "#e34c26"
+    },
+    {
       "lang": "Groovy",
       "seconds": 3094,
       "color": "#4298b8"
-    },
-    {
-      "lang": "Gettext Catalog",
-      "seconds": 2784,
-      "color": null
     },
     {
       "lang": "Lua",
@@ -90,7 +95,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 1859,
+      "seconds": 1867,
       "color": "#0060ac"
     },
     {
@@ -100,17 +105,12 @@
     },
     {
       "lang": "TOML",
-      "seconds": 1301,
+      "seconds": 1727,
       "color": "#9c4221"
     },
     {
-      "lang": "HTML",
-      "seconds": 1236,
-      "color": "#e34c26"
-    },
-    {
       "lang": "Git Config",
-      "seconds": 340,
+      "seconds": 610,
       "color": "#F44D27"
     },
     {
@@ -119,9 +119,19 @@
       "color": "#2A6277"
     },
     {
+      "lang": "CocoaPods",
+      "seconds": 227,
+      "color": null
+    },
+    {
       "lang": "C#",
       "seconds": 163,
       "color": "#178600"
+    },
+    {
+      "lang": "Gradle Kotlin DSL",
+      "seconds": 146,
+      "color": "#02303a"
     },
     {
       "lang": "TSConfig",
