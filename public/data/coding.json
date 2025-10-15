@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1394713,
+  "total_seconds": 1427920,
   "languages": [
     {
       "lang": "TypeScript",
@@ -20,38 +20,43 @@
     },
     {
       "lang": "Dart",
-      "seconds": 149521,
+      "seconds": 149597,
       "color": "#00B4AB"
     },
     {
       "lang": "Python",
-      "seconds": 81731,
+      "seconds": 105851,
       "color": "#3572A5"
     },
     {
       "lang": "Bash",
-      "seconds": 68288,
+      "seconds": 68672,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 34288,
+      "seconds": 34489,
       "color": "#292929"
     },
     {
       "lang": "YAML",
-      "seconds": 30631,
+      "seconds": 30675,
       "color": "#cb171e"
     },
     {
       "lang": "Markdown",
-      "seconds": 16939,
+      "seconds": 18894,
       "color": "#083fa1"
     },
     {
       "lang": "Makefile",
-      "seconds": 10299,
+      "seconds": 10466,
       "color": "#427819"
+    },
+    {
+      "lang": "Gettext Catalog",
+      "seconds": 9316,
+      "color": null
     },
     {
       "lang": "CSS",
@@ -59,24 +64,19 @@
       "color": "#563d7c"
     },
     {
-      "lang": "Gettext Catalog",
-      "seconds": 6083,
-      "color": null
+      "lang": "HTML",
+      "seconds": 6038,
+      "color": "#e34c26"
     },
     {
       "lang": "Text",
-      "seconds": 4262,
+      "seconds": 4282,
       "color": null
     },
     {
       "lang": "Image (svg)",
       "seconds": 3490,
       "color": null
-    },
-    {
-      "lang": "HTML",
-      "seconds": 3475,
-      "color": "#e34c26"
     },
     {
       "lang": "Groovy",
@@ -105,13 +105,18 @@
     },
     {
       "lang": "TOML",
-      "seconds": 1727,
+      "seconds": 1731,
       "color": "#9c4221"
     },
     {
       "lang": "Git Config",
       "seconds": 610,
       "color": "#F44D27"
+    },
+    {
+      "lang": "Diff",
+      "seconds": 439,
+      "color": null
     },
     {
       "lang": "Java Properties",
