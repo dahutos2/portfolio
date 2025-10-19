@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1490277,
+  "total_seconds": 1554860,
   "languages": [
     {
       "lang": "TypeScript",
@@ -19,14 +19,14 @@
       "color": null
     },
     {
+      "lang": "Python",
+      "seconds": 175136,
+      "color": "#3572A5"
+    },
+    {
       "lang": "Dart",
       "seconds": 149597,
       "color": "#00B4AB"
-    },
-    {
-      "lang": "Python",
-      "seconds": 147166,
-      "color": "#3572A5"
     },
     {
       "lang": "Bash",
@@ -44,33 +44,38 @@
       "color": "#cb171e"
     },
     {
-      "lang": "Markdown",
-      "seconds": 18936,
-      "color": "#083fa1"
-    },
-    {
-      "lang": "Makefile",
-      "seconds": 10505,
-      "color": "#427819"
-    },
-    {
       "lang": "HTML",
-      "seconds": 10462,
+      "seconds": 21732,
       "color": "#e34c26"
     },
     {
+      "lang": "JavaScript",
+      "seconds": 21087,
+      "color": "#f1e05a"
+    },
+    {
+      "lang": "Markdown",
+      "seconds": 18939,
+      "color": "#083fa1"
+    },
+    {
       "lang": "Gettext Catalog",
-      "seconds": 10267,
+      "seconds": 11424,
       "color": null
     },
     {
+      "lang": "Makefile",
+      "seconds": 10740,
+      "color": "#427819"
+    },
+    {
       "lang": "CSS",
-      "seconds": 6323,
+      "seconds": 9261,
       "color": "#563d7c"
     },
     {
       "lang": "Text",
-      "seconds": 4395,
+      "seconds": 4975,
       "color": null
     },
     {
@@ -85,7 +90,7 @@
     },
     {
       "lang": "Lua",
-      "seconds": 2319,
+      "seconds": 2320,
       "color": "#000080"
     },
     {
@@ -99,29 +104,24 @@
       "color": "#0060ac"
     },
     {
-      "lang": "JavaScript",
-      "seconds": 1854,
-      "color": "#f1e05a"
-    },
-    {
       "lang": "TOML",
-      "seconds": 1734,
+      "seconds": 1736,
       "color": "#9c4221"
     },
     {
+      "lang": "CSV",
+      "seconds": 1578,
+      "color": "#237346"
+    },
+    {
       "lang": "Git Config",
-      "seconds": 653,
+      "seconds": 656,
       "color": "#F44D27"
     },
     {
       "lang": "Diff",
       "seconds": 439,
       "color": null
-    },
-    {
-      "lang": "CSV",
-      "seconds": 388,
-      "color": "#237346"
     },
     {
       "lang": "Java Properties",
