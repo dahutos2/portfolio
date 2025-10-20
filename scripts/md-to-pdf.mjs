@@ -40,7 +40,10 @@ async function main() {
           printBackground: true,
           margin: { top: "20mm", right: "20mm", bottom: "20mm", left: "20mm" },
         },
-        css, // ← ここがポイント
+        css,
+        launch_options: {
+          args: ["--no-sandbox", "--disable-setuid-sandbox"],
+        },
       }
     );
 
