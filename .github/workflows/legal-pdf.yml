@@ -1,0 +1,42 @@
+name: Build Legal PDFs
+
+on:
+  push:
+    paths:
+      - "content/legal/**/*.md"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-legal-pdfs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: |
+          npm ci || npm i
+
+      - name: Build PDFs from Markdown
+        run: |
+          npm run build:legal
+
+      - name: Commit PDFs
+        run: |
+          if ! git status --porcelain | grep -q . ; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/legal
+          git commit -m "chore(legal): update PDFs"
+          git push

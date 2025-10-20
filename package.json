@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:legal": "node scripts/md-to-pdf.mjs",
+    "build:all": "npm run build:legal && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -20,6 +22,8 @@
     "@vitejs/plugin-vue": "^6.0.0",
     "@vue/tsconfig": "^0.7.0",
     "autoprefixer": "^10.4.21",
+    "globby": "^15.0.0",
+    "md-to-pdf": "^5.2.4",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.8.3",
