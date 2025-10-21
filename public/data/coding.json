@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1597706,
+  "total_seconds": 1618072,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 400823,
+      "seconds": 400872,
       "color": "#3178c6"
     },
     {
@@ -15,17 +15,17 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 205074,
+      "seconds": 205167,
       "color": null
     },
     {
       "lang": "Python",
-      "seconds": 191964,
+      "seconds": 192832,
       "color": "#3572A5"
     },
     {
       "lang": "Dart",
-      "seconds": 158816,
+      "seconds": 173539,
       "color": "#00B4AB"
     },
     {
@@ -35,42 +35,42 @@
     },
     {
       "lang": "JSON",
-      "seconds": 34677,
+      "seconds": 35030,
       "color": "#292929"
     },
     {
       "lang": "YAML",
-      "seconds": 30730,
+      "seconds": 32247,
       "color": "#cb171e"
     },
     {
       "lang": "HTML",
-      "seconds": 27190,
+      "seconds": 27681,
       "color": "#e34c26"
     },
     {
       "lang": "JavaScript",
-      "seconds": 21862,
+      "seconds": 22124,
       "color": "#f1e05a"
     },
     {
       "lang": "Markdown",
-      "seconds": 19951,
+      "seconds": 20824,
       "color": "#083fa1"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 14631,
+      "seconds": 15337,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 13811,
+      "seconds": 14003,
       "color": "#563d7c"
     },
     {
       "lang": "Makefile",
-      "seconds": 11713,
+      "seconds": 11794,
       "color": "#427819"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 3490,
+      "seconds": 3491,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 1867,
+      "seconds": 2023,
       "color": "#0060ac"
     },
     {
@@ -177,6 +177,11 @@
       "lang": "Modelica",
       "seconds": 1,
       "color": "#de1d31"
+    },
+    {
+      "lang": "Cocoa",
+      "seconds": 1,
+      "color": null
     }
   ]
 }
