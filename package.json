@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "build:legal": "node scripts/md-to-pdf.mjs",
+    "build:legal": "node scripts/md-to-public.mjs",
     "build:all": "npm run build:legal && npm run build",
     "preview": "vite preview"
   },

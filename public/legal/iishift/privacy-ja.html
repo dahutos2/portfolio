@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="ja"><head><meta name="viewport" content="width=device-width, initial-scale=1"><title></title><meta charset="utf-8"><style>* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+		'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	line-height: 1.6;
+	font-size: 0.6875em; /* 11 pt */
+	color: #111;
+	margin: 0;
+}
+
+body > :first-child {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+body > :last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0.5em 0 0.25em;
+}
+
+h5,
+h6 {
+	padding: 0;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 0.875em;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0.25em 0 1em;
+}
+
+blockquote {
+	margin: 0.5em 0 1em;
+	padding-left: 0.5em;
+	padding-right: 1em;
+	border-left: 4px solid gainsboro;
+	font-style: italic;
+}
+
+ul,
+ol {
+	margin: 0;
+	margin-left: 1em;
+	padding: 0 1.5em 0.5em;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code,
+p code,
+li code,
+pre code {
+	background-color: #f8f8f8;
+	padding: 0.1em 0.375em;
+	border: 1px solid #f8f8f8;
+	border-radius: 0.25em;
+	font-family: monospace;
+	font-size: 1.2em;
+}
+
+pre code {
+	display: block;
+	padding: 0.5em;
+}
+
+.page-break {
+	page-break-after: always;
+}
+
+img {
+	max-width: 100%;
+	margin: 1em 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	display: block;
+	margin: 0 0 1em;
+	width: 100%;
+	overflow: auto;
+}
+
+table th,
+table td {
+	padding: 0.5em 1em;
+	border: 1px solid gainsboro;
+}
+
+table th {
+	font-weight: 600;
+}
+
+table tr {
+	background-color: white;
+	border-top: 1px solid gainsboro;
+}
+
+table tr:nth-child(2n) {
+	background-color: whitesmoke;
+}
+/*# sourceURL=/Users/okumuradaichi/work/Github/portfolio/node_modules/md-to-pdf/markdown.css*/</style><style>pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub
+  Description: Light theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-light
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #24292e;
+  background: #ffffff
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #d73a49
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #6f42c1
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #005cc5
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #032f62
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #e36209
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #6a737d
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #22863a
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #24292e
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #005cc5;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #735c0f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #24292e;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #24292e;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #22863a;
+  background-color: #f0fff4
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #b31d28;
+  background-color: #ffeef0
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}/*# sourceURL=/Users/okumuradaichi/work/Github/portfolio/node_modules/highlight.js/styles/github.css*/</style><style>
+@page { size: A4; margin: 20mm; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Yu Gothic", YuGothic, Meiryo, "Noto Sans CJK JP", sans-serif;
+  line-height: 1.8;
+  color: #111827;
+  font-size: 12.5pt;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+h1 { font-size: 20pt; margin: 0 0 12px; }
+h2 { font-size: 14pt; margin: 18px 0 8px; }
+p, li { font-size: 12.5pt; }
+hr { border: 0; border-top: 1px solid #e5e7eb; margin: 12px 0; }
+</style></head>
+	<body class="">
+		<h1 id="プライバシーポリシー">プライバシーポリシー</h1>
+<h2 id="1-収集する情報">1. 収集する情報</h2>
+<p>本アプリはユーザー登録情報、シフト希望、勤怠データなど業務遂行に必要な情報を扱います。端末内の個人情報や写真、位置情報等を無断で取得することはありません。</p>
+<h2 id="2-利用目的">2. 利用目的</h2>
+<p>取得した情報は、シフト管理、勤怠管理、管理者からの連絡、お問い合わせ対応、機能改善に利用します。これら以外の目的で利用する際は事前に通知し同意を得ます。</p>
+<h2 id="3-外部への提供">3. 外部への提供</h2>
+<p>法令で定められた場合を除き、ユーザーの同意なく第三者に個人情報を提供しません。業務委託先へ提供する場合は適切な契約を締結し安全管理を徹底します。</p>
+<h2 id="4-安全管理">4. 安全管理</h2>
+<p>通信は暗号化し、認証済みユーザーのみが情報にアクセスできる仕組みを採用しています。不正アクセス防止、データ保全のため定期的に運用状況を監査します。</p>
+<h2 id="5-利用者の権利">5. 利用者の権利</h2>
+<p>ご本人からの情報開示、訂正、利用停止、削除のご希望には、合理的な範囲で速やかに対応します。アプリ内サポート窓口までご連絡ください。</p>
+<h2 id="6-改定">6. 改定</h2>
+<p>本ポリシーを改定する場合はアプリ内のお知らせ等で周知します。改定後にアプリを利用した場合は変更に同意したものとみなします。</p>
+<h2 id="お問い合わせ窓口">お問い合わせ窓口</h2>
+<p><a href="mailto:dahutos2@gmail.com">dahutos2@gmail.com</a></p>
+
+	
+
+</body></html>

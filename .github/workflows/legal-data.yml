@@ -1,4 +1,4 @@
-name: Build Legal PDFs
+name: Build Legal Public
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  build-legal-pdfs:
+  build-legal-data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,11 +30,11 @@ jobs:
         run: |
           npm ci || npm i
 
-      - name: Build PDFs from Markdown
+      - name: Build Public from Markdown
         run: |
           npm run build:legal
 
-      - name: Commit PDFs
+      - name: Commit Public
         run: |
           if ! git status --porcelain | grep -q . ; then
             echo "No changes to commit"
@@ -43,5 +43,5 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/legal
-          git commit -m "chore(legal): update PDFs"
+          git commit -m "chore(legal): update Public"
           git push
