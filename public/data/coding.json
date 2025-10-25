@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1645975,
+  "total_seconds": 1661083,
   "languages": [
     {
       "lang": "TypeScript",
@@ -20,22 +20,22 @@
     },
     {
       "lang": "Python",
-      "seconds": 200635,
+      "seconds": 205153,
       "color": "#3572A5"
     },
     {
       "lang": "Dart",
-      "seconds": 178892,
+      "seconds": 179278,
       "color": "#00B4AB"
     },
     {
       "lang": "Bash",
-      "seconds": 70120,
+      "seconds": 70147,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 35735,
+      "seconds": 35738,
       "color": "#292929"
     },
     {
@@ -44,28 +44,28 @@
       "color": "#cb171e"
     },
     {
+      "lang": "JavaScript",
+      "seconds": 30822,
+      "color": "#f1e05a"
+    },
+    {
       "lang": "HTML",
-      "seconds": 27819,
+      "seconds": 29018,
       "color": "#e34c26"
     },
     {
       "lang": "Markdown",
-      "seconds": 27496,
+      "seconds": 28023,
       "color": "#083fa1"
     },
     {
-      "lang": "JavaScript",
-      "seconds": 22979,
-      "color": "#f1e05a"
-    },
-    {
       "lang": "Gettext Catalog",
-      "seconds": 15668,
+      "seconds": 15894,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 14012,
+      "seconds": 14386,
       "color": "#563d7c"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Text",
-      "seconds": 5020,
+      "seconds": 5024,
       "color": null
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "lang": "TOML",
-      "seconds": 1736,
+      "seconds": 1737,
       "color": "#9c4221"
     },
     {
