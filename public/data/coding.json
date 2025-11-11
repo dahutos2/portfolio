@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1708264,
+  "total_seconds": 1713161,
   "languages": [
     {
       "lang": "TypeScript",
@@ -25,12 +25,12 @@
     },
     {
       "lang": "Dart",
-      "seconds": 182807,
+      "seconds": 183289,
       "color": "#00B4AB"
     },
     {
       "lang": "Bash",
-      "seconds": 70240,
+      "seconds": 70519,
       "color": null
     },
     {
@@ -50,12 +50,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 32489,
+      "seconds": 34486,
       "color": "#cb171e"
     },
     {
       "lang": "Markdown",
-      "seconds": 30396,
+      "seconds": 32511,
       "color": "#083fa1"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Text",
-      "seconds": 5087,
+      "seconds": 5106,
       "color": null
     },
     {
@@ -104,14 +104,14 @@
       "color": "#1d365d"
     },
     {
+      "lang": "TOML",
+      "seconds": 1744,
+      "color": "#9c4221"
+    },
+    {
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "TOML",
-      "seconds": 1738,
-      "color": "#9c4221"
     },
     {
       "lang": "CSV",
