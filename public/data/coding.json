@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1731102,
+  "total_seconds": 1731376,
   "languages": [
     {
       "lang": "TypeScript",
@@ -45,7 +45,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 36864,
+      "seconds": 37139,
       "color": "#cb171e"
     },
     {
