@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1735256,
+  "total_seconds": 1743864,
   "languages": [
     {
       "lang": "TypeScript",
@@ -25,12 +25,12 @@
     },
     {
       "lang": "Dart",
-      "seconds": 192297,
+      "seconds": 195154,
       "color": "#00B4AB"
     },
     {
       "lang": "Bash",
-      "seconds": 72346,
+      "seconds": 75589,
       "color": null
     },
     {
@@ -39,18 +39,18 @@
       "color": "#f1e05a"
     },
     {
+      "lang": "Markdown",
+      "seconds": 39022,
+      "color": "#083fa1"
+    },
+    {
       "lang": "HTML",
       "seconds": 38914,
       "color": "#e34c26"
     },
     {
-      "lang": "Markdown",
-      "seconds": 38131,
-      "color": "#083fa1"
-    },
-    {
       "lang": "JSON",
-      "seconds": 37352,
+      "seconds": 38331,
       "color": "#292929"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 12941,
+      "seconds": 13333,
       "color": "#427819"
     },
     {
@@ -104,6 +104,11 @@
       "color": "#1d365d"
     },
     {
+      "lang": "Git Config",
+      "seconds": 1857,
+      "color": "#F44D27"
+    },
+    {
       "lang": "TOML",
       "seconds": 1744,
       "color": "#9c4221"
@@ -112,11 +117,6 @@
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "Git Config",
-      "seconds": 1611,
-      "color": "#F44D27"
     },
     {
       "lang": "CSV",
