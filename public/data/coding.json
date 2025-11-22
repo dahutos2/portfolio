@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1743864,
+  "total_seconds": 1754881,
   "languages": [
     {
       "lang": "TypeScript",
@@ -25,13 +25,18 @@
     },
     {
       "lang": "Dart",
-      "seconds": 195154,
+      "seconds": 199967,
       "color": "#00B4AB"
     },
     {
       "lang": "Bash",
-      "seconds": 75589,
+      "seconds": 79241,
       "color": null
+    },
+    {
+      "lang": "Markdown",
+      "seconds": 40348,
+      "color": "#083fa1"
     },
     {
       "lang": "JavaScript",
@@ -39,19 +44,14 @@
       "color": "#f1e05a"
     },
     {
-      "lang": "Markdown",
-      "seconds": 39022,
-      "color": "#083fa1"
+      "lang": "JSON",
+      "seconds": 38993,
+      "color": "#292929"
     },
     {
       "lang": "HTML",
       "seconds": 38914,
       "color": "#e34c26"
-    },
-    {
-      "lang": "JSON",
-      "seconds": 38331,
-      "color": "#292929"
     },
     {
       "lang": "YAML",
@@ -70,7 +70,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 13333,
+      "seconds": 13369,
       "color": "#427819"
     },
     {
@@ -129,6 +129,11 @@
       "color": "#2A6277"
     },
     {
+      "lang": "Git",
+      "seconds": 539,
+      "color": null
+    },
+    {
       "lang": "Diff",
       "seconds": 439,
       "color": null
@@ -157,11 +162,6 @@
       "lang": "Swift",
       "seconds": 12,
       "color": "#F05138"
-    },
-    {
-      "lang": "Git",
-      "seconds": 12,
-      "color": null
     },
     {
       "lang": "Docker",
