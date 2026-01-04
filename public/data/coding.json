@@ -1,76 +1,76 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1957708,
+  "total_seconds": 1959366,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 407527,
+      "seconds": 407452,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 376296,
+      "seconds": 376580,
       "color": "#00B4AB"
     },
     {
       "lang": "Ruby",
-      "seconds": 373708,
+      "seconds": 373801,
       "color": "#701516"
     },
     {
       "lang": "Python",
-      "seconds": 218408,
+      "seconds": 218709,
       "color": "#3572A5"
     },
     {
       "lang": "Vue.js",
-      "seconds": 209348,
+      "seconds": 209983,
       "color": null
     },
     {
       "lang": "Bash",
-      "seconds": 82832,
+      "seconds": 82840,
       "color": null
     },
     {
       "lang": "Markdown",
-      "seconds": 43364,
+      "seconds": 43379,
       "color": "#083fa1"
     },
     {
       "lang": "YAML",
-      "seconds": 41900,
+      "seconds": 41906,
       "color": "#cb171e"
     },
     {
       "lang": "JSON",
-      "seconds": 41788,
+      "seconds": 41816,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 40241,
+      "seconds": 40305,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 38914,
+      "seconds": 38973,
       "color": "#e34c26"
     },
     {
       "lang": "CSS",
-      "seconds": 20522,
+      "seconds": 20732,
       "color": "#563d7c"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 18627,
+      "seconds": 18637,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 14116,
+      "seconds": 14265,
       "color": "#427819"
     },
     {
@@ -99,14 +99,14 @@
       "color": "#000080"
     },
     {
-      "lang": "Less",
-      "seconds": 2256,
-      "color": "#1d365d"
+      "lang": "Git",
+      "seconds": 2198,
+      "color": null
     },
     {
-      "lang": "Git",
-      "seconds": 2178,
-      "color": null
+      "lang": "Less",
+      "seconds": 2108,
+      "color": "#1d365d"
     },
     {
       "lang": "Git Config",
