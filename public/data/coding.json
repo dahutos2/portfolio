@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1959366,
+  "total_seconds": 1969608,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 407452,
+      "seconds": 407488,
       "color": "#3178c6"
     },
     {
@@ -25,32 +25,32 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 209983,
+      "seconds": 210267,
       "color": null
     },
     {
       "lang": "Bash",
-      "seconds": 82840,
+      "seconds": 86859,
       "color": null
     },
     {
       "lang": "Markdown",
-      "seconds": 43379,
+      "seconds": 44112,
       "color": "#083fa1"
     },
     {
       "lang": "YAML",
-      "seconds": 41906,
+      "seconds": 43866,
       "color": "#cb171e"
     },
     {
       "lang": "JSON",
-      "seconds": 41816,
+      "seconds": 43381,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 40305,
+      "seconds": 40307,
       "color": "#f1e05a"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "lang": "CSS",
-      "seconds": 20732,
+      "seconds": 20743,
       "color": "#563d7c"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 14265,
+      "seconds": 14816,
       "color": "#427819"
     },
     {
@@ -89,8 +89,13 @@
       "color": "#4298b8"
     },
     {
+      "lang": "Git",
+      "seconds": 2596,
+      "color": null
+    },
+    {
       "lang": "XML",
-      "seconds": 2560,
+      "seconds": 2564,
       "color": "#0060ac"
     },
     {
@@ -99,18 +104,13 @@
       "color": "#000080"
     },
     {
-      "lang": "Git",
-      "seconds": 2198,
-      "color": null
-    },
-    {
       "lang": "Less",
       "seconds": 2108,
       "color": "#1d365d"
     },
     {
       "lang": "Git Config",
-      "seconds": 1857,
+      "seconds": 1861,
       "color": "#F44D27"
     },
     {
@@ -127,6 +127,11 @@
       "lang": "CSV",
       "seconds": 1578,
       "color": "#237346"
+    },
+    {
+      "lang": "SSH Config",
+      "seconds": 635,
+      "color": null
     },
     {
       "lang": "Java Properties",
@@ -159,9 +164,19 @@
       "color": "#d1dbe0"
     },
     {
+      "lang": "PHP",
+      "seconds": 23,
+      "color": "#4F5D95"
+    },
+    {
       "lang": "Swift",
       "seconds": 12,
       "color": "#F05138"
+    },
+    {
+      "lang": "Blade Template",
+      "seconds": 11,
+      "color": null
     },
     {
       "lang": "Docker",
@@ -182,6 +197,11 @@
       "lang": "Modelica",
       "seconds": 1,
       "color": "#de1d31"
+    },
+    {
+      "lang": "Apache Config",
+      "seconds": 1,
+      "color": null
     },
     {
       "lang": "Cocoa",
