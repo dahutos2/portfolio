@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 1970671,
+  "total_seconds": 1974931,
   "languages": [
     {
       "lang": "TypeScript",
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Bash",
-      "seconds": 86859,
+      "seconds": 90461,
       "color": null
     },
     {
@@ -45,7 +45,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 43381,
+      "seconds": 43387,
       "color": "#292929"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 1861,
+      "seconds": 2002,
       "color": "#F44D27"
     },
     {
@@ -139,6 +139,11 @@
       "color": "#2A6277"
     },
     {
+      "lang": "Apache Config",
+      "seconds": 495,
+      "color": null
+    },
+    {
       "lang": "Diff",
       "seconds": 439,
       "color": null
@@ -160,7 +165,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 24,
+      "seconds": 41,
       "color": "#d1dbe0"
     },
     {
@@ -197,11 +202,6 @@
       "lang": "Modelica",
       "seconds": 1,
       "color": "#de1d31"
-    },
-    {
-      "lang": "Apache Config",
-      "seconds": 1,
-      "color": null
     },
     {
       "lang": "Cocoa",
