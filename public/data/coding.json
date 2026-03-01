@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2013134,
+  "total_seconds": 2051771,
   "languages": [
     {
       "lang": "TypeScript",
@@ -10,12 +10,12 @@
     },
     {
       "lang": "Dart",
-      "seconds": 394781,
+      "seconds": 394813,
       "color": "#00B4AB"
     },
     {
       "lang": "Ruby",
-      "seconds": 373801,
+      "seconds": 373882,
       "color": "#701516"
     },
     {
@@ -30,22 +30,22 @@
     },
     {
       "lang": "Bash",
-      "seconds": 93959,
+      "seconds": 94030,
       "color": null
     },
     {
       "lang": "Markdown",
-      "seconds": 48215,
+      "seconds": 83618,
       "color": "#083fa1"
     },
     {
       "lang": "YAML",
-      "seconds": 47961,
+      "seconds": 48389,
       "color": "#cb171e"
     },
     {
       "lang": "JSON",
-      "seconds": 44466,
+      "seconds": 45123,
       "color": "#292929"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 14977,
+      "seconds": 14999,
       "color": "#427819"
     },
     {
@@ -95,12 +95,12 @@
     },
     {
       "lang": "XML",
-      "seconds": 2564,
+      "seconds": 2566,
       "color": "#0060ac"
     },
     {
       "lang": "Lua",
-      "seconds": 2320,
+      "seconds": 2438,
       "color": "#000080"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 2031,
+      "seconds": 2105,
       "color": "#F44D27"
     },
     {
@@ -129,18 +129,28 @@
       "color": "#237346"
     },
     {
+      "lang": "Java Properties",
+      "seconds": 1332,
+      "color": "#2A6277"
+    },
+    {
+      "lang": "Kotlin",
+      "seconds": 706,
+      "color": "#A97BFF"
+    },
+    {
       "lang": "SSH Config",
       "seconds": 635,
       "color": null
     },
     {
-      "lang": "Java Properties",
-      "seconds": 589,
-      "color": "#2A6277"
-    },
-    {
       "lang": "Apache Config",
       "seconds": 570,
+      "color": null
+    },
+    {
+      "lang": "CocoaPods",
+      "seconds": 530,
       "color": null
     },
     {
@@ -149,8 +159,8 @@
       "color": null
     },
     {
-      "lang": "CocoaPods",
-      "seconds": 431,
+      "lang": "Public Key",
+      "seconds": 207,
       "color": null
     },
     {
@@ -187,11 +197,6 @@
       "lang": "Docker",
       "seconds": 10,
       "color": null
-    },
-    {
-      "lang": "Kotlin",
-      "seconds": 8,
-      "color": "#A97BFF"
     },
     {
       "lang": "RBS",
