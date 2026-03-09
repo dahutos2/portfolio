@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2082371,
+  "total_seconds": 2094800,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 407617,
+      "seconds": 408003,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 399555,
+      "seconds": 399584,
       "color": "#00B4AB"
     },
     {
@@ -25,32 +25,32 @@
     },
     {
       "lang": "Vue.js",
-      "seconds": 210868,
+      "seconds": 211054,
       "color": null
     },
     {
       "lang": "Markdown",
-      "seconds": 95073,
+      "seconds": 101027,
       "color": "#083fa1"
     },
     {
       "lang": "Bash",
-      "seconds": 94794,
+      "seconds": 95271,
       "color": null
     },
     {
       "lang": "YAML",
-      "seconds": 53769,
+      "seconds": 55570,
       "color": "#cb171e"
     },
     {
       "lang": "JSON",
-      "seconds": 45185,
+      "seconds": 45711,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 44424,
+      "seconds": 44554,
       "color": "#f1e05a"
     },
     {
@@ -70,12 +70,12 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 15470,
+      "seconds": 15618,
       "color": "#427819"
     },
     {
       "lang": "Git",
-      "seconds": 10661,
+      "seconds": 12089,
       "color": null
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 2690,
+      "seconds": 2772,
       "color": "#0060ac"
     },
     {
@@ -135,8 +135,13 @@
     },
     {
       "lang": "Kotlin",
-      "seconds": 724,
+      "seconds": 1235,
       "color": "#A97BFF"
+    },
+    {
+      "lang": "PHP",
+      "seconds": 808,
+      "color": "#4F5D95"
     },
     {
       "lang": "SSH Config",
@@ -175,13 +180,8 @@
     },
     {
       "lang": "INI",
-      "seconds": 41,
+      "seconds": 42,
       "color": "#d1dbe0"
-    },
-    {
-      "lang": "PHP",
-      "seconds": 38,
-      "color": "#4F5D95"
     },
     {
       "lang": "Swift",
