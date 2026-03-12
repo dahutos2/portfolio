@@ -1,6 +1,6 @@
 {
-  "total_repos": 57,
-  "private_repos": 16,
+  "total_repos": 56,
+  "private_repos": 15,
   "public_repos": 41,
   "languages": [
     {
@@ -35,8 +35,8 @@
     },
     {
       "lang": "JavaScript",
-      "count": 2,
-      "stars": 2
+      "count": 1,
+      "stars": 1
     },
     {
       "lang": "PHP",
@@ -69,5 +69,5 @@
       "stars": 2
     }
   ],
-  "total_stars": 60
+  "total_stars": 59
 }
