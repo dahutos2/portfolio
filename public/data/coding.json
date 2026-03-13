@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2101465,
+  "total_seconds": 2103429,
   "languages": [
     {
       "lang": "TypeScript",
@@ -35,12 +35,12 @@
     },
     {
       "lang": "Bash",
-      "seconds": 95271,
+      "seconds": 95281,
       "color": null
     },
     {
       "lang": "YAML",
-      "seconds": 55570,
+      "seconds": 55703,
       "color": "#cb171e"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 12324,
+      "seconds": 12579,
       "color": null
     },
     {
@@ -119,6 +119,11 @@
       "color": "#2A6277"
     },
     {
+      "lang": "Diff",
+      "seconds": 2004,
+      "color": null
+    },
+    {
       "lang": "Kotlin",
       "seconds": 1893,
       "color": "#A97BFF"
@@ -156,11 +161,6 @@
     {
       "lang": "CocoaPods",
       "seconds": 530,
-      "color": null
-    },
-    {
-      "lang": "Diff",
-      "seconds": 439,
       "color": null
     },
     {
