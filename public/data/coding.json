@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2103429,
+  "total_seconds": 2116282,
   "languages": [
     {
       "lang": "TypeScript",
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 105001,
+      "seconds": 117847,
       "color": "#083fa1"
     },
     {
@@ -197,6 +197,11 @@
       "lang": "Docker",
       "seconds": 10,
       "color": null
+    },
+    {
+      "lang": "D",
+      "seconds": 6,
+      "color": "#ba595e"
     },
     {
       "lang": "RBS",
