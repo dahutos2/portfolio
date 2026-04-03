@@ -1,6 +1,6 @@
 {
-  "total_repos": 56,
-  "private_repos": 15,
+  "total_repos": 58,
+  "private_repos": 17,
   "public_repos": 41,
   "languages": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "lang": "Unknown",
-      "count": 4,
-      "stars": 2
+      "count": 5,
+      "stars": 3
     },
     {
       "lang": "Jupyter Notebook",
@@ -35,8 +35,8 @@
     },
     {
       "lang": "JavaScript",
-      "count": 1,
-      "stars": 1
+      "count": 2,
+      "stars": 2
     },
     {
       "lang": "PHP",
@@ -69,5 +69,5 @@
       "stars": 2
     }
   ],
-  "total_stars": 59
+  "total_stars": 61
 }
