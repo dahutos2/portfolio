@@ -1,7 +1,7 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2160834,
+  "total_seconds": 2185938,
   "languages": [
     {
       "lang": "TypeScript",
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 153919,
+      "seconds": 176966,
       "color": "#083fa1"
     },
     {
@@ -89,6 +89,11 @@
       "color": null
     },
     {
+      "lang": "CSV",
+      "seconds": 3634,
+      "color": "#237346"
+    },
+    {
       "lang": "Groovy",
       "seconds": 3094,
       "color": "#4298b8"
@@ -137,11 +142,6 @@
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "CSV",
-      "seconds": 1578,
-      "color": "#237346"
     },
     {
       "lang": "PHP",
