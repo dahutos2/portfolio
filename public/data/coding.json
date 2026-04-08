@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2185938,
+  "total_seconds": 2208913,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 408003,
+      "seconds": 409014,
       "color": "#3178c6"
     },
     {
@@ -30,7 +30,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 176966,
+      "seconds": 194083,
       "color": "#083fa1"
     },
     {
@@ -45,17 +45,17 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 51143,
+      "seconds": 52347,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 47532,
+      "seconds": 49782,
       "color": "#292929"
     },
     {
       "lang": "HTML",
-      "seconds": 39992,
+      "seconds": 40134,
       "color": "#e34c26"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 13118,
+      "seconds": 13169,
       "color": null
     },
     {
@@ -84,14 +84,14 @@
       "color": null
     },
     {
+      "lang": "CSV",
+      "seconds": 4220,
+      "color": "#237346"
+    },
+    {
       "lang": "Image (svg)",
       "seconds": 4162,
       "color": null
-    },
-    {
-      "lang": "CSV",
-      "seconds": 3634,
-      "color": "#237346"
     },
     {
       "lang": "Groovy",
@@ -110,7 +110,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 2270,
+      "seconds": 2292,
       "color": "#F44D27"
     },
     {
@@ -159,6 +159,11 @@
       "color": null
     },
     {
+      "lang": "Gosu",
+      "seconds": 564,
+      "color": "#82937f"
+    },
+    {
       "lang": "CocoaPods",
       "seconds": 530,
       "color": null
@@ -169,18 +174,18 @@
       "color": null
     },
     {
+      "lang": "TSConfig",
+      "seconds": 167,
+      "color": null
+    },
+    {
       "lang": "C#",
       "seconds": 163,
       "color": "#178600"
     },
     {
-      "lang": "TSConfig",
-      "seconds": 145,
-      "color": null
-    },
-    {
       "lang": "INI",
-      "seconds": 42,
+      "seconds": 45,
       "color": "#d1dbe0"
     },
     {
