@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2264689,
+  "total_seconds": 2292493,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 435239,
+      "seconds": 453630,
       "color": "#3178c6"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 213347,
+      "seconds": 213657,
       "color": "#083fa1"
     },
     {
@@ -45,17 +45,17 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 52347,
+      "seconds": 53036,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 52224,
+      "seconds": 52635,
       "color": "#292929"
     },
     {
       "lang": "HTML",
-      "seconds": 44669,
+      "seconds": 52008,
       "color": "#e34c26"
     },
     {
@@ -75,12 +75,12 @@
     },
     {
       "lang": "Git",
-      "seconds": 13733,
+      "seconds": 13871,
       "color": null
     },
     {
       "lang": "CSV",
-      "seconds": 6767,
+      "seconds": 6982,
       "color": "#237346"
     },
     {
@@ -164,13 +164,13 @@
       "color": "#82937f"
     },
     {
-      "lang": "CocoaPods",
-      "seconds": 530,
+      "lang": "TSConfig",
+      "seconds": 541,
       "color": null
     },
     {
-      "lang": "TSConfig",
-      "seconds": 233,
+      "lang": "CocoaPods",
+      "seconds": 530,
       "color": null
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 64,
+      "seconds": 67,
       "color": "#d1dbe0"
     },
     {
