@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2389548,
+  "total_seconds": 2422761,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 499472,
+      "seconds": 527388,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 229927,
+      "seconds": 231616,
       "color": "#083fa1"
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "HTML",
-      "seconds": 61984,
+      "seconds": 62878,
       "color": "#e34c26"
     },
     {
       "lang": "JavaScript",
-      "seconds": 56827,
+      "seconds": 56828,
       "color": "#f1e05a"
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 54001,
+      "seconds": 54829,
       "color": "#292929"
     },
     {
       "lang": "CSV",
-      "seconds": 24369,
+      "seconds": 25461,
       "color": "#237346"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 15106,
+      "seconds": 15201,
       "color": null
     },
     {
@@ -109,6 +109,11 @@
       "color": "#0060ac"
     },
     {
+      "lang": "Diff",
+      "seconds": 2606,
+      "color": null
+    },
+    {
       "lang": "Lua",
       "seconds": 2443,
       "color": "#000080"
@@ -122,11 +127,6 @@
       "lang": "Java Properties",
       "seconds": 2015,
       "color": "#2A6277"
-    },
-    {
-      "lang": "Diff",
-      "seconds": 2004,
-      "color": null
     },
     {
       "lang": "Kotlin",
@@ -149,6 +149,11 @@
       "color": "#4F5D95"
     },
     {
+      "lang": "TSConfig",
+      "seconds": 637,
+      "color": null
+    },
+    {
       "lang": "SSH Config",
       "seconds": 635,
       "color": null
@@ -162,11 +167,6 @@
       "lang": "Gosu",
       "seconds": 564,
       "color": "#82937f"
-    },
-    {
-      "lang": "TSConfig",
-      "seconds": 541,
-      "color": null
     },
     {
       "lang": "CocoaPods",
