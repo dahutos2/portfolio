@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2422761,
+  "total_seconds": 2443678,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 527388,
+      "seconds": 541790,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 231616,
+      "seconds": 236886,
       "color": "#083fa1"
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 54829,
+      "seconds": 54831,
       "color": "#292929"
     },
     {
       "lang": "CSV",
-      "seconds": 25461,
+      "seconds": 25913,
       "color": "#237346"
     },
     {
@@ -144,14 +144,14 @@
       "color": "#02303a"
     },
     {
+      "lang": "TSConfig",
+      "seconds": 1428,
+      "color": null
+    },
+    {
       "lang": "PHP",
       "seconds": 808,
       "color": "#4F5D95"
-    },
-    {
-      "lang": "TSConfig",
-      "seconds": 637,
-      "color": null
     },
     {
       "lang": "SSH Config",
