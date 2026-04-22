@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2491957,
+  "total_seconds": 2514153,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 570796,
+      "seconds": 578521,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 239392,
+      "seconds": 241600,
       "color": "#083fa1"
     },
     {
@@ -39,33 +39,33 @@
       "color": null
     },
     {
-      "lang": "HTML",
-      "seconds": 64157,
-      "color": "#e34c26"
-    },
-    {
       "lang": "JavaScript",
-      "seconds": 63086,
+      "seconds": 69293,
       "color": "#f1e05a"
     },
     {
+      "lang": "HTML",
+      "seconds": 64160,
+      "color": "#e34c26"
+    },
+    {
       "lang": "JSON",
-      "seconds": 58119,
+      "seconds": 62133,
       "color": "#292929"
     },
     {
       "lang": "YAML",
-      "seconds": 56873,
+      "seconds": 56970,
       "color": "#cb171e"
     },
     {
       "lang": "CSV",
-      "seconds": 30197,
+      "seconds": 30281,
       "color": "#237346"
     },
     {
       "lang": "CSS",
-      "seconds": 21783,
+      "seconds": 22936,
       "color": "#563d7c"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 15352,
+      "seconds": 15776,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 2932,
+      "seconds": 3032,
       "color": "#F44D27"
     },
     {
@@ -145,7 +145,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 1481,
+      "seconds": 1662,
       "color": null
     },
     {
