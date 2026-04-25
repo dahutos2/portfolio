@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2560087,
+  "total_seconds": 2579090,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 614192,
+      "seconds": 618680,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 399667,
+      "seconds": 402909,
       "color": "#00B4AB"
     },
     {
@@ -20,12 +20,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 246336,
+      "seconds": 249858,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 219652,
+      "seconds": 221614,
       "color": "#3572A5"
     },
     {
@@ -35,27 +35,27 @@
     },
     {
       "lang": "Bash",
-      "seconds": 95459,
+      "seconds": 96379,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 70102,
+      "seconds": 70398,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 65585,
+      "seconds": 66347,
       "color": "#292929"
     },
     {
       "lang": "HTML",
-      "seconds": 65191,
+      "seconds": 65497,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 57025,
+      "seconds": 57173,
       "color": "#cb171e"
     },
     {
@@ -75,17 +75,17 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 16067,
+      "seconds": 16781,
       "color": "#427819"
     },
     {
       "lang": "Git",
-      "seconds": 15790,
+      "seconds": 16188,
       "color": null
     },
     {
       "lang": "Text",
-      "seconds": 5150,
+      "seconds": 7100,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 3032,
+      "seconds": 3046,
       "color": "#F44D27"
     },
     {
@@ -129,24 +129,24 @@
       "color": "#2A6277"
     },
     {
+      "lang": "TOML",
+      "seconds": 1918,
+      "color": "#9c4221"
+    },
+    {
       "lang": "Kotlin",
       "seconds": 1894,
       "color": "#A97BFF"
     },
     {
-      "lang": "TOML",
-      "seconds": 1744,
-      "color": "#9c4221"
+      "lang": "TSConfig",
+      "seconds": 1819,
+      "color": null
     },
     {
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "TSConfig",
-      "seconds": 1711,
-      "color": null
     },
     {
       "lang": "PHP",
