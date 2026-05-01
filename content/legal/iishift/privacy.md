@@ -26,4 +26,4 @@ revision_date: 2025-10-20
 本ポリシーを改定する場合はアプリ内のお知らせ等で周知します。改定後にアプリを利用した場合は変更に同意したものとみなします。
 
 ## お問い合わせ窓口
-dahutos2@gmail.com
+okumura08iidays@gmail.com

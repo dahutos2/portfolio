@@ -32,4 +32,4 @@ revision_date: 2025-10-20
 本規約は日本法を準拠法とし、本アプリに関して紛争が生じた場合は、運営者の所在地を管轄する裁判所を第一審の専属的合意管轄とします。
 
 ## お問い合わせ窓口
-dahutos2@gmail.com
+okumura08iidays@gmail.com
