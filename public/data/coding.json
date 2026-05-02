@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2730084,
+  "total_seconds": 2760035,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 692971,
+      "seconds": 697709,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 426357,
+      "seconds": 431299,
       "color": "#00B4AB"
     },
     {
@@ -20,12 +20,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 268784,
+      "seconds": 272268,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 226932,
+      "seconds": 233833,
       "color": "#3572A5"
     },
     {
@@ -35,33 +35,38 @@
     },
     {
       "lang": "Bash",
-      "seconds": 96584,
+      "seconds": 96802,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 77105,
+      "seconds": 80434,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 73767,
+      "seconds": 74473,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 72702,
+      "seconds": 72745,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 58296,
+      "seconds": 58958,
       "color": "#cb171e"
     },
     {
       "lang": "CSV",
-      "seconds": 30396,
+      "seconds": 31322,
       "color": "#237346"
+    },
+    {
+      "lang": "Gettext Catalog",
+      "seconds": 24772,
+      "color": null
     },
     {
       "lang": "CSS",
@@ -69,23 +74,18 @@
       "color": "#563d7c"
     },
     {
-      "lang": "Gettext Catalog",
-      "seconds": 22864,
+      "lang": "Git",
+      "seconds": 18058,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 16829,
+      "seconds": 16879,
       "color": "#427819"
     },
     {
-      "lang": "Git",
-      "seconds": 16680,
-      "color": null
-    },
-    {
       "lang": "Text",
-      "seconds": 7100,
+      "seconds": 7102,
       "color": null
     },
     {
@@ -95,12 +95,12 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 3228,
+      "seconds": 3334,
       "color": "#F44D27"
     },
     {
       "lang": "TSConfig",
-      "seconds": 3125,
+      "seconds": 3127,
       "color": null
     },
     {
@@ -119,6 +119,11 @@
       "color": null
     },
     {
+      "lang": "TOML",
+      "seconds": 2468,
+      "color": "#9c4221"
+    },
+    {
       "lang": "Lua",
       "seconds": 2443,
       "color": "#000080"
@@ -134,13 +139,8 @@
       "color": "#2A6277"
     },
     {
-      "lang": "TOML",
-      "seconds": 1918,
-      "color": "#9c4221"
-    },
-    {
       "lang": "Kotlin",
-      "seconds": 1894,
+      "seconds": 1904,
       "color": "#A97BFF"
     },
     {
