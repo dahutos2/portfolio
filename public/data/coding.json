@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 2889988,
+  "total_seconds": 2911769,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 799555,
+      "seconds": 816043,
       "color": "#3178c6"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 284831,
+      "seconds": 286723,
       "color": "#083fa1"
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 84190,
+      "seconds": 84577,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 76457,
+      "seconds": 76476,
       "color": "#f1e05a"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "lang": "CSV",
-      "seconds": 32033,
+      "seconds": 32932,
       "color": "#237346"
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 20468,
+      "seconds": 21916,
       "color": null
     },
     {
@@ -94,14 +94,14 @@
       "color": null
     },
     {
-      "lang": "TSConfig",
-      "seconds": 3413,
-      "color": null
+      "lang": "Git Config",
+      "seconds": 3421,
+      "color": "#F44D27"
     },
     {
-      "lang": "Git Config",
-      "seconds": 3334,
-      "color": "#F44D27"
+      "lang": "TSConfig",
+      "seconds": 3414,
+      "color": null
     },
     {
       "lang": "Groovy",
@@ -164,6 +164,11 @@
       "color": null
     },
     {
+      "lang": "Docker",
+      "seconds": 568,
+      "color": null
+    },
+    {
       "lang": "Gosu",
       "seconds": 564,
       "color": "#82937f"
@@ -185,7 +190,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 137,
+      "seconds": 138,
       "color": "#d1dbe0"
     },
     {
@@ -201,11 +206,6 @@
     {
       "lang": "Blade Template",
       "seconds": 11,
-      "color": null
-    },
-    {
-      "lang": "Docker",
-      "seconds": 10,
       "color": null
     },
     {
