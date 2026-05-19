@@ -1,0 +1,55 @@
+name: Setup Node and pnpm
+description: Read .tool-versions, verify package metadata, and activate pnpm.
+runs:
+  using: composite
+  steps:
+    - name: Read tool versions
+      id: tool-versions
+      shell: bash
+      run: |
+        node_version=$(awk '/^nodejs /{print $2; exit}' .tool-versions)
+        pnpm_version=$(awk '/^pnpm /{print $2; exit}' .tool-versions)
+
+        if [ -z "$node_version" ] || [ -z "$pnpm_version" ]; then
+          echo "Failed to read nodejs/pnpm versions from .tool-versions"
+          exit 1
+        fi
+
+        echo "node=$node_version" >> "$GITHUB_OUTPUT"
+        echo "pnpm=$pnpm_version" >> "$GITHUB_OUTPUT"
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ steps.tool-versions.outputs.node }}
+
+    - name: Setup pnpm
+      shell: bash
+      run: |
+        corepack enable
+        corepack prepare pnpm@${{ steps.tool-versions.outputs.pnpm }} --activate
+
+    - name: Verify package manager versions
+      shell: bash
+      run: |
+        node_version='${{ steps.tool-versions.outputs.node }}'
+        pnpm_version='${{ steps.tool-versions.outputs.pnpm }}'
+
+        package_manager=$(node -p "require('./package.json').packageManager || ''")
+        engine_node=$(node -p "require('./package.json').engines?.node || ''")
+        engine_pnpm=$(node -p "require('./package.json').engines?.pnpm || ''")
+
+        # CI とローカルの実行環境がずれないよう、宣言値を単一のバージョンに揃える。
+        if [ "$package_manager" != "pnpm@$pnpm_version" ]; then
+          echo "packageManager must be pnpm@$pnpm_version, but got: $package_manager"
+          exit 1
+        fi
+
+        if [ "$engine_pnpm" != "$pnpm_version" ]; then
+          echo "engines.pnpm must be $pnpm_version, but got: $engine_pnpm"
+          exit 1
+        fi
+
+        if [ "$engine_node" != ">=$node_version <25" ]; then
+          echo "engines.node must be >=$node_version <25, but got: $engine_node"
+          exit 1
+        fi

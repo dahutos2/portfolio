@@ -27,22 +27,38 @@
 
 ## 開発方法
 
+本プロジェクトは Node.js `24.15.0` と pnpm `10.33.0` を前提にしています。
+バージョンは `.tool-versions`、`package.json` の `engines` / `packageManager`、CI で揃えています。
+
 ### 依存インストール
 
 ```bash
-npm install
+pnpm install --frozen-lockfile
+```
+
+依存関係を変更した場合だけ、lockfile を更新します。
+
+```bash
+pnpm install
+pnpm audit --audit-level high
+```
+
+Python 依存を変更する場合は `requirements.in` を編集し、ハッシュ付きの `requirements.txt` を再生成します。
+
+```bash
+uv pip compile requirements.in --generate-hashes --output-file requirements.txt --python-version 3.11
 ```
 
 ### 開発サーバ起動
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 ### ビルド
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 → `dist/` に成果物が生成されます。
@@ -53,3 +69,5 @@ npm run build
 
 - **fetch-data.yml** → 毎日 JST 11:00にデータを収集し、デプロイ先の`public/data/` のみ上書きする
 - **deploy-pages.yml** → コードを変更すると自動でサイトをビルド・デプロイする
+
+`fetch-data.yml` の `GH_PAT` は、`/user/repos?visibility=all` で private リポジトリも集計するために使います。fine-grained PAT を使う場合は対象リポジトリを絞り、Metadata read-only を最小権限として設定します。
