@@ -17,9 +17,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
+      # .tool-versions と package.json の整合性を検証し、pnpm を有効化する
+      - uses: ./.github/actions/setup-pnpm
 
       - name: Install Japanese fonts
         run: |
@@ -28,11 +27,19 @@ jobs:
 
       - name: Install deps
         run: |
-          npm ci || npm i
+          pnpm install --frozen-lockfile
+
+      - name: Install browser for PDF generation
+        run: |
+          pnpm exec puppeteer browsers install chrome
+
+      - name: Audit Node deps
+        run: |
+          pnpm audit --audit-level high
 
       - name: Build Public from Markdown
         run: |
-          npm run build:legal
+          pnpm run build:legal
 
       - name: Commit Public
         run: |

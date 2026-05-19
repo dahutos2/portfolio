@@ -3,11 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=24.15.0 <25",
+    "pnpm": "10.33.0"
+  },
+  "packageManager": "pnpm@10.33.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "build:legal": "node scripts/md-to-public.mjs",
-    "build:all": "npm run build:legal && npm run build",
+    "build:all": "pnpm run build:legal && pnpm run build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -25,6 +30,7 @@
     "globby": "^15.0.0",
     "md-to-pdf": "^5.2.5",
     "postcss": "^8.5.6",
+    "puppeteer": "25.0.4",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.8.3",
     "unplugin-auto-import": "^19.3.0",

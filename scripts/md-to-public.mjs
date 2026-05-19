@@ -42,6 +42,16 @@ function outHtmlName(base) {
   return `${base}-ja.html`; // ja 固定
 }
 
+/**
+ * md-to-pdf が埋め込む sourceURL は実行環境の絶対パスを含むため、
+ * CI とローカルで生成 HTML に不要な差分が出ないよう削除します。
+ *
+ * @param {string} html
+ */
+function stripSourceUrlComments(html) {
+  return html.replace(/\/\*# sourceURL=.*?\*\//g, "");
+}
+
 async function main() {
   const files = await globby(["**/*.md"], { cwd: inDir, absolute: true });
 
@@ -89,7 +99,7 @@ async function main() {
 
     // md-to-pdf の as_html は <html> を含むフルHTMLを返します。
     // 必要に応じてメタや言語属性を補強したい場合は下の置換で追記できます。
-    let html = htmlResult.content;
+    let html = stripSourceUrlComments(htmlResult.content);
 
     // 例：lang と簡易 meta を足す（既に入っていれば二重追加されないよう軽めの置換）
     if (!/<!DOCTYPE html>/i.test(html)) {
