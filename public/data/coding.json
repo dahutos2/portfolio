@@ -1,31 +1,31 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3033019,
+  "total_seconds": 3082962,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 878459,
+      "seconds": 907149,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 435483,
+      "seconds": 441139,
       "color": "#00B4AB"
     },
     {
       "lang": "Ruby",
-      "seconds": 373890,
+      "seconds": 373952,
       "color": "#701516"
     },
     {
       "lang": "Markdown",
-      "seconds": 299752,
+      "seconds": 304269,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 262883,
+      "seconds": 268199,
       "color": "#3572A5"
     },
     {
@@ -35,57 +35,57 @@
     },
     {
       "lang": "Bash",
-      "seconds": 96820,
+      "seconds": 97046,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 90371,
+      "seconds": 90698,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 76857,
+      "seconds": 78126,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 75105,
+      "seconds": 75412,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 59655,
+      "seconds": 58491,
       "color": "#cb171e"
     },
     {
       "lang": "CSV",
-      "seconds": 33338,
+      "seconds": 33909,
       "color": "#237346"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 31799,
+      "seconds": 32436,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 23330,
+      "seconds": 24039,
       "color": "#663399"
     },
     {
       "lang": "Git",
-      "seconds": 22735,
+      "seconds": 22742,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 17343,
+      "seconds": 17258,
       "color": "#427819"
     },
     {
       "lang": "Text",
-      "seconds": 7102,
+      "seconds": 6990,
       "color": null
     },
     {
@@ -95,12 +95,12 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 3646,
+      "seconds": 3893,
       "color": null
     },
     {
       "lang": "Git Config",
-      "seconds": 3427,
+      "seconds": 3435,
       "color": "#F44D27"
     },
     {
@@ -110,12 +110,12 @@
     },
     {
       "lang": "XML",
-      "seconds": 2772,
+      "seconds": 2951,
       "color": "#0060ac"
     },
     {
       "lang": "TOML",
-      "seconds": 2672,
+      "seconds": 2753,
       "color": "#9c4221"
     },
     {
@@ -129,6 +129,11 @@
       "color": "#000080"
     },
     {
+      "lang": "Vue",
+      "seconds": 2171,
+      "color": "#41b883"
+    },
+    {
       "lang": "Less",
       "seconds": 2108,
       "color": "#1d365d"
@@ -140,7 +145,7 @@
     },
     {
       "lang": "Kotlin",
-      "seconds": 1904,
+      "seconds": 1810,
       "color": "#A97BFF"
     },
     {
@@ -150,7 +155,7 @@
     },
     {
       "lang": "PHP",
-      "seconds": 808,
+      "seconds": 1085,
       "color": "#4F5D95"
     },
     {
@@ -189,6 +194,11 @@
       "color": "#178600"
     },
     {
+      "lang": "Blade Template",
+      "seconds": 154,
+      "color": null
+    },
+    {
       "lang": "SQL",
       "seconds": 153,
       "color": "#e38c00"
@@ -207,11 +217,6 @@
       "lang": "Swift",
       "seconds": 12,
       "color": "#F05138"
-    },
-    {
-      "lang": "Blade Template",
-      "seconds": 11,
-      "color": null
     },
     {
       "lang": "D",
