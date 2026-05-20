@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3082962,
+  "total_seconds": 3167765,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 907149,
+      "seconds": 943576,
       "color": "#3178c6"
     },
     {
@@ -20,12 +20,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 304269,
+      "seconds": 326794,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 268199,
+      "seconds": 276149,
       "color": "#3572A5"
     },
     {
@@ -35,73 +35,78 @@
     },
     {
       "lang": "Bash",
-      "seconds": 97046,
+      "seconds": 98240,
       "color": null
     },
     {
       "lang": "JSON",
-      "seconds": 90698,
+      "seconds": 94325,
       "color": "#292929"
     },
     {
       "lang": "JavaScript",
-      "seconds": 78126,
+      "seconds": 82569,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 75412,
+      "seconds": 75897,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 58491,
+      "seconds": 59835,
       "color": "#cb171e"
     },
     {
-      "lang": "CSV",
-      "seconds": 33909,
-      "color": "#237346"
-    },
-    {
       "lang": "Gettext Catalog",
-      "seconds": 32436,
+      "seconds": 35310,
       "color": null
     },
     {
+      "lang": "CSV",
+      "seconds": 34036,
+      "color": "#237346"
+    },
+    {
       "lang": "CSS",
-      "seconds": 24039,
+      "seconds": 24214,
       "color": "#663399"
     },
     {
       "lang": "Git",
-      "seconds": 22742,
+      "seconds": 23138,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 17258,
+      "seconds": 18447,
       "color": "#427819"
     },
     {
       "lang": "Text",
-      "seconds": 6990,
+      "seconds": 7032,
       "color": null
     },
     {
       "lang": "Image (svg)",
-      "seconds": 4162,
+      "seconds": 4616,
       "color": null
     },
     {
       "lang": "TSConfig",
-      "seconds": 3893,
+      "seconds": 4315,
       "color": null
     },
     {
       "lang": "Git Config",
-      "seconds": 3435,
+      "seconds": 3740,
       "color": "#F44D27"
+    },
+    {
+      "lang": "TOML",
+      "seconds": 3249,
+      "color": "#9c4221"
     },
     {
       "lang": "Groovy",
@@ -112,11 +117,6 @@
       "lang": "XML",
       "seconds": 2951,
       "color": "#0060ac"
-    },
-    {
-      "lang": "TOML",
-      "seconds": 2753,
-      "color": "#9c4221"
     },
     {
       "lang": "Diff",
@@ -130,7 +130,7 @@
     },
     {
       "lang": "Vue",
-      "seconds": 2171,
+      "seconds": 2241,
       "color": "#41b883"
     },
     {
@@ -164,13 +164,13 @@
       "color": null
     },
     {
-      "lang": "Apache Config",
-      "seconds": 570,
+      "lang": "Docker",
+      "seconds": 617,
       "color": null
     },
     {
-      "lang": "Docker",
-      "seconds": 568,
+      "lang": "Apache Config",
+      "seconds": 570,
       "color": null
     },
     {
@@ -182,6 +182,11 @@
       "lang": "CocoaPods",
       "seconds": 532,
       "color": null
+    },
+    {
+      "lang": "SQL",
+      "seconds": 359,
+      "color": "#e38c00"
     },
     {
       "lang": "Public Key",
@@ -197,11 +202,6 @@
       "lang": "Blade Template",
       "seconds": 154,
       "color": null
-    },
-    {
-      "lang": "SQL",
-      "seconds": 153,
-      "color": "#e38c00"
     },
     {
       "lang": "INI",
@@ -232,6 +232,11 @@
       "lang": "Objective-C",
       "seconds": 6,
       "color": "#438eff"
+    },
+    {
+      "lang": "nvmrc",
+      "seconds": 3,
+      "color": null
     },
     {
       "lang": "Cocoa",
