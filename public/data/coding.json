@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3400819,
+  "total_seconds": 3435750,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1101618,
+      "seconds": 1113880,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 444375,
+      "seconds": 444488,
       "color": "#00B4AB"
     },
     {
@@ -20,12 +20,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 351535,
+      "seconds": 354343,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 295648,
+      "seconds": 310060,
       "color": "#3572A5"
     },
     {
@@ -35,42 +35,42 @@
     },
     {
       "lang": "JSON",
-      "seconds": 102674,
+      "seconds": 104486,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 102565,
+      "seconds": 102602,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 83536,
+      "seconds": 84216,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 77533,
+      "seconds": 78037,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 61259,
+      "seconds": 61263,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 39304,
+      "seconds": 41033,
       "color": null
     },
     {
       "lang": "CSV",
-      "seconds": 34228,
+      "seconds": 34277,
       "color": "#237346"
     },
     {
       "lang": "CSS",
-      "seconds": 25151,
+      "seconds": 25171,
       "color": "#663399"
     },
     {
@@ -99,14 +99,14 @@
       "color": null
     },
     {
+      "lang": "TOML",
+      "seconds": 3852,
+      "color": "#9c4221"
+    },
+    {
       "lang": "Git Config",
       "seconds": 3770,
       "color": "#F44D27"
-    },
-    {
-      "lang": "TOML",
-      "seconds": 3363,
-      "color": "#9c4221"
     },
     {
       "lang": "Groovy",
@@ -160,7 +160,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 909,
+      "seconds": 920,
       "color": "#e38c00"
     },
     {
