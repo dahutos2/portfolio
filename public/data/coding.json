@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3508412,
+  "total_seconds": 3553402,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1117037,
+      "seconds": 1131741,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 444488,
+      "seconds": 446437,
       "color": "#00B4AB"
     },
     {
@@ -19,14 +19,14 @@
       "color": "#701516"
     },
     {
-      "lang": "Markdown",
-      "seconds": 360216,
-      "color": "#083fa1"
+      "lang": "Python",
+      "seconds": 373172,
+      "color": "#3572A5"
     },
     {
-      "lang": "Python",
-      "seconds": 358185,
-      "color": "#3572A5"
+      "lang": "Markdown",
+      "seconds": 366060,
+      "color": "#083fa1"
     },
     {
       "lang": "Vue.js",
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 104928,
+      "seconds": 109324,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 102789,
+      "seconds": 102796,
       "color": null
     },
     {
@@ -50,37 +50,37 @@
     },
     {
       "lang": "HTML",
-      "seconds": 81497,
+      "seconds": 81658,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 61263,
+      "seconds": 61269,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 49466,
+      "seconds": 51184,
       "color": null
     },
     {
       "lang": "CSV",
-      "seconds": 34281,
+      "seconds": 34304,
       "color": "#237346"
     },
     {
       "lang": "CSS",
-      "seconds": 26733,
+      "seconds": 26772,
       "color": "#663399"
     },
     {
       "lang": "Git",
-      "seconds": 24897,
+      "seconds": 25799,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 20181,
+      "seconds": 20397,
       "color": "#427819"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 4578,
+      "seconds": 4615,
       "color": null
     },
     {
