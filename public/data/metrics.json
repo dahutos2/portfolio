@@ -6,7 +6,7 @@
     {
       "lang": "Dart",
       "count": 15,
-      "stars": 20
+      "stars": 21
     },
     {
       "lang": "TypeScript",
@@ -69,5 +69,5 @@
       "stars": 2
     }
   ],
-  "total_stars": 63
+  "total_stars": 64
 }
