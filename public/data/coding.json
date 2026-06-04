@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3575781,
+  "total_seconds": 3620036,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1147403,
+      "seconds": 1166612,
       "color": "#3178c6"
     },
     {
@@ -15,18 +15,18 @@
     },
     {
       "lang": "Python",
-      "seconds": 375147,
+      "seconds": 384064,
       "color": "#3572A5"
+    },
+    {
+      "lang": "Markdown",
+      "seconds": 375683,
+      "color": "#083fa1"
     },
     {
       "lang": "Ruby",
       "seconds": 374328,
       "color": "#701516"
-    },
-    {
-      "lang": "Markdown",
-      "seconds": 368818,
-      "color": "#083fa1"
     },
     {
       "lang": "Vue.js",
@@ -35,17 +35,17 @@
     },
     {
       "lang": "JSON",
-      "seconds": 109328,
+      "seconds": 109491,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 102796,
+      "seconds": 102797,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 85452,
+      "seconds": 85744,
       "color": "#f1e05a"
     },
     {
@@ -55,22 +55,22 @@
     },
     {
       "lang": "YAML",
-      "seconds": 61269,
+      "seconds": 62043,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 52316,
+      "seconds": 52813,
       "color": null
     },
     {
       "lang": "CSV",
-      "seconds": 34304,
+      "seconds": 34423,
       "color": "#237346"
     },
     {
       "lang": "CSS",
-      "seconds": 26772,
+      "seconds": 26790,
       "color": "#663399"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 20397,
+      "seconds": 21039,
       "color": "#427819"
     },
     {
@@ -99,6 +99,11 @@
       "color": null
     },
     {
+      "lang": "Vue",
+      "seconds": 4299,
+      "color": "#41b883"
+    },
+    {
       "lang": "TOML",
       "seconds": 3859,
       "color": "#9c4221"
@@ -107,6 +112,11 @@
       "lang": "Git Config",
       "seconds": 3770,
       "color": "#F44D27"
+    },
+    {
+      "lang": "PHP",
+      "seconds": 3343,
+      "color": "#4F5D95"
     },
     {
       "lang": "Groovy",
@@ -129,14 +139,14 @@
       "color": "#000080"
     },
     {
-      "lang": "Vue",
-      "seconds": 2241,
-      "color": "#41b883"
-    },
-    {
       "lang": "Java Properties",
       "seconds": 2237,
       "color": "#2A6277"
+    },
+    {
+      "lang": "TSV",
+      "seconds": 2126,
+      "color": "#237346"
     },
     {
       "lang": "Less",
@@ -152,11 +162,6 @@
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "PHP",
-      "seconds": 1085,
-      "color": "#4F5D95"
     },
     {
       "lang": "SQL",
@@ -189,6 +194,11 @@
       "color": null
     },
     {
+      "lang": "Blade Template",
+      "seconds": 467,
+      "color": null
+    },
+    {
       "lang": "Public Key",
       "seconds": 215,
       "color": null
@@ -197,11 +207,6 @@
       "lang": "C#",
       "seconds": 163,
       "color": "#178600"
-    },
-    {
-      "lang": "Blade Template",
-      "seconds": 154,
-      "color": null
     },
     {
       "lang": "INI",
