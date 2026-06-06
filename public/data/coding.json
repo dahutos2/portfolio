@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3620036,
+  "total_seconds": 3652552,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1166612,
+      "seconds": 1179354,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 446437,
+      "seconds": 450998,
       "color": "#00B4AB"
     },
     {
       "lang": "Python",
-      "seconds": 384064,
+      "seconds": 392752,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 375683,
+      "seconds": 378067,
       "color": "#083fa1"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 109491,
+      "seconds": 111125,
       "color": "#292929"
     },
     {
@@ -45,32 +45,32 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 85744,
+      "seconds": 85838,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 81725,
+      "seconds": 81809,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 62043,
+      "seconds": 62216,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 52813,
+      "seconds": 54015,
       "color": null
     },
     {
       "lang": "CSV",
-      "seconds": 34423,
+      "seconds": 34452,
       "color": "#237346"
     },
     {
       "lang": "CSS",
-      "seconds": 26790,
+      "seconds": 26806,
       "color": "#663399"
     },
     {
@@ -80,13 +80,18 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 21039,
+      "seconds": 21085,
       "color": "#427819"
     },
     {
       "lang": "Text",
       "seconds": 8236,
       "color": null
+    },
+    {
+      "lang": "Vue",
+      "seconds": 5093,
+      "color": "#41b883"
     },
     {
       "lang": "Image (svg)",
@@ -99,13 +104,8 @@
       "color": null
     },
     {
-      "lang": "Vue",
-      "seconds": 4299,
-      "color": "#41b883"
-    },
-    {
       "lang": "TOML",
-      "seconds": 3859,
+      "seconds": 3865,
       "color": "#9c4221"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "lang": "PHP",
-      "seconds": 3343,
+      "seconds": 3401,
       "color": "#4F5D95"
     },
     {
@@ -195,7 +195,7 @@
     },
     {
       "lang": "Blade Template",
-      "seconds": 467,
+      "seconds": 474,
       "color": null
     },
     {
