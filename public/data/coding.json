@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3789548,
+  "total_seconds": 3816528,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1236478,
+      "seconds": 1248371,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 460290,
+      "seconds": 461833,
       "color": "#00B4AB"
     },
     {
       "lang": "Python",
-      "seconds": 422758,
+      "seconds": 423061,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 384902,
+      "seconds": 390060,
       "color": "#083fa1"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 123276,
+      "seconds": 126766,
       "color": "#292929"
     },
     {
@@ -45,23 +45,28 @@
     },
     {
       "lang": "HTML",
-      "seconds": 86921,
+      "seconds": 87022,
       "color": "#e34c26"
     },
     {
       "lang": "JavaScript",
-      "seconds": 86363,
+      "seconds": 86530,
       "color": "#f1e05a"
     },
     {
       "lang": "YAML",
-      "seconds": 62887,
+      "seconds": 63123,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 60962,
+      "seconds": 60980,
       "color": null
+    },
+    {
+      "lang": "CSS",
+      "seconds": 36018,
+      "color": "#663399"
     },
     {
       "lang": "CSV",
@@ -69,18 +74,13 @@
       "color": "#237346"
     },
     {
-      "lang": "CSS",
-      "seconds": 33409,
-      "color": "#663399"
-    },
-    {
       "lang": "Git",
-      "seconds": 26035,
+      "seconds": 26750,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 21134,
+      "seconds": 21810,
       "color": "#427819"
     },
     {
@@ -95,17 +95,17 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 4935,
+      "seconds": 4964,
       "color": "#F44D27"
+    },
+    {
+      "lang": "TSConfig",
+      "seconds": 4678,
+      "color": null
     },
     {
       "lang": "Image (svg)",
       "seconds": 4641,
-      "color": null
-    },
-    {
-      "lang": "TSConfig",
-      "seconds": 4637,
       "color": null
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 620,
+      "seconds": 621,
       "color": null
     },
     {
