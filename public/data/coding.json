@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3857076,
+  "total_seconds": 3896963,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1273651,
+      "seconds": 1299834,
       "color": "#3178c6"
     },
     {
       "lang": "Dart",
-      "seconds": 461833,
+      "seconds": 462941,
       "color": "#00B4AB"
     },
     {
       "lang": "Python",
-      "seconds": 423061,
+      "seconds": 425468,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 398832,
+      "seconds": 403226,
       "color": "#083fa1"
     },
     {
@@ -35,37 +35,37 @@
     },
     {
       "lang": "JSON",
-      "seconds": 128674,
+      "seconds": 129561,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 103015,
+      "seconds": 103545,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 89057,
+      "seconds": 91041,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 87022,
+      "seconds": 87074,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 63380,
+      "seconds": 63572,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 60980,
+      "seconds": 61044,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 37139,
+      "seconds": 38851,
       "color": "#663399"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 21810,
+      "seconds": 21933,
       "color": "#427819"
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 5179,
+      "seconds": 5228,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 4964,
+      "seconds": 4974,
       "color": "#F44D27"
     },
     {
@@ -165,17 +165,17 @@
     },
     {
       "lang": "SQL",
-      "seconds": 920,
+      "seconds": 1078,
       "color": "#e38c00"
+    },
+    {
+      "lang": "Docker",
+      "seconds": 657,
+      "color": null
     },
     {
       "lang": "SSH Config",
       "seconds": 635,
-      "color": null
-    },
-    {
-      "lang": "Docker",
-      "seconds": 623,
       "color": null
     },
     {
