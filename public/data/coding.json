@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3896963,
+  "total_seconds": 3919717,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1299834,
+      "seconds": 1310388,
       "color": "#3178c6"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "lang": "Python",
-      "seconds": 425468,
+      "seconds": 427124,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 403226,
+      "seconds": 403760,
       "color": "#083fa1"
     },
     {
@@ -35,17 +35,17 @@
     },
     {
       "lang": "JSON",
-      "seconds": 129561,
+      "seconds": 130280,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 103545,
+      "seconds": 103551,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 91041,
+      "seconds": 94831,
       "color": "#f1e05a"
     },
     {
@@ -55,17 +55,17 @@
     },
     {
       "lang": "YAML",
-      "seconds": 63572,
+      "seconds": 63573,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 61044,
+      "seconds": 61539,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 38851,
+      "seconds": 40793,
       "color": "#663399"
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 5228,
+      "seconds": 5264,
       "color": null
     },
     {
@@ -114,14 +114,14 @@
       "color": "#9c4221"
     },
     {
+      "lang": "Groovy",
+      "seconds": 3497,
+      "color": "#4298b8"
+    },
+    {
       "lang": "PHP",
       "seconds": 3401,
       "color": "#4F5D95"
-    },
-    {
-      "lang": "Groovy",
-      "seconds": 3094,
-      "color": "#4298b8"
     },
     {
       "lang": "Diff",
@@ -154,6 +154,11 @@
       "color": "#1d365d"
     },
     {
+      "lang": "Prisma",
+      "seconds": 1934,
+      "color": "#0c344b"
+    },
+    {
       "lang": "Kotlin",
       "seconds": 1841,
       "color": "#A97BFF"
@@ -165,7 +170,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 1078,
+      "seconds": 1620,
       "color": "#e38c00"
     },
     {
@@ -212,6 +217,11 @@
       "lang": "INI",
       "seconds": 151,
       "color": "#d1dbe0"
+    },
+    {
+      "lang": "Java",
+      "seconds": 142,
+      "color": "#b07219"
     },
     {
       "lang": "Modelica",
