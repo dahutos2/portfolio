@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 3921901,
+  "total_seconds": 3958394,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1312548,
+      "seconds": 1333600,
       "color": "#3178c6"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "lang": "Python",
-      "seconds": 427124,
+      "seconds": 430229,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 403760,
+      "seconds": 407375,
       "color": "#083fa1"
     },
     {
@@ -35,42 +35,42 @@
     },
     {
       "lang": "JSON",
-      "seconds": 130280,
+      "seconds": 130562,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 103551,
+      "seconds": 103704,
       "color": null
     },
     {
       "lang": "JavaScript",
-      "seconds": 94831,
+      "seconds": 95994,
       "color": "#f1e05a"
     },
     {
       "lang": "HTML",
-      "seconds": 87074,
+      "seconds": 87763,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 63573,
+      "seconds": 63664,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 61539,
+      "seconds": 61893,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 40817,
+      "seconds": 46670,
       "color": "#663399"
     },
     {
       "lang": "CSV",
-      "seconds": 34482,
+      "seconds": 34489,
       "color": "#237346"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 21933,
+      "seconds": 21934,
       "color": "#427819"
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 5264,
+      "seconds": 5269,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 4974,
+      "seconds": 5049,
       "color": "#F44D27"
     },
     {
@@ -170,12 +170,12 @@
     },
     {
       "lang": "SQL",
-      "seconds": 1620,
+      "seconds": 1626,
       "color": "#e38c00"
     },
     {
       "lang": "Docker",
-      "seconds": 657,
+      "seconds": 696,
       "color": null
     },
     {
