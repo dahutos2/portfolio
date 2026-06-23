@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4185765,
+  "total_seconds": 4217657,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1462919,
+      "seconds": 1483020,
       "color": "#3178c6"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 438951,
+      "seconds": 445634,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 436361,
+      "seconds": 437284,
       "color": "#3572A5"
     },
     {
@@ -35,23 +35,28 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 141451,
+      "seconds": 143406,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 137166,
+      "seconds": 138052,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 104127,
+      "seconds": 104148,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 88029,
+      "seconds": 88041,
       "color": "#e34c26"
+    },
+    {
+      "lang": "Gettext Catalog",
+      "seconds": 63807,
+      "color": null
     },
     {
       "lang": "YAML",
@@ -59,13 +64,8 @@
       "color": "#cb171e"
     },
     {
-      "lang": "Gettext Catalog",
-      "seconds": 63485,
-      "color": null
-    },
-    {
       "lang": "CSS",
-      "seconds": 51575,
+      "seconds": 52237,
       "color": "#663399"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 22158,
+      "seconds": 22175,
       "color": "#427819"
     },
     {
@@ -90,17 +90,17 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 5440,
+      "seconds": 5526,
       "color": "#F44D27"
     },
     {
       "lang": "TSConfig",
-      "seconds": 5269,
+      "seconds": 5276,
       "color": null
     },
     {
       "lang": "Vue",
-      "seconds": 5093,
+      "seconds": 5274,
       "color": "#41b883"
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 2951,
+      "seconds": 2959,
       "color": "#0060ac"
     },
     {
@@ -200,7 +200,7 @@
     },
     {
       "lang": "Blade Template",
-      "seconds": 474,
+      "seconds": 500,
       "color": null
     },
     {
@@ -220,7 +220,7 @@
     },
     {
       "lang": "Terraform",
-      "seconds": 142,
+      "seconds": 144,
       "color": null
     },
     {
