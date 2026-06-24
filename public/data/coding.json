@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4217657,
+  "total_seconds": 4255850,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1483020,
+      "seconds": 1496579,
       "color": "#3178c6"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "lang": "Markdown",
-      "seconds": 445634,
+      "seconds": 452438,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 437284,
+      "seconds": 437348,
       "color": "#3572A5"
     },
     {
@@ -35,37 +35,37 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 143406,
+      "seconds": 156432,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 138052,
+      "seconds": 140810,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 104148,
+      "seconds": 104162,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 88041,
+      "seconds": 88197,
       "color": "#e34c26"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 63807,
+      "seconds": 63936,
       "color": null
     },
     {
       "lang": "YAML",
-      "seconds": 63794,
+      "seconds": 63795,
       "color": "#cb171e"
     },
     {
       "lang": "CSS",
-      "seconds": 52237,
+      "seconds": 52536,
       "color": "#663399"
     },
     {
@@ -89,19 +89,19 @@
       "color": null
     },
     {
+      "lang": "Vue",
+      "seconds": 6446,
+      "color": "#41b883"
+    },
+    {
       "lang": "Git Config",
-      "seconds": 5526,
+      "seconds": 5660,
       "color": "#F44D27"
     },
     {
       "lang": "TSConfig",
-      "seconds": 5276,
+      "seconds": 5349,
       "color": null
-    },
-    {
-      "lang": "Vue",
-      "seconds": 5274,
-      "color": "#41b883"
     },
     {
       "lang": "Image (svg)",
@@ -215,7 +215,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 151,
+      "seconds": 156,
       "color": "#d1dbe0"
     },
     {
