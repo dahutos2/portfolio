@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4362893,
+  "total_seconds": 4413534,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1566862,
+      "seconds": 1602525,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 471954,
+      "seconds": 477452,
       "color": "#083fa1"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 167316,
+      "seconds": 174127,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 142190,
+      "seconds": 144657,
       "color": "#292929"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 64024,
+      "seconds": 64107,
       "color": "#cb171e"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 699,
+      "seconds": 810,
       "color": null
     },
     {
@@ -220,7 +220,7 @@
     },
     {
       "lang": "Terraform",
-      "seconds": 144,
+      "seconds": 150,
       "color": null
     },
     {
@@ -230,7 +230,7 @@
     },
     {
       "lang": "HCL",
-      "seconds": 129,
+      "seconds": 131,
       "color": "#844FBA"
     },
     {
