@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4413534,
+  "total_seconds": 4481128,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1602525,
+      "seconds": 1650947,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 477452,
+      "seconds": 481396,
       "color": "#083fa1"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "lang": "Python",
-      "seconds": 438247,
+      "seconds": 448043,
       "color": "#3572A5"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 174127,
+      "seconds": 174758,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 144657,
+      "seconds": 146273,
       "color": "#292929"
     },
     {
@@ -50,17 +50,17 @@
     },
     {
       "lang": "HTML",
-      "seconds": 88441,
+      "seconds": 88465,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 64107,
+      "seconds": 64943,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 63936,
+      "seconds": 64392,
       "color": null
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 22175,
+      "seconds": 22776,
       "color": "#427819"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 5706,
+      "seconds": 5766,
       "color": "#F44D27"
     },
     {
@@ -105,12 +105,12 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 4641,
+      "seconds": 4809,
       "color": null
     },
     {
       "lang": "TOML",
-      "seconds": 3883,
+      "seconds": 4360,
       "color": "#9c4221"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 810,
+      "seconds": 997,
       "color": null
     },
     {
@@ -201,6 +201,11 @@
     {
       "lang": "Blade Template",
       "seconds": 500,
+      "color": null
+    },
+    {
+      "lang": "RPMSpec",
+      "seconds": 375,
       "color": null
     },
     {
