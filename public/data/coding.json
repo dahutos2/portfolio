@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4650764,
+  "total_seconds": 4701889,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1753583,
+      "seconds": 1780365,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 500254,
+      "seconds": 515599,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 482260,
+      "seconds": 482396,
       "color": "#3572A5"
     },
     {
@@ -35,27 +35,27 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 179943,
+      "seconds": 181792,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 151190,
+      "seconds": 156760,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 104166,
+      "seconds": 104167,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 88465,
+      "seconds": 88507,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 65960,
+      "seconds": 66247,
       "color": "#cb171e"
     },
     {
@@ -70,7 +70,7 @@
     },
     {
       "lang": "CSV",
-      "seconds": 34489,
+      "seconds": 34490,
       "color": "#237346"
     },
     {
@@ -80,12 +80,12 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 23386,
+      "seconds": 23476,
       "color": "#427819"
     },
     {
       "lang": "Text",
-      "seconds": 8410,
+      "seconds": 8411,
       "color": null
     },
     {
@@ -94,14 +94,14 @@
       "color": "#41b883"
     },
     {
-      "lang": "Git Config",
-      "seconds": 5797,
-      "color": "#F44D27"
+      "lang": "TSConfig",
+      "seconds": 6438,
+      "color": null
     },
     {
-      "lang": "TSConfig",
-      "seconds": 5669,
-      "color": null
+      "lang": "Git Config",
+      "seconds": 5812,
+      "color": "#F44D27"
     },
     {
       "lang": "TOML",
@@ -130,7 +130,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 2959,
+      "seconds": 2963,
       "color": "#0060ac"
     },
     {
@@ -155,7 +155,7 @@
     },
     {
       "lang": "Prisma",
-      "seconds": 1940,
+      "seconds": 1996,
       "color": "#0c344b"
     },
     {
@@ -164,14 +164,14 @@
       "color": "#A97BFF"
     },
     {
+      "lang": "SQL",
+      "seconds": 1816,
+      "color": "#e38c00"
+    },
+    {
       "lang": "Gradle Kotlin DSL",
       "seconds": 1738,
       "color": "#02303a"
-    },
-    {
-      "lang": "SQL",
-      "seconds": 1639,
-      "color": "#e38c00"
     },
     {
       "lang": "Docker",
