@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4701889,
+  "total_seconds": 4720159,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1780365,
+      "seconds": 1790718,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 515599,
+      "seconds": 518799,
       "color": "#083fa1"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 181792,
+      "seconds": 184279,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 156760,
+      "seconds": 158438,
       "color": "#292929"
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 66247,
+      "seconds": 66603,
       "color": "#cb171e"
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 5812,
+      "seconds": 5821,
       "color": "#F44D27"
     },
     {
@@ -155,7 +155,7 @@
     },
     {
       "lang": "Prisma",
-      "seconds": 1996,
+      "seconds": 1997,
       "color": "#0c344b"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 1122,
+      "seconds": 1309,
       "color": null
     },
     {
