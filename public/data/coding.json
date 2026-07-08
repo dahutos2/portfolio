@@ -1,16 +1,16 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 4776289,
+  "total_seconds": 4851132,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 1836179,
+      "seconds": 1876186,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 528352,
+      "seconds": 555004,
       "color": "#083fa1"
     },
     {
@@ -35,17 +35,17 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 184730,
+      "seconds": 187619,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 158665,
+      "seconds": 162328,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 104167,
+      "seconds": 104996,
       "color": null
     },
     {
@@ -55,7 +55,7 @@
     },
     {
       "lang": "YAML",
-      "seconds": 66728,
+      "seconds": 67311,
       "color": "#cb171e"
     },
     {
@@ -89,18 +89,18 @@
       "color": null
     },
     {
+      "lang": "TSConfig",
+      "seconds": 6591,
+      "color": null
+    },
+    {
       "lang": "Vue",
       "seconds": 6446,
       "color": "#41b883"
     },
     {
-      "lang": "TSConfig",
-      "seconds": 6438,
-      "color": null
-    },
-    {
       "lang": "Git Config",
-      "seconds": 6134,
+      "seconds": 6158,
       "color": "#F44D27"
     },
     {
@@ -130,7 +130,7 @@
     },
     {
       "lang": "XML",
-      "seconds": 2963,
+      "seconds": 2966,
       "color": "#0060ac"
     },
     {
@@ -165,7 +165,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 1816,
+      "seconds": 1817,
       "color": "#e38c00"
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 1309,
+      "seconds": 1330,
       "color": null
     },
     {
@@ -249,6 +249,11 @@
       "color": "#F05138"
     },
     {
+      "lang": "Objective-C++",
+      "seconds": 9,
+      "color": "#6866fb"
+    },
+    {
       "lang": "D",
       "seconds": 6,
       "color": "#ba595e"
@@ -262,6 +267,11 @@
       "lang": "Objective-C",
       "seconds": 6,
       "color": "#438eff"
+    },
+    {
+      "lang": "C++",
+      "seconds": 6,
+      "color": "#f34b7d"
     },
     {
       "lang": "nvmrc",
