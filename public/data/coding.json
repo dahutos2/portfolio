@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5116007,
+  "total_seconds": 5151224,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2089097,
+      "seconds": 2100165,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 589421,
+      "seconds": 592193,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 483042,
+      "seconds": 487937,
       "color": "#3572A5"
     },
     {
       "lang": "Dart",
-      "seconds": 462941,
+      "seconds": 470716,
       "color": "#00B4AB"
     },
     {
@@ -35,17 +35,17 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 190691,
+      "seconds": 191831,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 171946,
+      "seconds": 174722,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 105695,
+      "seconds": 106867,
       "color": null
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 68940,
+      "seconds": 69716,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 64392,
+      "seconds": 64403,
       "color": null
     },
     {
@@ -80,18 +80,18 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 23503,
+      "seconds": 24438,
       "color": "#427819"
+    },
+    {
+      "lang": "Vue",
+      "seconds": 8956,
+      "color": "#41b883"
     },
     {
       "lang": "Text",
       "seconds": 8411,
       "color": null
-    },
-    {
-      "lang": "Vue",
-      "seconds": 7477,
-      "color": "#41b883"
     },
     {
       "lang": "TSConfig",
@@ -139,6 +139,11 @@
       "color": "#000080"
     },
     {
+      "lang": "SQL",
+      "seconds": 2249,
+      "color": "#e38c00"
+    },
+    {
       "lang": "Java Properties",
       "seconds": 2237,
       "color": "#2A6277"
@@ -162,11 +167,6 @@
       "lang": "Kotlin",
       "seconds": 1841,
       "color": "#A97BFF"
-    },
-    {
-      "lang": "SQL",
-      "seconds": 1831,
-      "color": "#e38c00"
     },
     {
       "lang": "Gradle Kotlin DSL",
