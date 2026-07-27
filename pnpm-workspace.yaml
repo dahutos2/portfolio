@@ -1,0 +1,12 @@
+minimumReleaseAge: 1440
+minimumReleaseAgeIgnoreMissingTime: false
+minimumReleaseAgeStrict: true
+trustPolicy: no-downgrade
+blockExoticSubdeps: true
+trustLockfile: false
+overrides:
+  "vite-svg-loader>svgo": 3.3.4
+  "esbuild@": 0.28.1
+allowBuilds:
+  esbuild: true
+  puppeteer: false
