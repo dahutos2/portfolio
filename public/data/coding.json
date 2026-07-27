@@ -1,11 +1,11 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5408930,
+  "total_seconds": 5410360,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2288843,
+      "seconds": 2290235,
       "color": "#3178c6"
     },
     {
@@ -40,7 +40,7 @@
     },
     {
       "lang": "JSON",
-      "seconds": 183244,
+      "seconds": 183283,
       "color": "#292929"
     },
     {
