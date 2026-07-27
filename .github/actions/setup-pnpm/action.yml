@@ -22,11 +22,11 @@ runs:
       with:
         node-version: ${{ steps.tool-versions.outputs.node }}
 
-    - name: Setup pnpm
+    - name: Activate the project-pinned pnpm
       shell: bash
       run: |
         corepack enable
-        corepack prepare pnpm@${{ steps.tool-versions.outputs.pnpm }} --activate
+        pnpm --version
 
     - name: Verify package manager versions
       shell: bash
@@ -38,9 +38,10 @@ runs:
         engine_node=$(node -p "require('./package.json').engines?.node || ''")
         engine_pnpm=$(node -p "require('./package.json').engines?.pnpm || ''")
 
-        # CI とローカルの実行環境がずれないよう、宣言値を単一のバージョンに揃える。
-        if [ "$package_manager" != "pnpm@$pnpm_version" ]; then
-          echo "packageManager must be pnpm@$pnpm_version, but got: $package_manager"
+        # Corepack が取得物を検証できるよう、pnpm のバージョンと SHA-512 を固定する。
+        package_manager_pattern="^pnpm@${pnpm_version}\\+sha512\\.[0-9a-f]{128}$"
+        if [[ ! "$package_manager" =~ $package_manager_pattern ]]; then
+          echo "packageManager must pin pnpm@$pnpm_version with a SHA-512 hash, but got: $package_manager"
           exit 1
         fi
 

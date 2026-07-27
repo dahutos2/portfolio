@@ -2,7 +2,8 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { globby } from "globby";
-import { mdToPdf } from "md-to-pdf";
+import { marked } from "marked";
+import puppeteer from "puppeteer";
 
 const root = process.cwd();
 const inDir = path.join(root, "content", "legal");
@@ -22,8 +23,8 @@ body {
   padding: 0 24px;
   box-sizing: border-box;
 }
-h1 { font-size: 20pt; margin: 0 0 12px; }
-h2 { font-size: 14pt; margin: 18px 0 8px; }
+h1 { font-size: 20pt; margin: 0 0 12px; break-after: avoid; }
+h2 { font-size: 14pt; margin: 18px 0 8px; break-after: avoid; }
 p, li { font-size: 12.5pt; }
 hr { border: 0; border-top: 1px solid #e5e7eb; margin: 12px 0; }
 `;
@@ -43,83 +44,79 @@ function outHtmlName(base) {
 }
 
 /**
- * md-to-pdf が埋め込む sourceURL は実行環境の絶対パスを含むため、
- * CI とローカルで生成 HTML に不要な差分が出ないよう削除します。
- *
- * @param {string} html
+ * @param {string} markdown
+ * @returns {string}
  */
-function stripSourceUrlComments(html) {
-  return html.replace(/\/\*# sourceURL=.*?\*\//g, "");
+function stripFrontMatter(markdown) {
+  if (!markdown.startsWith("---\n")) return markdown;
+
+  const end = markdown.indexOf("\n---\n", 4);
+  if (end === -1) {
+    throw new Error("Unclosed YAML front matter");
+  }
+
+  return markdown.slice(end + 5);
+}
+
+/**
+ * @param {string} markdown
+ */
+async function renderHtml(markdown) {
+  const content = await marked.parse(stripFrontMatter(markdown));
+  return `<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>${css}</style>
+</head>
+<body>
+${content}
+</body>
+</html>
+`;
 }
 
 async function main() {
   const files = await globby(["**/*.md"], { cwd: inDir, absolute: true });
+  const browser = await puppeteer.launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
 
-  for (const mdPath of files) {
-    const rel = path.relative(inDir, mdPath);
-    const { dir, name } = path.parse(rel);
-    const outProjectDir = path.join(outDir, dir);
-    await fs.mkdir(outProjectDir, { recursive: true });
+  try {
+    for (const mdPath of files) {
+      const rel = path.relative(inDir, mdPath);
+      const { dir, name } = path.parse(rel);
+      const outProjectDir = path.join(outDir, dir);
+      await fs.mkdir(outProjectDir, { recursive: true });
 
-    // ===== PDF 生成 =====
-    const outPdfPath = path.join(outProjectDir, outPdfName(name));
-    const pdfResult = await mdToPdf(
-      { path: mdPath },
-      {
-        dest: outPdfPath,
-        pdf_options: {
+      const markdown = await fs.readFile(mdPath, "utf8");
+      const html = await renderHtml(markdown);
+
+      // ===== PDF 生成 =====
+      const outPdfPath = path.join(outProjectDir, outPdfName(name));
+      const page = await browser.newPage();
+      try {
+        await page.setContent(html, { waitUntil: "load" });
+        await page.pdf({
+          path: outPdfPath,
           format: "A4",
           printBackground: true,
           margin: { top: "20mm", right: "20mm", bottom: "20mm", left: "20mm" },
-        },
-        css,
-        launch_options: {
-          args: ["--no-sandbox", "--disable-setuid-sandbox"],
-        },
+        });
+      } finally {
+        await page.close();
       }
-    );
-    if (!pdfResult) throw new Error(`Failed to render PDF: ${mdPath}`);
-    console.log("generated PDF:", path.relative(root, outPdfPath));
 
-    // ===== HTML 生成 =====
-    const outHtmlPath = path.join(outProjectDir, outHtmlName(name));
-    const htmlResult = await mdToPdf(
-      { path: mdPath },
-      {
-        as_html: true, // ← これで HTML を生成
-        css,
-        launch_options: {
-          args: ["--no-sandbox", "--disable-setuid-sandbox"],
-        },
-      }
-    );
-    if (!htmlResult || typeof htmlResult.content !== "string") {
-      throw new Error(`Failed to render HTML: ${mdPath}`);
-    }
+      console.log("generated PDF:", path.relative(root, outPdfPath));
 
-    // md-to-pdf の as_html は <html> を含むフルHTMLを返します。
-    // 必要に応じてメタや言語属性を補強したい場合は下の置換で追記できます。
-    let html = stripSourceUrlComments(htmlResult.content);
-
-    // 例：lang と簡易 meta を足す（既に入っていれば二重追加されないよう軽めの置換）
-    if (!/<!DOCTYPE html>/i.test(html)) {
-      html = `<!DOCTYPE html>\n${html}`;
+      // ===== HTML 生成 =====
+      const outHtmlPath = path.join(outProjectDir, outHtmlName(name));
+      await fs.writeFile(outHtmlPath, html, "utf8");
+      console.log("generated HTML:", path.relative(root, outHtmlPath));
     }
-    if (!/<html[^>]*lang=/.test(html)) {
-      html = html.replace(/<html(.*?)>/i, `<html$1 lang="ja">`);
-    }
-    if (!/<meta charset=/i.test(html)) {
-      html = html.replace(/<head>/i, `<head><meta charset="utf-8">`);
-    }
-    if (!/<meta name="viewport"/i.test(html)) {
-      html = html.replace(
-        /<head>/i,
-        `<head><meta name="viewport" content="width=device-width, initial-scale=1">`
-      );
-    }
-
-    await fs.writeFile(outHtmlPath, html, "utf8");
-    console.log("generated HTML:", path.relative(root, outHtmlPath));
+  } finally {
+    await browser.close();
   }
 }
 

@@ -27,8 +27,9 @@
 
 ## 開発方法
 
-本プロジェクトは Node.js `24.15.0` と pnpm `10.33.0` を前提にしています。
+本プロジェクトは Node.js `24.18.0` (LTS) と pnpm `11.17.0` を前提にしています。
 バージョンは `.tool-versions`、`package.json` の `engines` / `packageManager`、CI で揃えています。
+pnpm は Corepack 用の SHA-512 も固定し、公開後 24 時間未満の依存や信頼レベルが低下したリリースを拒否します。
 
 ### 依存インストール
 
