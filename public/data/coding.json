@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5410360,
+  "total_seconds": 5440681,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2290235,
+      "seconds": 2306823,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 616315,
+      "seconds": 620532,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 507490,
+      "seconds": 510048,
       "color": "#3572A5"
     },
     {
       "lang": "Dart",
-      "seconds": 472973,
+      "seconds": 473343,
       "color": "#00B4AB"
     },
     {
@@ -35,27 +35,27 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 193509,
+      "seconds": 196049,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 183283,
+      "seconds": 185803,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 107166,
+      "seconds": 107756,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 88238,
+      "seconds": 88523,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 70796,
+      "seconds": 71206,
       "color": "#cb171e"
     },
     {
@@ -80,7 +80,7 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 24694,
+      "seconds": 24765,
       "color": "#427819"
     },
     {
@@ -90,22 +90,22 @@
     },
     {
       "lang": "Text",
-      "seconds": 8470,
+      "seconds": 8475,
       "color": null
     },
     {
       "lang": "TSConfig",
-      "seconds": 7191,
+      "seconds": 7197,
       "color": null
     },
     {
       "lang": "Git Config",
-      "seconds": 6307,
+      "seconds": 6318,
       "color": "#F44D27"
     },
     {
       "lang": "TOML",
-      "seconds": 5326,
+      "seconds": 5330,
       "color": "#9c4221"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 3790,
+      "seconds": 3885,
       "color": "#e38c00"
     },
     {
@@ -145,7 +145,7 @@
     },
     {
       "lang": "Prisma",
-      "seconds": 2344,
+      "seconds": 2395,
       "color": "#0c344b"
     },
     {
