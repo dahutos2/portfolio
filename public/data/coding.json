@@ -1,26 +1,26 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5440681,
+  "total_seconds": 5481813,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2306823,
+      "seconds": 2334293,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 620532,
+      "seconds": 625719,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 510048,
+      "seconds": 512177,
       "color": "#3572A5"
     },
     {
       "lang": "Dart",
-      "seconds": 473343,
+      "seconds": 473382,
       "color": "#00B4AB"
     },
     {
@@ -35,52 +35,52 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 196049,
+      "seconds": 197137,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 185803,
+      "seconds": 188732,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 107756,
+      "seconds": 108503,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 88523,
+      "seconds": 88612,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 71206,
+      "seconds": 71248,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 63612,
+      "seconds": 63651,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 56731,
+      "seconds": 56808,
       "color": "#663399"
     },
     {
       "lang": "CSV",
-      "seconds": 34587,
+      "seconds": 35219,
       "color": "#237346"
     },
     {
       "lang": "Git",
-      "seconds": 26821,
+      "seconds": 27061,
       "color": null
     },
     {
       "lang": "Makefile",
-      "seconds": 24765,
+      "seconds": 25082,
       "color": "#427819"
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "lang": "TOML",
-      "seconds": 5330,
+      "seconds": 5334,
       "color": "#9c4221"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 3885,
+      "seconds": 3903,
       "color": "#e38c00"
     },
     {
@@ -139,14 +139,14 @@
       "color": "#0060ac"
     },
     {
+      "lang": "Prisma",
+      "seconds": 2479,
+      "color": "#0c344b"
+    },
+    {
       "lang": "Lua",
       "seconds": 2443,
       "color": "#000080"
-    },
-    {
-      "lang": "Prisma",
-      "seconds": 2395,
-      "color": "#0c344b"
     },
     {
       "lang": "Java Properties",
