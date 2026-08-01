@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5506630,
+  "total_seconds": 5533056,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2348732,
+      "seconds": 2359712,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 631706,
+      "seconds": 634218,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 513752,
+      "seconds": 520323,
       "color": "#3572A5"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "lang": "Ruby",
-      "seconds": 374319,
+      "seconds": 374361,
       "color": "#701516"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 199265,
+      "seconds": 200376,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 189071,
+      "seconds": 189424,
       "color": "#292929"
     },
     {
@@ -50,32 +50,32 @@
     },
     {
       "lang": "HTML",
-      "seconds": 88613,
+      "seconds": 89009,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 71248,
+      "seconds": 71336,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 63789,
+      "seconds": 64247,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 56808,
+      "seconds": 56809,
       "color": "#663399"
     },
     {
       "lang": "CSV",
-      "seconds": 35219,
+      "seconds": 35542,
       "color": "#237346"
     },
     {
       "lang": "Git",
-      "seconds": 27061,
+      "seconds": 27758,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 6318,
+      "seconds": 6404,
       "color": "#F44D27"
     },
     {
@@ -115,7 +115,7 @@
     },
     {
       "lang": "SQL",
-      "seconds": 3903,
+      "seconds": 3910,
       "color": "#e38c00"
     },
     {
@@ -135,8 +135,13 @@
     },
     {
       "lang": "XML",
-      "seconds": 2977,
+      "seconds": 2994,
       "color": "#0060ac"
+    },
+    {
+      "lang": "C",
+      "seconds": 2734,
+      "color": "#555555"
     },
     {
       "lang": "Prisma",
@@ -155,7 +160,7 @@
     },
     {
       "lang": "TSV",
-      "seconds": 2126,
+      "seconds": 2178,
       "color": "#237346"
     },
     {
