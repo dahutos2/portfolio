@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5533056,
+  "total_seconds": 5543930,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2359712,
+      "seconds": 2362436,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 634218,
+      "seconds": 636864,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 520323,
+      "seconds": 523533,
       "color": "#3572A5"
     },
     {
@@ -35,32 +35,32 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 200376,
+      "seconds": 200411,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 189424,
+      "seconds": 190391,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 108518,
+      "seconds": 108776,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 89009,
+      "seconds": 89031,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 71336,
+      "seconds": 71694,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 64247,
+      "seconds": 64486,
       "color": null
     },
     {
@@ -75,7 +75,7 @@
     },
     {
       "lang": "Git",
-      "seconds": 27758,
+      "seconds": 27844,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 6404,
+      "seconds": 6433,
       "color": "#F44D27"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 5116,
+      "seconds": 5123,
       "color": null
     },
     {
@@ -129,14 +129,14 @@
       "color": "#4F5D95"
     },
     {
+      "lang": "XML",
+      "seconds": 3258,
+      "color": "#0060ac"
+    },
+    {
       "lang": "Diff",
       "seconds": 2999,
       "color": null
-    },
-    {
-      "lang": "XML",
-      "seconds": 2994,
-      "color": "#0060ac"
     },
     {
       "lang": "C",
@@ -145,7 +145,7 @@
     },
     {
       "lang": "Prisma",
-      "seconds": 2479,
+      "seconds": 2489,
       "color": "#0c344b"
     },
     {
@@ -155,7 +155,7 @@
     },
     {
       "lang": "Java Properties",
-      "seconds": 2237,
+      "seconds": 2254,
       "color": "#2A6277"
     },
     {
@@ -195,7 +195,7 @@
     },
     {
       "lang": "CocoaPods",
-      "seconds": 634,
+      "seconds": 635,
       "color": null
     },
     {
