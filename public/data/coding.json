@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5564461,
+  "total_seconds": 5591192,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2367418,
+      "seconds": 2377140,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 643106,
+      "seconds": 647827,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 527839,
+      "seconds": 535810,
       "color": "#3572A5"
     },
     {
@@ -25,7 +25,7 @@
     },
     {
       "lang": "Ruby",
-      "seconds": 374434,
+      "seconds": 375069,
       "color": "#701516"
     },
     {
@@ -35,12 +35,12 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 202811,
+      "seconds": 204363,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 190736,
+      "seconds": 191359,
       "color": "#292929"
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 72923,
+      "seconds": 73708,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 64501,
+      "seconds": 64879,
       "color": null
     },
     {
@@ -95,12 +95,12 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 7380,
+      "seconds": 7384,
       "color": null
     },
     {
       "lang": "Git Config",
-      "seconds": 6706,
+      "seconds": 6842,
       "color": "#F44D27"
     },
     {
@@ -144,18 +144,18 @@
       "color": "#555555"
     },
     {
+      "lang": "Lua",
+      "seconds": 2524,
+      "color": "#000080"
+    },
+    {
       "lang": "Prisma",
       "seconds": 2489,
       "color": "#0c344b"
     },
     {
-      "lang": "Lua",
-      "seconds": 2443,
-      "color": "#000080"
-    },
-    {
       "lang": "Java Properties",
-      "seconds": 2254,
+      "seconds": 2294,
       "color": "#2A6277"
     },
     {
@@ -215,7 +215,7 @@
     },
     {
       "lang": "Public Key",
-      "seconds": 215,
+      "seconds": 299,
       "color": null
     },
     {
