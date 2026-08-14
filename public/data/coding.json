@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5732998,
+  "total_seconds": 5768999,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2446088,
+      "seconds": 2464522,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 660727,
+      "seconds": 663852,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 584368,
+      "seconds": 595699,
       "color": "#3572A5"
     },
     {
@@ -35,22 +35,22 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 208847,
+      "seconds": 209896,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 193685,
+      "seconds": 193717,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 108928,
+      "seconds": 109053,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 89533,
+      "seconds": 90037,
       "color": "#e34c26"
     },
     {
@@ -60,7 +60,7 @@
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 65893,
+      "seconds": 65973,
       "color": null
     },
     {
@@ -80,32 +80,32 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 25305,
+      "seconds": 25572,
       "color": "#427819"
     },
     {
       "lang": "Vue",
-      "seconds": 19057,
+      "seconds": 19060,
       "color": "#41b883"
     },
     {
       "lang": "Text",
-      "seconds": 8475,
+      "seconds": 8476,
       "color": null
     },
     {
       "lang": "TSConfig",
-      "seconds": 8013,
+      "seconds": 8025,
       "color": null
     },
     {
       "lang": "Git Config",
-      "seconds": 6847,
+      "seconds": 7026,
       "color": "#F44D27"
     },
     {
       "lang": "TOML",
-      "seconds": 5584,
+      "seconds": 5869,
       "color": "#9c4221"
     },
     {
@@ -115,13 +115,18 @@
     },
     {
       "lang": "SQL",
-      "seconds": 3910,
+      "seconds": 4056,
       "color": "#e38c00"
     },
     {
       "lang": "Groovy",
       "seconds": 3585,
       "color": "#4298b8"
+    },
+    {
+      "lang": "Diff",
+      "seconds": 3532,
+      "color": null
     },
     {
       "lang": "PHP",
@@ -134,18 +139,13 @@
       "color": "#0060ac"
     },
     {
-      "lang": "Diff",
-      "seconds": 3236,
-      "color": null
-    },
-    {
       "lang": "C",
       "seconds": 2734,
       "color": "#555555"
     },
     {
       "lang": "Prisma",
-      "seconds": 2548,
+      "seconds": 2653,
       "color": "#0c344b"
     },
     {
@@ -230,7 +230,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 156,
+      "seconds": 157,
       "color": "#d1dbe0"
     },
     {
@@ -242,6 +242,11 @@
       "lang": "HCL",
       "seconds": 131,
       "color": "#844FBA"
+    },
+    {
+      "lang": "E-mail",
+      "seconds": 23,
+      "color": null
     },
     {
       "lang": "Modelica",
