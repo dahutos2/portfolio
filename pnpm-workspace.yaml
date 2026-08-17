@@ -5,6 +5,7 @@ trustPolicy: no-downgrade
 blockExoticSubdeps: true
 trustLockfile: false
 overrides:
+  nanoid: 3.3.18
   "vite-svg-loader>svgo": 3.3.4
   "esbuild@": 0.28.1
 allowBuilds:
