@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5810587,
+  "total_seconds": 5839961,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2488687,
+      "seconds": 2502304,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 666132,
+      "seconds": 667570,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 609954,
+      "seconds": 620195,
       "color": "#3572A5"
     },
     {
@@ -35,37 +35,37 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 209918,
+      "seconds": 210353,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 193717,
+      "seconds": 195323,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 109083,
+      "seconds": 109088,
       "color": null
     },
     {
       "lang": "HTML",
-      "seconds": 90037,
+      "seconds": 90094,
       "color": "#e34c26"
     },
     {
       "lang": "YAML",
-      "seconds": 74570,
+      "seconds": 74640,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 66215,
+      "seconds": 66374,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 56853,
+      "seconds": 57791,
       "color": "#663399"
     },
     {
@@ -85,12 +85,12 @@
     },
     {
       "lang": "Vue",
-      "seconds": 19060,
+      "seconds": 19643,
       "color": "#41b883"
     },
     {
       "lang": "Text",
-      "seconds": 8476,
+      "seconds": 8482,
       "color": null
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "lang": "Git Config",
-      "seconds": 7026,
+      "seconds": 7053,
       "color": "#F44D27"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "lang": "Image (svg)",
-      "seconds": 5177,
+      "seconds": 5181,
       "color": null
     },
     {
@@ -120,7 +120,7 @@
     },
     {
       "lang": "Diff",
-      "seconds": 3606,
+      "seconds": 3793,
       "color": null
     },
     {
@@ -230,7 +230,7 @@
     },
     {
       "lang": "INI",
-      "seconds": 157,
+      "seconds": 158,
       "color": "#d1dbe0"
     },
     {
