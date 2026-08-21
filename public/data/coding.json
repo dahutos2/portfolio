@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5878099,
+  "total_seconds": 5912778,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2517592,
+      "seconds": 2532382,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 668373,
+      "seconds": 671340,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 641878,
+      "seconds": 651636,
       "color": "#3572A5"
     },
     {
@@ -35,17 +35,17 @@
     },
     {
       "lang": "JavaScript",
-      "seconds": 210518,
+      "seconds": 210646,
       "color": "#f1e05a"
     },
     {
       "lang": "JSON",
-      "seconds": 195334,
+      "seconds": 195524,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 109088,
+      "seconds": 109104,
       "color": null
     },
     {
@@ -55,17 +55,17 @@
     },
     {
       "lang": "YAML",
-      "seconds": 74640,
+      "seconds": 74775,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 66528,
+      "seconds": 66877,
       "color": null
     },
     {
       "lang": "CSS",
-      "seconds": 57791,
+      "seconds": 62650,
       "color": "#663399"
     },
     {
@@ -80,12 +80,12 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 25572,
+      "seconds": 25722,
       "color": "#427819"
     },
     {
       "lang": "Vue",
-      "seconds": 19643,
+      "seconds": 20695,
       "color": "#41b883"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "lang": "TSConfig",
-      "seconds": 8059,
+      "seconds": 8067,
       "color": null
     },
     {
@@ -105,7 +105,7 @@
     },
     {
       "lang": "TOML",
-      "seconds": 5869,
+      "seconds": 5870,
       "color": "#9c4221"
     },
     {
@@ -139,14 +139,14 @@
       "color": "#0060ac"
     },
     {
+      "lang": "C",
+      "seconds": 3008,
+      "color": "#555555"
+    },
+    {
       "lang": "Prisma",
       "seconds": 2753,
       "color": "#0c344b"
-    },
-    {
-      "lang": "C",
-      "seconds": 2734,
-      "color": "#555555"
     },
     {
       "lang": "Lua",
