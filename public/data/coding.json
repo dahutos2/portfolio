@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 5912778,
+  "total_seconds": 5962773,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2532382,
+      "seconds": 2550465,
       "color": "#3178c6"
     },
     {
       "lang": "Markdown",
-      "seconds": 671340,
+      "seconds": 673193,
       "color": "#083fa1"
     },
     {
       "lang": "Python",
-      "seconds": 651636,
+      "seconds": 666511,
       "color": "#3572A5"
     },
     {
@@ -29,18 +29,18 @@
       "color": "#701516"
     },
     {
+      "lang": "JavaScript",
+      "seconds": 211635,
+      "color": "#f1e05a"
+    },
+    {
       "lang": "Vue.js",
       "seconds": 211054,
       "color": null
     },
     {
-      "lang": "JavaScript",
-      "seconds": 210646,
-      "color": "#f1e05a"
-    },
-    {
       "lang": "JSON",
-      "seconds": 195524,
+      "seconds": 195564,
       "color": "#292929"
     },
     {
@@ -54,19 +54,19 @@
       "color": "#e34c26"
     },
     {
+      "lang": "CSS",
+      "seconds": 75429,
+      "color": "#663399"
+    },
+    {
       "lang": "YAML",
       "seconds": 74775,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 66877,
+      "seconds": 67219,
       "color": null
-    },
-    {
-      "lang": "CSS",
-      "seconds": 62650,
-      "color": "#663399"
     },
     {
       "lang": "CSV",
@@ -80,12 +80,12 @@
     },
     {
       "lang": "Makefile",
-      "seconds": 25722,
+      "seconds": 25756,
       "color": "#427819"
     },
     {
       "lang": "Vue",
-      "seconds": 20695,
+      "seconds": 21525,
       "color": "#41b883"
     },
     {
@@ -115,12 +115,12 @@
     },
     {
       "lang": "SQL",
-      "seconds": 4131,
+      "seconds": 4149,
       "color": "#e38c00"
     },
     {
       "lang": "Diff",
-      "seconds": 3793,
+      "seconds": 3866,
       "color": null
     },
     {
@@ -145,7 +145,7 @@
     },
     {
       "lang": "Prisma",
-      "seconds": 2753,
+      "seconds": 2833,
       "color": "#0c344b"
     },
     {
