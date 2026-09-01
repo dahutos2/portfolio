@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 6433601,
+  "total_seconds": 6480328,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2752164,
+      "seconds": 2768395,
       "color": "#3178c6"
     },
     {
       "lang": "Python",
-      "seconds": 873569,
+      "seconds": 892384,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 699929,
+      "seconds": 702261,
       "color": "#083fa1"
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "lang": "Ruby",
-      "seconds": 375406,
+      "seconds": 375533,
       "color": "#701516"
     },
     {
       "lang": "JavaScript",
-      "seconds": 213109,
+      "seconds": 213186,
       "color": "#f1e05a"
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 200706,
+      "seconds": 202262,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 110783,
+      "seconds": 111955,
       "color": null
     },
     {
@@ -55,18 +55,18 @@
     },
     {
       "lang": "YAML",
-      "seconds": 78200,
+      "seconds": 78375,
       "color": "#cb171e"
+    },
+    {
+      "lang": "Gettext Catalog",
+      "seconds": 76182,
+      "color": null
     },
     {
       "lang": "CSS",
       "seconds": 75722,
       "color": "#663399"
-    },
-    {
-      "lang": "Gettext Catalog",
-      "seconds": 75001,
-      "color": null
     },
     {
       "lang": "CSV",
@@ -90,12 +90,12 @@
     },
     {
       "lang": "Text",
-      "seconds": 10100,
+      "seconds": 13927,
       "color": null
     },
     {
       "lang": "Diff",
-      "seconds": 9208,
+      "seconds": 10441,
       "color": null
     },
     {
@@ -180,7 +180,7 @@
     },
     {
       "lang": "Docker",
-      "seconds": 1341,
+      "seconds": 1342,
       "color": null
     },
     {
