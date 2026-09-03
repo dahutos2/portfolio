@@ -1,21 +1,21 @@
 {
   "range": "all_time",
   "started_at": "2025-07-01T15:00:00+00:00",
-  "total_seconds": 6520874,
+  "total_seconds": 6565899,
   "languages": [
     {
       "lang": "TypeScript",
-      "seconds": 2774809,
+      "seconds": 2785853,
       "color": "#3178c6"
     },
     {
       "lang": "Python",
-      "seconds": 910941,
+      "seconds": 934816,
       "color": "#3572A5"
     },
     {
       "lang": "Markdown",
-      "seconds": 708726,
+      "seconds": 713090,
       "color": "#083fa1"
     },
     {
@@ -40,12 +40,12 @@
     },
     {
       "lang": "JSON",
-      "seconds": 204279,
+      "seconds": 205775,
       "color": "#292929"
     },
     {
       "lang": "Bash",
-      "seconds": 112992,
+      "seconds": 113633,
       "color": null
     },
     {
@@ -55,12 +55,12 @@
     },
     {
       "lang": "YAML",
-      "seconds": 78375,
+      "seconds": 78670,
       "color": "#cb171e"
     },
     {
       "lang": "Gettext Catalog",
-      "seconds": 76194,
+      "seconds": 77418,
       "color": null
     },
     {
@@ -90,7 +90,7 @@
     },
     {
       "lang": "Text",
-      "seconds": 19258,
+      "seconds": 19780,
       "color": null
     },
     {
@@ -119,8 +119,13 @@
       "color": null
     },
     {
+      "lang": "Prisma",
+      "seconds": 4594,
+      "color": "#0c344b"
+    },
+    {
       "lang": "SQL",
-      "seconds": 4189,
+      "seconds": 4315,
       "color": "#e38c00"
     },
     {
@@ -142,11 +147,6 @@
       "lang": "XML",
       "seconds": 3262,
       "color": "#0060ac"
-    },
-    {
-      "lang": "Prisma",
-      "seconds": 3154,
-      "color": "#0c344b"
     },
     {
       "lang": "C",
