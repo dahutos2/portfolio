@@ -23,7 +23,14 @@ try {
     const user = JSON.parse(await fs.readFile('dist/data/user.json', 'utf8'));
     assert.ok((await page.$eval('h1', element => element.textContent)).includes(user.name));
     assert.ok(await page.$('a[href^="https://github.com/"]'));
-    assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth), 'horizontal overflow');
+    const layout = await page.evaluate(() => ({
+      width: window.innerWidth,
+      scrollWidth: document.documentElement.scrollWidth,
+      overflowing: [...document.querySelectorAll('body *')]
+        .filter(element => element.getBoundingClientRect().right > window.innerWidth + 1)
+        .slice(0, 8).map(element => ({ tag: element.tagName, text: element.textContent?.trim().slice(0, 80) })),
+    }));
+    assert.ok(layout.scrollWidth <= layout.width, `horizontal overflow: ${JSON.stringify(layout)}`);
   }
   for (const file of ['user', 'repos', 'metrics', 'coding', 'career', 'services', 'testimonials']) {
     const response = await page.goto(`${base}data/${file}.json`);
