@@ -9,11 +9,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AboutSection: typeof import('./src/components/AboutSection.vue')['default']
-    AchievementCard: typeof import('./src/components/parts/AchievementCard.vue')['default']
     CareerSection: typeof import('./src/components/CareerSection.vue')['default']
     ContactSection: typeof import('./src/components/ContactSection.vue')['default']
     HeroSection: typeof import('./src/components/HeroSection.vue')['default']
-    HoverTooltip: typeof import('./src/components/parts/HoverTooltip.vue')['default']
     ProjectCard: typeof import('./src/components/parts/ProjectCard.vue')['default']
     ProjectsSection: typeof import('./src/components/ProjectsSection.vue')['default']
     SectionState: typeof import('./src/components/parts/SectionState.vue')['default']
@@ -22,7 +20,6 @@ declare module 'vue' {
     ServicesSection: typeof import('./src/components/ServicesSection.vue')['default']
     Skeleton: typeof import('./src/components/parts/Skeleton.vue')['default']
     SkillsSection: typeof import('./src/components/SkillsSection.vue')['default']
-    StatsSection: typeof import('./src/components/StatsSection.vue')['default']
     TestimonialCard: typeof import('./src/components/parts/TestimonialCard.vue')['default']
     TestimonialsSection: typeof import('./src/components/TestimonialsSection.vue')['default']
   }
