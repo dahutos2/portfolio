@@ -26,7 +26,7 @@ const toggle = () => (showAll.value = !showAll.value)
     <SectionTitle title="制作実績" />
 
     <SectionState :loading="loading" :data="repos" empty-text="プロジェクトがありません">
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <ProjectCard v-for="r in visibleRepos" :key="r.full_name" :repo="r" />
       </div>
 
