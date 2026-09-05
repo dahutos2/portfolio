@@ -78,8 +78,4 @@ career:
 # position: 肩書き
 # quote:    声の内容
 # avatar:   顔写真
-testimonials:
-  - author: "Bob"
-    position: "CTO @ Bar"
-    quote: "迅速かつ高品質なデリバリーに感謝"
-    avatar: "assets/man.png"
+testimonials: []

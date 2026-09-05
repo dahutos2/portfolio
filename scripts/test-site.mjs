@@ -11,6 +11,11 @@ try {
   browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
   const page = await browser.newPage();
   const errors = [];
+  const dataRequests = [];
+  page.on('request', request => {
+    const url = new URL(request.url());
+    if (url.href.startsWith(base) && url.pathname.includes('/data/')) dataRequests.push(url);
+  });
   page.on('pageerror', error => errors.push(error.message));
   page.on('response', response => {
     if (response.url().startsWith(base) && response.status() >= 400) {
@@ -31,6 +36,13 @@ try {
         .slice(0, 8).map(element => ({ tag: element.tagName, text: element.textContent?.trim().slice(0, 80) })),
     }));
     assert.ok(layout.scrollWidth <= layout.width, `horizontal overflow: ${JSON.stringify(layout)}`);
+  }
+  if (process.env.GITHUB_RUN_ID) {
+    assert.ok(dataRequests.length > 0, 'the page must load its data');
+    for (const url of dataRequests) {
+      assert.equal(url.searchParams.get('v'), `${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT ?? '1'}`,
+        'each deployment must use its run ID to invalidate JSON caches, even at the same commit');
+    }
   }
   for (const file of ['user', 'repos', 'metrics', 'coding', 'career', 'services', 'testimonials']) {
     const response = await page.goto(`${base}data/${file}.json`);
