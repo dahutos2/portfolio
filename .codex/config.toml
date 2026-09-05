@@ -1,4 +1,0 @@
-# Daily checks need GitHub, registries, advisories and public links.
-# Filesystem access remains restricted to the workspace and temporary directories.
-[sandbox_workspace_write]
-network_access = true
