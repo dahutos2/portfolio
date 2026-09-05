@@ -20,3 +20,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Build outputs; source data is fetched or generated at build time.
+/public/data/
+/public/legal/
+.venv/
+__pycache__/

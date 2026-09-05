@@ -29,7 +29,7 @@ from datetime import datetime
 def github_api(url: str, headers: dict) -> dict:
     try:
         req = ur.Request(url, headers=headers)
-        with ur.urlopen(req) as res:
+        with ur.urlopen(req, timeout=30) as res:
             return json.load(res)
     except urlerror.HTTPError as e:
         raise RuntimeError(f"GitHub API error {e.code} for {url}") from e
@@ -38,7 +38,8 @@ def github_api(url: str, headers: dict) -> dict:
 def paginated(url: str, headers: dict):
     page = 1
     while True:
-        data = github_api(f"{url}?per_page=100&page={page}", headers)
+        separator = "&" if "?" in url else "?"
+        data = github_api(f"{url}{separator}per_page=100&page={page}", headers)
         if not data:
             break
         yield from data
@@ -48,10 +49,10 @@ def paginated(url: str, headers: dict):
 def wakatime_api(endpoint: str, api_key: str):
     url = f"https://wakatime.com/api/v1/{endpoint}?api_key={urlparse.quote(api_key)}"
     try:
-        with ur.urlopen(url) as res:
+        with ur.urlopen(url, timeout=30) as res:
             payload = json.load(res)
             if not payload.get("data"):
-                raise RuntimeError(str(payload))
+                raise RuntimeError("WakaTime returned no data")
             return payload["data"]
     except urlerror.HTTPError as e:
         raise RuntimeError(f"[WakaTime {e.code}] {endpoint}") from e
@@ -136,8 +137,7 @@ def build_metrics_json(headers: dict, out_dir: Path):
 def build_coding_json(owner: str, out_dir: Path) -> None:
     key = os.getenv("WAKATIME_API_KEY")
     if not key:
-        print("⚠️  WAKATIME_API_KEY が未設定: coding.json をスキップ")
-        return
+        raise RuntimeError("ENV WAKATIME_API_KEY が未設定です。")
 
     # 集計データ
     stats = wakatime_api(f"users/{owner}/stats/all_time", key)
@@ -183,10 +183,9 @@ def build_coding_json(owner: str, out_dir: Path) -> None:
 def build_extra_sections(cfg: dict, out_dir: Path) -> None:
     # services / career / testimonials をそのまま JSON にコピー
     for k in ["services", "career", "testimonials"]:
-        if k in cfg:
-            (out_dir / f"{k}.json").write_text(
-                json.dumps(cfg[k], ensure_ascii=False, indent=2)
-            )
+        (out_dir / f"{k}.json").write_text(
+            json.dumps(cfg.get(k, []), ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
 
 def main():
@@ -197,7 +196,8 @@ def main():
         raise RuntimeError("ENV OWNER / GH_TOKEN が未設定です。")
 
     # YAML 読み込み
-    cfg = yaml.safe_load(open("portfolio.config.yml"))
+    with open("portfolio.config.yml", encoding="utf-8") as source:
+        cfg = yaml.safe_load(source)
 
     # GitHub API 共通ヘッダ
     headers = {

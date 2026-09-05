@@ -78,6 +78,7 @@ ${content}
 }
 
 async function main() {
+  await fs.rm(outDir, { recursive: true, force: true });
   const files = await globby(["**/*.md"], { cwd: inDir, absolute: true });
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],

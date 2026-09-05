@@ -1,74 +1,51 @@
 # ポートフォリオサイト
 
-このプロジェクトは **Vite + Vue 3 + TypeScript + Tailwind CSS** によるモダンなポートフォリオサイトです。  
-**2 種類のデータソース** から動的データを生成し、GitHub Actions により自動デプロイされます。
+Vite + Vue 3 + TypeScript + Tailwind CSSによるGitHub Pagesサイト。
 
-## 特徴
+## データと公開
 
-- **GitHub Actions CI/CD**
-  - データ収集・ビルド・デプロイを自動化
-- データは以下 2 種類から構成
-  - GitHub / WakaTime など外部 API から収集する動的データ
-  - `portfolio.config.yml` に記述された手動管理データ（サービス・タイムライン・実績など）
+- GitHub / WakaTime APIからプロフィール・リポジトリ・活動指標を収集する。
+- `portfolio.config.yml` からサービス・経歴・推薦文を生成する。
+- `content/legal/` のMarkdownから規約HTML・PDFを生成する。
+- `public/data/` と `public/legal/` はビルド生成物。Git管理・手編集しない。
 
-## データの流れ
+[Portfolioワークフロー](.github/workflows/deploy-pages.yml) がPR検証と公開を担当する。
+毎日JST 11:00、mainへのpush、mainでの手動実行では、依存監査・テスト・実データ収集・規約生成・ビルド・ブラウザ検証がすべて成功した同一実行の成果物を公開する。収集や検証に失敗した場合は既存の公開サイトを維持する。
+PRでは秘密情報を使わず固定サンプルで検証し、公開しない。`build.json` で公開commit・実行ID・生成時刻を確認できる。
 
-1. **GitHub Actions の fetch-data ワークフロー**
-   - Python スクリプトが以下を取得
-     - GitHub API → リポジトリ情報、スター数、言語比率など
-     - WakaTime API → コーディング時間
-   - `portfolio.config.yml` の内容（サービス・タイムライン・実績・推薦文）を JSON に変換
-   - これらを `public/data/` に JSON として出力  
-     → 例：`public/data/metrics.json`, `public/data/services.json`, `public/data/user.json`
+Codexによる提案・承認・PR・マージの運用は [日次改善](docs/maintenance.md) を参照。
 
-2. **GitHub Actions の deploy-pages ワークフロー**
-   - Vite でサイトをビルド（`dist/`）
-   - GitHub Pages に自動デプロイ
+## ローカル開発
 
-## 開発方法
+Nodeとpnpmのバージョンは `.tool-versions` と `package.json` に固定し、CIで整合を検証する。Pythonは3.11を使用する。
 
-本プロジェクトは Node.js `24.18.0` (LTS) と pnpm `11.17.0` を前提にしています。
-バージョンは `.tool-versions`、`package.json` の `engines` / `packageManager`、CI で揃えています。
-pnpm は Corepack 用の SHA-512 も固定し、公開後 24 時間未満の依存や信頼レベルが低下したリリースを拒否します。
-
-### 依存インストール
-
-```bash
+```sh
 pnpm install --frozen-lockfile
-```
-
-依存関係を変更した場合だけ、lockfile を更新します。
-
-```bash
-pnpm install
-pnpm audit --audit-level high
-```
-
-Python 依存を変更する場合は `requirements.in` を編集し、ハッシュ付きの `requirements.txt` を再生成します。
-
-```bash
-uv pip compile requirements.in --generate-hashes --output-file requirements.txt --python-version 3.11
-```
-
-### 開発サーバ起動
-
-```bash
+uv venv --python 3.11 .venv
+uv pip sync --python .venv/bin/python --require-hashes requirements.txt
+.venv/bin/python tests/preview_data.py
 pnpm dev
 ```
 
-### ビルド
+実データを使う場合は `OWNER`、`GH_TOKEN`、`WAKATIME_API_KEY` を環境に設定し、`.venv/bin/python .github/scripts/build_data.py` を実行する。秘密値をファイルにcommitしない。CIのmain専用 `production` Environmentに設定する `GH_PAT` は集計対象のprivate repository Metadata read-onlyを必要最小限に許可する。
 
-```bash
-pnpm run build
+## 検証
+
+```sh
+pnpm audit --audit-level high
+.venv/bin/python -m pip_audit --require-hashes -r requirements.txt --disable-pip
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python tests/preview_data.py
+pnpm exec puppeteer browsers install chrome
+pnpm run build:all
+pnpm run test:site
 ```
 
-→ `dist/` に成果物が生成されます。
+規約PDFには日本語フォントが必要。CIはNoto CJKを導入する。
 
-## デプロイ
+依存変更時は対応するmanifestを編集してlockfileを再生成し、監査・検証する。
+Pythonは `requirements.in` を正本として以下を実行する。通常更新では `--exclude-newer` に実行日の7日前のUTC日時を指定する。
 
-デプロイは全自動で行われます：
-
-- **fetch-data.yml** → 毎日 JST 11:00にデータを収集し、デプロイ先の`public/data/` のみ上書きする
-- **deploy-pages.yml** → コードを変更すると自動でサイトをビルド・デプロイする
-
-`fetch-data.yml` の `GH_PAT` は、`/user/repos?visibility=all` で private リポジトリも集計するために使います。fine-grained PAT を使う場合は対象リポジトリを絞り、Metadata read-only を最小権限として設定します。
+```sh
+uv pip compile requirements.in --generate-hashes --output-file requirements.txt --python-version 3.11 --exclude-newer <UTC日時>
+```

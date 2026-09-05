@@ -14,7 +14,8 @@
     "typecheck:legal": "tsc --allowJs --checkJs --noEmit --target ES2022 --module NodeNext --moduleResolution NodeNext --skipLibCheck scripts/md-to-public.mjs",
     "build:legal": "pnpm run typecheck:legal && node scripts/md-to-public.mjs",
     "build:all": "pnpm run build:legal && pnpm run build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:site": "node scripts/test-site.mjs"
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.2.3",
