@@ -70,6 +70,7 @@ jobs:
           Path('dist/build.json').write_text(json.dumps({
               'commit': os.environ['GITHUB_SHA'],
               'run_id': os.environ['GITHUB_RUN_ID'],
+              'run_attempt': os.environ['GITHUB_RUN_ATTEMPT'],
               'generated_at': datetime.now(timezone.utc).isoformat(),
           }) + '\n')
           PYTHON

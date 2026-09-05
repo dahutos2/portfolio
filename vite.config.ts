@@ -18,7 +18,9 @@ export default defineConfig({
     },
   },
   define: {
-    __BUILD_ID__: JSON.stringify(process.env.GITHUB_SHA ?? ''),
+    __BUILD_ID__: JSON.stringify(process.env.GITHUB_RUN_ID
+      ? `${process.env.GITHUB_RUN_ID}-${process.env.GITHUB_RUN_ATTEMPT ?? '1'}`
+      : `local-${Date.now()}`),
   },
   server: { port: 5173 },
   base: '/portfolio/'
