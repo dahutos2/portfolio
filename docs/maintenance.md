@@ -17,3 +17,5 @@
 ## 正本
 
 時刻・モデルはスケジュール、公開処理は `.github/workflows/deploy-pages.yml`。掲載文は `portfolio.config.yml`、規約は `content/legal/`、動的情報は外部API。生成物 `public/data/`・`public/legal/`・`dist/` は編集・commitしない。規約のURL・本文、掲載内容、同一commit再公開時のキャッシュ更新を保持する。
+
+依存脆弱性への一時的な緩和判断と解除条件は[ADR 0001](adr/0001-braces-depth-guard.md)を参照する。

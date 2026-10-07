@@ -11,3 +11,7 @@ overrides:
 allowBuilds:
   esbuild: true
   puppeteer: false
+# Backport of micromatch/braces#72 at 28d440b5dd449dbf1fe6f3506cf94ecca4d02660 for GHSA-vfj7-8cjw-p6xm.
+# Caps recursive parsing and traversal; remove this patch when upstream publishes an official fix.
+patchedDependencies:
+  braces@3.0.3: patches/braces@3.0.3.patch

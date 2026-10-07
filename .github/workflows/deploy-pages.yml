@@ -35,6 +35,8 @@ jobs:
         run: |
           pnpm install --frozen-lockfile
           python -m pip install --require-hashes -r requirements.txt
+      - name: Test braces depth guard
+        run: node --test tests/braces-security.test.mjs
       - name: Audit dependencies
         run: |
           pnpm audit --audit-level high
