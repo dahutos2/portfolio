@@ -7,7 +7,7 @@ import unittest
 from subprocess import CompletedProcess
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / ".github"))
-from scripts.pnpm_audit_report import capture_audit
+from scripts.pnpm_audit_report import audit_log_record, capture_audit
 
 
 class PnpmAuditReportTest(unittest.TestCase):
@@ -151,6 +151,42 @@ class PnpmAuditReportTest(unittest.TestCase):
         self.assertEqual(artifact["classification"], "completed")
         self.assertEqual(artifact["severity_counts"]["critical"], 0)
         self.assertEqual(artifact["audit"], audit)
+
+    def test_log_record_keeps_all_paths_and_run_provenance(self):
+        artifact = {
+            "generated_at_utc": "2026-10-08T04:00:00+00:00",
+            "commit_sha": "a" * 40,
+            "workflow_run": {"id": "12345", "attempt": "2"},
+            "dependency_inputs": {"pnpm-lock.yaml": "b" * 64},
+            "exit_code": 1,
+            "classification": "vulnerabilities_found",
+            "error_code": None,
+            "severity_counts": {"info": 0, "low": 0, "moderate": 1, "high": 1, "critical": 0},
+            "audit": {
+                "advisories": {
+                    "1": {
+                        "github_advisory_id": "GHSA-example",
+                        "module_name": "example",
+                        "severity": "high",
+                        "title": "Example advisory",
+                        "url": "https://github.com/advisories/GHSA-example",
+                        "vulnerable_versions": "<2.0.0",
+                        "patched_versions": ">=2.0.0",
+                        "findings": [{"version": "1.9.0", "paths": [".>z>example", ".>a>example", ".>z>example"]}],
+                    }
+                }
+            },
+        }
+
+        record = audit_log_record(artifact)
+
+        self.assertEqual(record["severity_counts"], artifact["severity_counts"])
+        self.assertEqual(record["dependency_inputs"], artifact["dependency_inputs"])
+        self.assertEqual(record["advisories"][0]["id"], "GHSA-example")
+        self.assertEqual(
+            record["advisories"][0]["findings"],
+            [{"version": "1.9.0", "paths": [".>a>example", ".>z>example"]}],
+        )
 
 
 if __name__ == "__main__":

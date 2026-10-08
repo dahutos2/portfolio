@@ -19,6 +19,7 @@ DEPENDENCY_INPUTS = (
 )
 AUDIT_COMMAND = ("pnpm", "audit", "--audit-level", "high", "--json")
 SEVERITIES = ("info", "low", "moderate", "high", "critical")
+LOG_RECORD_PREFIX = "PNPM_AUDIT_REPORT_JSON="
 NETWORK_ERROR_CODES = (
     "EAI_AGAIN",
     "ENOTFOUND",
@@ -117,6 +118,68 @@ def summarize(
     return "audit_json_missing_counts", vulnerability_counts, None
 
 
+def audit_log_record(artifact: dict) -> dict:
+    audit = artifact.get("audit")
+    raw_advisories = audit.get("advisories") if isinstance(audit, dict) else None
+    if isinstance(raw_advisories, dict):
+        advisories = list(raw_advisories.values())
+    elif isinstance(raw_advisories, list):
+        advisories = raw_advisories
+    else:
+        advisories = []
+
+    findings_by_advisory = []
+    for advisory in advisories:
+        if not isinstance(advisory, dict):
+            continue
+        findings = []
+        raw_findings = advisory.get("findings")
+        if isinstance(raw_findings, list):
+            for finding in raw_findings:
+                if not isinstance(finding, dict):
+                    continue
+                raw_paths = finding.get("paths")
+                paths = (
+                    sorted({path for path in raw_paths if isinstance(path, str)})
+                    if isinstance(raw_paths, list)
+                    else []
+                )
+                findings.append({"version": finding.get("version"), "paths": paths})
+        findings_by_advisory.append(
+            {
+                "id": advisory.get("github_advisory_id") or advisory.get("id"),
+                "module_name": advisory.get("module_name"),
+                "severity": advisory.get("severity"),
+                "title": advisory.get("title"),
+                "url": advisory.get("url"),
+                "vulnerable_versions": advisory.get("vulnerable_versions"),
+                "patched_versions": advisory.get("patched_versions"),
+                "findings": findings,
+            }
+        )
+    findings_by_advisory.sort(
+        key=lambda advisory: (
+            str(advisory["severity"] or ""),
+            str(advisory["module_name"] or ""),
+            str(advisory["id"] or ""),
+        )
+    )
+
+    return {
+        key: artifact.get(key)
+        for key in (
+            "generated_at_utc",
+            "commit_sha",
+            "workflow_run",
+            "dependency_inputs",
+            "exit_code",
+            "classification",
+            "error_code",
+            "severity_counts",
+        )
+    } | {"advisories": findings_by_advisory}
+
+
 def capture_audit(
     project_root: Path,
     output_path: Path,
@@ -179,7 +242,14 @@ def capture_audit(
 def main() -> int:
     project_root = Path(__file__).resolve().parents[2]
     output_path = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("pnpm-audit-report.json")
-    return capture_audit(project_root, output_path)
+    artifact_path = output_path if output_path.is_absolute() else project_root / output_path
+    exit_code = capture_audit(project_root, artifact_path)
+    artifact = json.loads(artifact_path.read_text(encoding="utf-8"))
+    print(
+        LOG_RECORD_PREFIX
+        + json.dumps(audit_log_record(artifact), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    )
+    return exit_code
 
 
 if __name__ == "__main__":
