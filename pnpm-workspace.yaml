@@ -6,7 +6,7 @@ blockExoticSubdeps: true
 trustLockfile: false
 overrides:
   nanoid: 3.3.18
-  "vite-svg-loader>svgo": 3.3.4
+  "vite-svg-loader>svgo": 3.3.5
   "esbuild@": 0.28.1
 allowBuilds:
   esbuild: true
