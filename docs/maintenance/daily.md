@@ -4,8 +4,8 @@
 
 1. 最初に `portfolio.config.yml` の経歴の最終時点・担当範囲・成果、サービスとの対応、掲載実績を確認し、未掲載の可能性と事実未確認を分ける。中央 `managed-project-context` のportfolio入口からローカル履歴の手順を読み、不足項目に関係する会話を優先し、新着と未処理の過去分から掲載候補を確認する。抽出情報は指定のGit外領域に保持し、このリポジトリ・PR・ログへ会話を転載しない。未処理件数を残し、履歴処理が未完了でもCI確認を行う。
 2. staged・unstaged・untracked、リモートmain、未完了PR、専用DBの候補・判断状況を確認する。無関係な変更を保護し、ローカル変更を公開済みと扱わない。
-3. `bash scripts/maintenance-check.sh` で最新mainのCI・監査ログと公開 `build.json` を取得する。ローカル依存インストール・重複監査はしない。許可済みGitHubコネクタ・Web取得も使える。通信失敗は一度原因を確認し、反復せず未確認を報告する。
-4. main・CI・公開のSHA、run_id・attempt・生成日時を照合する。監査のrun URL・日時・SHAを示し、最新実行が当日JSTか、Audit dependenciesの成功とlow/moderateを含むログ内容を確認する。取得コマンドやCI全体の成功だけで脆弱性0件と判断しない。古い成功で最新の失敗・実行中を隠さず、ローカルlockfile差分へ流用しない。
+3. `bash scripts/maintenance-check.sh` で最新mainのCIと公開 `build.json` を取得する。依存監査は11:00 JSTのPortfolio workflowを優先し、GitHubコネクタで当日runのartifact `pnpm-audit-<run_id>-<attempt>` を取得する。artifact JSONのcommit・run・入力SHA256を検証し、`package.json`・`pnpm-workspace.yaml`・`pnpm-lock.yaml` の3ファイルが現在のcheckoutと一致する場合だけ監査結果として使う。一致するartifactがない場合だけ、現在のlockfileへ `pnpm audit --audit-level high --json` を一度実行する。通信失敗は再実行せず、未確認として記録する。
+4. CI artifactでは `classification`、`exit_code`、全severity件数、監査JSONを解析する。GitHub Advisory・upstream/npmの照合対象を各highまたはcritical findingから取り出し、依存経路を完全に確認する。監査run URL・JST日時・commit SHA・artifact名を示す。古い成功、別branchのrun、異なる入力SHAの結果を使わず、監査成功とCI全体の成功も混同しない。公開状態のSHA・生成時刻は別に照合する。
 5. Node・pnpm・Python・Actionsのサポート状況、依存の公式リリース・勧告、経歴・実績・サービス・掲載リポジトリ・説明文・リンクの変化を確認する。変化なしも確認範囲を短く残す。日曜だけ全リンク、表示、アクセシビリティ、生成経路へ広げる。表示の主張は実ブラウザで確認する。
 6. 既存PRのhead・CI・レビュー・マージ・公開状態に変化があれば[承認後の作業](delivery.md)の該当段階へ進む。掲載不足または候補があれば[更新提案](proposals.md)へ進み、会話からの推定を明示した掲載案を先に準備する。新規提案・重要な変化・失敗・利用者判断が必要な場合のみ通知する。同じ保留・承認待ち・却下済みを根拠変化なしに再通知しない。
 
