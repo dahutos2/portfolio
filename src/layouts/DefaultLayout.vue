@@ -28,10 +28,10 @@ const links = [
             </a>
 
             <!-- Hamburger -->
-            <button class="md:hidden p-2 rounded
+            <button class="md:hidden p-2 rounded-sm
                text-gray-700 dark:text-on-surface
                hover:text-primary-600 dark:hover:text-primary-300
-               focus-visible:outline-none
+               focus-visible:outline-hidden
                focus-visible:ring-2 focus-visible:ring-primary-500" @click="toggle" aria-label="Toggle main menu"
                 :aria-expanded="open" aria-controls="mobile-nav">
                 <svg v-if="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -60,7 +60,7 @@ const links = [
             leave-active-class="transition transform ease-in duration-200" leave-from-class="opacity-100 translate-y-0"
             leave-to-class="opacity-0 -translate-y-2">
             <nav v-if="open" id="mobile-nav" aria-label="Mobile navigation" class="md:hidden absolute inset-x-0 top-14 z-40
-               bg-white dark:bg-surface border-t border-gray-100 dark:border-surface-muted shadow">
+               bg-white dark:bg-surface border-t border-gray-100 dark:border-surface-muted shadow-sm">
                 <ul class="flex flex-col px-4 py-3 space-y-2">
                     <li v-for="l in links" :key="l.to">
                         <a :href="l.to" @click="close" class="block text-gray-700 dark:text-on-surface

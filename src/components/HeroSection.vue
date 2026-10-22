@@ -13,7 +13,7 @@ const { data: user, loading } = useFetch<User>('user.json')
       <div class="flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-8">
         <!-- テキスト -->
         <div class="flex-1 space-y-6">
-          <h1 class="text-4xl md:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
+          <h1 class="text-4xl md:text-6xl font-bold leading-tight md:leading-none text-gray-900 dark:text-white">
             {{ user!.name }}
           </h1>
 
