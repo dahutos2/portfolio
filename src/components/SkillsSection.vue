@@ -48,11 +48,11 @@ const visibleRows = computed(() =>
 
         <SectionState :loading="loading" :data="rows">
             <div class="flex flex-wrap gap-2 justify-end mb-6 text-xs font-medium">
-                <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">
+                <span class="px-2 py-0.5 rounded-sm bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300">
                     計測開始 {{ startedAt }}
                 </span>
                 <span
-                    class="px-2 py-0.5 rounded bg-primary-50 text-primary-600 dark:bg-primary-950/40 dark:text-primary-300">
+                    class="px-2 py-0.5 rounded-sm bg-primary-50 text-primary-600 dark:bg-primary-950/40 dark:text-primary-300">
                     合計 {{ totalHours }}&nbsp;h
                 </span>
             </div>
@@ -65,8 +65,8 @@ const visibleRows = computed(() =>
                     </span>
                 </div>
                 <!-- プログレスバー：言語固有の color があれば使用 -->
-                <div class="w-full h-2 rounded bg-gray-200 dark:bg-gray-600">
-                    <div class="h-2 rounded" :style="{
+                <div class="w-full h-2 rounded-sm bg-gray-200 dark:bg-gray-600">
+                    <div class="h-2 rounded-sm" :style="{
                         width: r.pct + '%',
                         backgroundColor: r.color || 'rgb(34 197 94)', /* fallback: Tailwind green-500 */
                     }" />

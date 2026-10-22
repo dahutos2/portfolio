@@ -1,7 +1,6 @@
 // @ts-check
 import fs from "node:fs/promises";
 import path from "node:path";
-import { globby } from "globby";
 import { marked } from "marked";
 import puppeteer from "puppeteer";
 
@@ -79,13 +78,17 @@ ${content}
 
 async function main() {
   await fs.rm(outDir, { recursive: true, force: true });
-  const files = await globby(["**/*.md"], { cwd: inDir, absolute: true });
+  const files = [];
+  for await (const file of fs.glob("**/*.md", { cwd: inDir })) {
+    files.push(file);
+  }
   const browser = await puppeteer.launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   try {
-    for (const mdPath of files) {
+    for (const file of files.sort()) {
+      const mdPath = path.join(inDir, file);
       const rel = path.relative(inDir, mdPath);
       const { dir, name } = path.parse(rel);
       const outProjectDir = path.join(outDir, dir);
