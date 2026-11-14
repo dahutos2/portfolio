@@ -2,6 +2,11 @@ minimumReleaseAge: 1440
 minimumReleaseAgeIgnoreMissingTime: false
 minimumReleaseAgeStrict: true
 trustPolicy: no-downgrade
+# CfT now publishes this release through Google's OSS Exit Gate instead of GitHub OIDC.
+# Verified against Chromium 157.0.8090.0 and npm registry signatures; keep version-scoped.
+# https://github.com/GoogleChromeLabs/chromium-bidi#publish-new-npm-release
+trustPolicyExclude:
+  - chromium-bidi@157.0.8090-0
 blockExoticSubdeps: true
 trustLockfile: false
 overrides:
